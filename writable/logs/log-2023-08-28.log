@@ -1,0 +1,305 @@
+CRITICAL - 2023-08-28 03:02:43 --> Undefined index: prodi_name
+in APPPATH\Views\admin\v_akreditasi.php on line 139.
+ 1 APPPATH\Views\admin\v_akreditasi.php(139): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: prodi_name', 'D:\\Codeigniter\\lppmi-unusia\\app\\Views\\admin\\v_akreditasi.php', 139, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Codeigniter\\lppmi-unusia\\app\\Views\\admin\\v_akreditasi.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/v_akreditasi', [], true)
+ 5 APPPATH\Controllers\Admin\ApsAdminController.php(37): view('admin/v_akreditasi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin\ApsAdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ApsAdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\lppmi-unusia\\public\\index.php')
+CRITICAL - 2023-08-28 03:28:14 --> Undefined index: prodi_name
+in APPPATH\Views\admin\v_akreditasi.php on line 139.
+ 1 APPPATH\Views\admin\v_akreditasi.php(139): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: prodi_name', 'D:\\Codeigniter\\lppmi-unusia\\app\\Views\\admin\\v_akreditasi.php', 139, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Codeigniter\\lppmi-unusia\\app\\Views\\admin\\v_akreditasi.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/v_akreditasi', [], true)
+ 5 APPPATH\Controllers\Admin\ApsAdminController.php(37): view('admin/v_akreditasi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin\ApsAdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ApsAdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\lppmi-unusia\\public\\index.php')
+CRITICAL - 2023-08-28 04:09:03 --> Undefined index: kadaluarsa
+in APPPATH\Views\admin\v_akreditasi.php on line 205.
+ 1 APPPATH\Views\admin\v_akreditasi.php(205): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: kadaluarsa', 'D:\\Codeigniter\\lppmi-unusia\\app\\Views\\admin\\v_akreditasi.php', 205, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Codeigniter\\lppmi-unusia\\app\\Views\\admin\\v_akreditasi.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/v_akreditasi', [], true)
+ 5 APPPATH\Controllers\Admin\ApsAdminController.php(37): view('admin/v_akreditasi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin\ApsAdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ApsAdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\lppmi-unusia\\public\\index.php')
+CRITICAL - 2023-08-28 04:11:26 --> Undefined index: kadaluarsa
+in APPPATH\Views\admin\v_akreditasi.php on line 205.
+ 1 APPPATH\Views\admin\v_akreditasi.php(205): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: kadaluarsa', 'D:\\Codeigniter\\lppmi-unusia\\app\\Views\\admin\\v_akreditasi.php', 205, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Codeigniter\\lppmi-unusia\\app\\Views\\admin\\v_akreditasi.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/v_akreditasi', [], true)
+ 5 APPPATH\Controllers\Admin\ApsAdminController.php(37): view('admin/v_akreditasi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin\ApsAdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ApsAdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\lppmi-unusia\\public\\index.php')
+CRITICAL - 2023-08-28 04:12:22 --> Undefined index: docs_id
+in APPPATH\Views\admin\v_akreditasi.php on line 215.
+ 1 APPPATH\Views\admin\v_akreditasi.php(215): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: docs_id', 'D:\\Codeigniter\\lppmi-unusia\\app\\Views\\admin\\v_akreditasi.php', 215, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Codeigniter\\lppmi-unusia\\app\\Views\\admin\\v_akreditasi.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/v_akreditasi', [], true)
+ 5 APPPATH\Controllers\Admin\ApsAdminController.php(37): view('admin/v_akreditasi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin\ApsAdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ApsAdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\lppmi-unusia\\public\\index.php')
+ERROR - 2023-08-28 04:34:50 --> mysqli_sql_exception: Table 'unusia_lppmi.v_akreditasi' doesn't exist in D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Codeigniter\lppmi-unusia\app\Controllers\Admin\ApsAdminController.php(34): CodeIgniter\BaseModel->findAll()
+#7 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Admin\ApsAdminController->index()
+#8 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ApsAdminController))
+#9 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Codeigniter\lppmi-unusia\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\...')
+#12 {main}
+CRITICAL - 2023-08-28 04:34:50 --> Table 'unusia_lppmi.v_akreditasi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `v_akreditasi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `v_akreditasi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `v_akreditasi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `v_akreditasi`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Admin\ApsAdminController.php(34): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin\ApsAdminController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ApsAdminController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\lppmi-unusia\\public\\index.php')
+ERROR - 2023-08-28 04:35:47 --> mysqli_sql_exception: Table 'unusia_lppmi.v_akreditasi' doesn't exist in D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Codeigniter\lppmi-unusia\app\Controllers\Admin\ApsAdminController.php(34): CodeIgniter\BaseModel->findAll()
+#7 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Admin\ApsAdminController->index()
+#8 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ApsAdminController))
+#9 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Codeigniter\lppmi-unusia\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\...')
+#12 {main}
+CRITICAL - 2023-08-28 04:35:47 --> Table 'unusia_lppmi.v_akreditasi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `v_akreditasi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `v_akreditasi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `v_akreditasi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `v_akreditasi`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Admin\ApsAdminController.php(34): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin\ApsAdminController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ApsAdminController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\lppmi-unusia\\public\\index.php')
+ERROR - 2023-08-28 04:36:00 --> mysqli_sql_exception: Table 'unusia_lppmi.v_akreditasi' doesn't exist in D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Codeigniter\lppmi-unusia\app\Controllers\Admin\ApsAdminController.php(34): CodeIgniter\BaseModel->findAll()
+#7 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Admin\ApsAdminController->index()
+#8 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ApsAdminController))
+#9 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Codeigniter\lppmi-unusia\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\...')
+#12 {main}
+CRITICAL - 2023-08-28 04:36:00 --> Table 'unusia_lppmi.v_akreditasi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `v_akreditasi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `v_akreditasi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `v_akreditasi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `v_akreditasi`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Admin\ApsAdminController.php(34): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin\ApsAdminController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ApsAdminController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\lppmi-unusia\\public\\index.php')
+CRITICAL - 2023-08-28 04:48:08 --> Undefined index: prodi_nama
+in APPPATH\Views\admin\v_akreditasi.php on line 79.
+ 1 APPPATH\Views\admin\v_akreditasi.php(79): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: prodi_nama', 'D:\\Codeigniter\\lppmi-unusia\\app\\Views\\admin\\v_akreditasi.php', 79, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Codeigniter\\lppmi-unusia\\app\\Views\\admin\\v_akreditasi.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/v_akreditasi', [], true)
+ 5 APPPATH\Controllers\Admin\ApsAdminController.php(37): view('admin/v_akreditasi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin\ApsAdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ApsAdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\lppmi-unusia\\public\\index.php')
+CRITICAL - 2023-08-28 04:49:30 --> Undefined index: prodi_nama
+in APPPATH\Views\admin\v_akreditasi.php on line 81.
+ 1 APPPATH\Views\admin\v_akreditasi.php(81): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: prodi_nama', 'D:\\Codeigniter\\lppmi-unusia\\app\\Views\\admin\\v_akreditasi.php', 81, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Codeigniter\\lppmi-unusia\\app\\Views\\admin\\v_akreditasi.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/v_akreditasi', [], true)
+ 5 APPPATH\Controllers\Admin\ApsAdminController.php(37): view('admin/v_akreditasi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin\ApsAdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ApsAdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\lppmi-unusia\\public\\index.php')
+CRITICAL - 2023-08-28 04:49:48 --> Undefined index: no_sk
+in APPPATH\Views\admin\v_akreditasi.php on line 84.
+ 1 APPPATH\Views\admin\v_akreditasi.php(84): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: no_sk', 'D:\\Codeigniter\\lppmi-unusia\\app\\Views\\admin\\v_akreditasi.php', 84, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Codeigniter\\lppmi-unusia\\app\\Views\\admin\\v_akreditasi.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/v_akreditasi', [], true)
+ 5 APPPATH\Controllers\Admin\ApsAdminController.php(37): view('admin/v_akreditasi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin\ApsAdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ApsAdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\lppmi-unusia\\public\\index.php')
+CRITICAL - 2023-08-28 06:13:45 --> Too few arguments to function App\Models\ApsModel::getAllAps(), 0 passed in D:\Codeigniter\lppmi-unusia\app\Controllers\Admin\ApsAdminController.php on line 34 and exactly 1 expected
+in APPPATH\Models\ApsModel.php on line 26.
+ 1 APPPATH\Controllers\Admin\ApsAdminController.php(34): App\Models\ApsModel->getAllAps()
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin\ApsAdminController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ApsAdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\lppmi-unusia\\public\\index.php')
+ERROR - 2023-08-28 06:14:43 --> mysqli_sql_exception: Column 'prodi_id' in field list is ambiguous in D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT aps_id,p...', 0)
+#1 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT aps_id,p...')
+#2 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT aps_id,p...')
+#3 D:\Codeigniter\lppmi-unusia\app\Models\ApsModel.php(28): CodeIgniter\Database\BaseConnection->query('SELECT aps_id,p...')
+#4 D:\Codeigniter\lppmi-unusia\app\Controllers\Admin\ApsAdminController.php(34): App\Models\ApsModel->getAllAps()
+#5 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Admin\ApsAdminController->index()
+#6 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ApsAdminController))
+#7 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\Codeigniter\lppmi-unusia\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\...')
+#10 {main}
+CRITICAL - 2023-08-28 06:14:43 --> Column 'prodi_id' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT aps_id,prodi_id,no_sk,thn_sk,peringkat,tgl_kadaluarsa,DATE_FORMAT(created_at,\'%d %M %Y\') AS created_at,prodi_nama,prodi_kode,prodi_strata,prodi_link FROM tbl_akreditasi JOIN tbl_prodi ON prodi_id=prodi_id', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT aps_id,prodi_id,no_sk,thn_sk,peringkat,tgl_kadaluarsa,DATE_FORMAT(created_at,\'%d %M %Y\') AS created_at,prodi_nama,prodi_kode,prodi_strata,prodi_link FROM tbl_akreditasi JOIN tbl_prodi ON prodi_id=prodi_id')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT aps_id,prodi_id,no_sk,thn_sk,peringkat,tgl_kadaluarsa,DATE_FORMAT(created_at,\'%d %M %Y\') AS created_at,prodi_nama,prodi_kode,prodi_strata,prodi_link FROM tbl_akreditasi JOIN tbl_prodi ON prodi_id=prodi_id')
+ 4 APPPATH\Models\ApsModel.php(28): CodeIgniter\Database\BaseConnection->query('SELECT aps_id,prodi_id,no_sk,thn_sk,peringkat,tgl_kadaluarsa,DATE_FORMAT(created_at,\'%d %M %Y\') AS created_at,prodi_nama,prodi_kode,prodi_strata,prodi_link FROM tbl_akreditasi JOIN tbl_prodi ON prodi_id=prodi_id')
+ 5 APPPATH\Controllers\Admin\ApsAdminController.php(34): App\Models\ApsModel->getAllAps()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin\ApsAdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ApsAdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\lppmi-unusia\\public\\index.php')
+ERROR - 2023-08-28 06:19:56 --> mysqli_sql_exception: Column 'prodi_id' in field list is ambiguous in D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT aps_id,p...', 0)
+#1 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT aps_id,p...')
+#2 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT aps_id,p...')
+#3 D:\Codeigniter\lppmi-unusia\app\Models\ApsModel.php(28): CodeIgniter\Database\BaseConnection->query('SELECT aps_id,p...')
+#4 D:\Codeigniter\lppmi-unusia\app\Controllers\Admin\ApsAdminController.php(34): App\Models\ApsModel->getAllAps()
+#5 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Admin\ApsAdminController->index()
+#6 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ApsAdminController))
+#7 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\Codeigniter\lppmi-unusia\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\...')
+#10 {main}
+CRITICAL - 2023-08-28 06:19:56 --> Column 'prodi_id' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT aps_id,prodi_id,no_sk,thn_sk,peringkat,tgl_kadaluarsa,DATE_FORMAT(created_at,\'%d %M %Y\') AS created_at,prodi_nama,prodi_kode,prodi_strata,prodi_link FROM tbl_akreditasi JOIN tbl_prodi ON prodi_id=prodi_id', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT aps_id,prodi_id,no_sk,thn_sk,peringkat,tgl_kadaluarsa,DATE_FORMAT(created_at,\'%d %M %Y\') AS created_at,prodi_nama,prodi_kode,prodi_strata,prodi_link FROM tbl_akreditasi JOIN tbl_prodi ON prodi_id=prodi_id')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT aps_id,prodi_id,no_sk,thn_sk,peringkat,tgl_kadaluarsa,DATE_FORMAT(created_at,\'%d %M %Y\') AS created_at,prodi_nama,prodi_kode,prodi_strata,prodi_link FROM tbl_akreditasi JOIN tbl_prodi ON prodi_id=prodi_id')
+ 4 APPPATH\Models\ApsModel.php(28): CodeIgniter\Database\BaseConnection->query('SELECT aps_id,prodi_id,no_sk,thn_sk,peringkat,tgl_kadaluarsa,DATE_FORMAT(created_at,\'%d %M %Y\') AS created_at,prodi_nama,prodi_kode,prodi_strata,prodi_link FROM tbl_akreditasi JOIN tbl_prodi ON prodi_id=prodi_id')
+ 5 APPPATH\Controllers\Admin\ApsAdminController.php(34): App\Models\ApsModel->getAllAps()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin\ApsAdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ApsAdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\lppmi-unusia\\public\\index.php')
+CRITICAL - 2023-08-28 06:26:36 --> Too few arguments to function App\Models\ApsModel::getAllAps(), 0 passed in D:\Codeigniter\lppmi-unusia\app\Controllers\Admin\ApsAdminController.php on line 34 and exactly 1 expected
+in APPPATH\Models\ApsModel.php on line 26.
+ 1 APPPATH\Controllers\Admin\ApsAdminController.php(34): App\Models\ApsModel->getAllAps()
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin\ApsAdminController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ApsAdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\lppmi-unusia\\public\\index.php')
+CRITICAL - 2023-08-28 06:27:41 --> Too few arguments to function App\Models\ApsModel::getAllAps(), 0 passed in D:\Codeigniter\lppmi-unusia\app\Controllers\Admin\ApsAdminController.php on line 35 and exactly 1 expected
+in APPPATH\Models\ApsModel.php on line 26.
+ 1 APPPATH\Controllers\Admin\ApsAdminController.php(35): App\Models\ApsModel->getAllAps()
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin\ApsAdminController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ApsAdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\lppmi-unusia\\public\\index.php')
+CRITICAL - 2023-08-28 06:28:58 --> Undefined index: prodi_nama
+in APPPATH\Views\admin\v_akreditasi.php on line 79.
+ 1 APPPATH\Views\admin\v_akreditasi.php(79): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: prodi_nama', 'D:\\Codeigniter\\lppmi-unusia\\app\\Views\\admin\\v_akreditasi.php', 79, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Codeigniter\\lppmi-unusia\\app\\Views\\admin\\v_akreditasi.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/v_akreditasi', [], true)
+ 5 APPPATH\Controllers\Admin\ApsAdminController.php(38): view('admin/v_akreditasi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin\ApsAdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ApsAdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\lppmi-unusia\\public\\index.php')
+CRITICAL - 2023-08-28 08:26:46 --> Undefined index: kode
+in APPPATH\Views\admin\v_prodi.php on line 133.
+ 1 APPPATH\Views\admin\v_prodi.php(133): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: kode', 'D:\\Codeigniter\\lppmi-unusia\\app\\Views\\admin\\v_prodi.php', 133, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Codeigniter\\lppmi-unusia\\app\\Views\\admin\\v_prodi.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/v_prodi', [], true)
+ 5 APPPATH\Controllers\Admin\ProdiAdminController.php(35): view('admin/v_prodi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin\ProdiAdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ProdiAdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\lppmi-unusia\\public\\index.php')
+CRITICAL - 2023-08-28 08:27:08 --> Undefined index: id
+in APPPATH\Views\admin\v_prodi.php on line 133.
+ 1 APPPATH\Views\admin\v_prodi.php(133): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id', 'D:\\Codeigniter\\lppmi-unusia\\app\\Views\\admin\\v_prodi.php', 133, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Codeigniter\\lppmi-unusia\\app\\Views\\admin\\v_prodi.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/v_prodi', [], true)
+ 5 APPPATH\Controllers\Admin\ProdiAdminController.php(35): view('admin/v_prodi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin\ProdiAdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ProdiAdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\lppmi-unusia\\public\\index.php')

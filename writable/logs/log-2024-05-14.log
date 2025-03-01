@@ -1,0 +1,12 @@
+CRITICAL - 2024-05-14 04:40:28 --> Use of undefined constant title - assumed 'title' (this will throw an Error in a future version of PHP)
+in APPPATH\Views\about\p2_view.php on line 9.
+ 1 APPPATH\Views\about\p2_view.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant title - assumed \'title\' (this will throw an Error in a future version of PHP)', 'D:\\Codeigniter\\inf-dev\\app\\Views\\about\\p2_view.php', 9, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Codeigniter\\inf-dev\\app\\Views\\about\\p2_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('about/p2_view', [], true)
+ 5 APPPATH\Controllers\AbP2Controller.php(29): view('about/p2_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AbP2Controller->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AbP2Controller))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\inf-dev\\public\\index.php')

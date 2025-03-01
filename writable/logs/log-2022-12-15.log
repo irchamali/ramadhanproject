@@ -1,0 +1,37 @@
+ERROR - 2022-12-15 04:36:36 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\PMII DEV\Repo\hibahweb\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\PMII DEV\Repo\hibahweb\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 D:\PMII DEV\Repo\hibahweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\PMII DEV\Repo\hibahweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\PMII DEV\Repo\hibahweb\app\Models\VisitorModel.php(15): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 D:\PMII DEV\Repo\hibahweb\app\Controllers\BaseController.php(67): App\Models\VisitorModel->count_visitor('::1', 'Chrome 108.0.0....')
+#5 D:\PMII DEV\Repo\hibahweb\vendor\codeigniter4\framework\system\CodeIgniter.php(890): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#6 D:\PMII DEV\Repo\hibahweb\vendor\codeigniter4\framework\system\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+#7 D:\PMII DEV\Repo\hibahweb\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\PMII DEV\Repo\hibahweb\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 D:\PMII DEV\Repo\hibahweb\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('D:\\PMII DEV\\Rep...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\PMII DEV\Repo\hibahweb\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\PMII DEV\Repo\hibahweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\PMII DEV\Repo\hibahweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\PMII DEV\Repo\hibahweb\app\Models\VisitorModel.php(15): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#3 D:\PMII DEV\Repo\hibahweb\app\Controllers\BaseController.php(67): App\Models\VisitorModel->count_visitor('::1', 'Chrome 108.0.0....')
+#4 D:\PMII DEV\Repo\hibahweb\vendor\codeigniter4\framework\system\CodeIgniter.php(890): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 D:\PMII DEV\Repo\hibahweb\vendor\codeigniter4\framework\system\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+#6 D:\PMII DEV\Repo\hibahweb\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\PMII DEV\Repo\hibahweb\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 D:\PMII DEV\Repo\hibahweb\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('D:\\PMII DEV\\Rep...')
+#9 {main}
+CRITICAL - 2022-12-15 04:36:36 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\VisitorModel.php(15): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_visitors WHERE visit_ip=\'::1\' AND DATE(visit_date)=CURDATE()')
+ 3 APPPATH\Controllers\BaseController.php(67): App\Models\VisitorModel->count_visitor('::1', 'Chrome 108.0.0.0')
+ 4 SYSTEMPATH\CodeIgniter.php(890): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 5 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

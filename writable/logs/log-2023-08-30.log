@@ -1,0 +1,149 @@
+CRITICAL - 2023-08-30 02:29:48 --> Class 'App\Controllers\DocsCategoryModel' not found
+in APPPATH\Controllers\DocsController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DocsController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\lppmi-unusia\\public\\index.php')
+CRITICAL - 2023-08-30 02:31:00 --> Class 'App\Controllers\DocsCategoryModel' not found
+in APPPATH\Controllers\DocsController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DocsController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\lppmi-unusia\\public\\index.php')
+CRITICAL - 2023-08-30 02:31:01 --> Class 'App\Controllers\DocsCategoryModel' not found
+in APPPATH\Controllers\DocsController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DocsController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\lppmi-unusia\\public\\index.php')
+CRITICAL - 2023-08-30 02:31:02 --> Class 'App\Controllers\DocsCategoryModel' not found
+in APPPATH\Controllers\DocsController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DocsController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\lppmi-unusia\\public\\index.php')
+CRITICAL - 2023-08-30 02:31:26 --> Class 'App\Controllers\DocsCategoryModel' not found
+in APPPATH\Controllers\DocsController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DocsController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\lppmi-unusia\\public\\index.php')
+CRITICAL - 2023-08-30 02:31:27 --> Class 'App\Controllers\DocsCategoryModel' not found
+in APPPATH\Controllers\DocsController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DocsController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\lppmi-unusia\\public\\index.php')
+CRITICAL - 2023-08-30 02:31:29 --> Class 'App\Controllers\DocsCategoryModel' not found
+in APPPATH\Controllers\DocsController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DocsController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\lppmi-unusia\\public\\index.php')
+CRITICAL - 2023-08-30 02:31:46 --> Class 'App\Controllers\DocsCategoryModel' not found
+in APPPATH\Controllers\DocsController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DocsController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\lppmi-unusia\\public\\index.php')
+CRITICAL - 2023-08-30 02:33:07 --> Class 'App\Controllers\DocsCategoryModel' not found
+in APPPATH\Controllers\DocsController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DocsController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\lppmi-unusia\\public\\index.php')
+CRITICAL - 2023-08-30 02:33:58 --> Class 'App\Controllers\DocscategoryModel' not found
+in APPPATH\Controllers\DocsController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DocsController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\lppmi-unusia\\public\\index.php')
+CRITICAL - 2023-08-30 02:35:44 --> Class 'App\Controllers\DocscategoryModel' not found
+in APPPATH\Controllers\DocsController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DocsController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\lppmi-unusia\\public\\index.php')
+CRITICAL - 2023-08-30 02:36:51 --> Undefined variable: posts
+in APPPATH\Controllers\DocsController.php on line 44.
+ 1 APPPATH\Controllers\DocsController.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: posts', 'D:\\Codeigniter\\lppmi-unusia\\app\\Controllers\\DocsController.php', 44, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocsController->index('universitas')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocsController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\lppmi-unusia\\public\\index.php')
+CRITICAL - 2023-08-30 03:45:45 --> Undefined variable: row
+in APPPATH\Views\layout\breadcrumbs2.php on line 17.
+ 1 APPPATH\Views\layout\breadcrumbs2.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: row', 'D:\\Codeigniter\\lppmi-unusia\\app\\Views\\layout\\breadcrumbs2.php', 17, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Codeigniter\\lppmi-unusia\\app\\Views\\layout\\breadcrumbs2.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(452): CodeIgniter\View\View->render('layout/breadcrumbs2', null, true)
+ 5 APPPATH\Views\document_category.php(7): CodeIgniter\View\View->include('layout/breadcrumbs2')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\Codeigniter\\lppmi-unusia\\app\\Views\\document_category.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('document_category', [], true)
+ 9 APPPATH\Controllers\CategoryDocsController.php(46): view('document_category', [...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CategoryDocsController->index('universitas')
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryDocsController))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\lppmi-unusia\\public\\index.php')
+CRITICAL - 2023-08-30 03:46:21 --> Undefined variable: row
+in APPPATH\Views\layout\breadcrumbs2.php on line 17.
+ 1 APPPATH\Views\layout\breadcrumbs2.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: row', 'D:\\Codeigniter\\lppmi-unusia\\app\\Views\\layout\\breadcrumbs2.php', 17, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Codeigniter\\lppmi-unusia\\app\\Views\\layout\\breadcrumbs2.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(452): CodeIgniter\View\View->render('layout/breadcrumbs2', null, true)
+ 5 APPPATH\Views\document_category.php(7): CodeIgniter\View\View->include('layout/breadcrumbs2')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\Codeigniter\\lppmi-unusia\\app\\Views\\document_category.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('document_category', [], true)
+ 9 APPPATH\Controllers\CategoryDocsController.php(46): view('document_category', [...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CategoryDocsController->index('universitas')
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryDocsController))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\lppmi-unusia\\public\\index.php')
+CRITICAL - 2023-08-30 03:46:34 --> Undefined variable: row
+in APPPATH\Views\layout\breadcrumbs2.php on line 17.
+ 1 APPPATH\Views\layout\breadcrumbs2.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: row', 'D:\\Codeigniter\\lppmi-unusia\\app\\Views\\layout\\breadcrumbs2.php', 17, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Codeigniter\\lppmi-unusia\\app\\Views\\layout\\breadcrumbs2.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(452): CodeIgniter\View\View->render('layout/breadcrumbs2', null, true)
+ 5 APPPATH\Views\document_category.php(7): CodeIgniter\View\View->include('layout/breadcrumbs2')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\Codeigniter\\lppmi-unusia\\app\\Views\\document_category.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('document_category', [], true)
+ 9 APPPATH\Controllers\CategoryDocsController.php(46): view('document_category', [...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CategoryDocsController->index('universitas')
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryDocsController))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\lppmi-unusia\\public\\index.php')
+CRITICAL - 2023-08-30 03:47:38 --> Undefined variable: row
+in APPPATH\Views\layout\breadcrumbs2.php on line 17.
+ 1 APPPATH\Views\layout\breadcrumbs2.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: row', 'D:\\Codeigniter\\lppmi-unusia\\app\\Views\\layout\\breadcrumbs2.php', 17, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Codeigniter\\lppmi-unusia\\app\\Views\\layout\\breadcrumbs2.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(452): CodeIgniter\View\View->render('layout/breadcrumbs2', null, true)
+ 5 APPPATH\Views\document_category.php(7): CodeIgniter\View\View->include('layout/breadcrumbs2')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\Codeigniter\\lppmi-unusia\\app\\Views\\document_category.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('document_category', [], true)
+ 9 APPPATH\Controllers\CategoryDocsController.php(46): view('document_category', [...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CategoryDocsController->index('universitas')
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryDocsController))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\lppmi-unusia\\public\\index.php')

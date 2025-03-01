@@ -1,0 +1,141 @@
+CRITICAL - 2025-02-24 08:05:29 --> Undefined index: about_img
+in APPPATH\Views\about\sejarah_view.php on line 27.
+ 1 APPPATH\Views\about\sejarah_view.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: about_img', 'D:\\Codeigniter\\yayasan\\app\\Views\\about\\sejarah_view.php', 27, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Codeigniter\\yayasan\\app\\Views\\about\\sejarah_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('about/sejarah_view', [], true)
+ 5 APPPATH\Controllers\TtgSejarahController.php(27): view('about/sejarah_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TtgSejarahController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TtgSejarahController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\yayasan\\public\\index.php')
+CRITICAL - 2025-02-24 08:55:46 --> Undefined variable: related_post
+in APPPATH\Views\pages\gallery_view.php on line 55.
+ 1 APPPATH\Views\pages\gallery_view.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: related_post', 'D:\\Codeigniter\\yayasan\\app\\Views\\pages\\gallery_view.php', 55, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Codeigniter\\yayasan\\app\\Views\\pages\\gallery_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/gallery_view', [], true)
+ 5 APPPATH\Controllers\GalleryController.php(30): view('pages/gallery_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\GalleryController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GalleryController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\yayasan\\public\\index.php')
+CRITICAL - 2025-02-24 08:56:11 --> Undefined variable: categories
+in APPPATH\Views\pages\gallery_view.php on line 56.
+ 1 APPPATH\Views\pages\gallery_view.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: categories', 'D:\\Codeigniter\\yayasan\\app\\Views\\pages\\gallery_view.php', 56, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Codeigniter\\yayasan\\app\\Views\\pages\\gallery_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/gallery_view', [], true)
+ 5 APPPATH\Controllers\GalleryController.php(30): view('pages/gallery_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\GalleryController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GalleryController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\yayasan\\public\\index.php')
+CRITICAL - 2025-02-24 10:32:16 --> syntax error, unexpected 'endif' (T_ENDIF), expecting end of file
+in APPPATH\Views\layout\sidebar-dashboard.php on line 174.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\View\View.php(452): CodeIgniter\View\View->render('layout/sidebar-dashboard', null, true)
+ 3 APPPATH\Views\admin\v_laporan.php(47): CodeIgniter\View\View->include('layout/sidebar-dashboard')
+ 4 SYSTEMPATH\View\View.php(224): include('D:\\Codeigniter\\yayasan\\app\\Views\\admin\\v_laporan.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/v_laporan', [], true)
+ 7 APPPATH\Controllers\Admin\LapAdminController.php(37): view('admin/v_laporan', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin\LapAdminController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\LapAdminController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\yayasan\\public\\index.php')
+ERROR - 2025-02-24 22:16:23 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'project_ysgj.tbl_visitors.visit_date' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT DATE_FOR...', 0)
+#1 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FOR...')
+#2 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FOR...')
+#3 /Users/irchamali/Projects/ci/yayasan/app/Models/VisitorModel.php(23): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FOR...')
+#4 /Users/irchamali/Projects/ci/yayasan/app/Controllers/Admin/AdminController.php(21): App\Models\VisitorModel->visitor_statistics()
+#5 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\Admin\AdminController->index()
+#6 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+#7 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/irchamali/Projects/ci/yayasan/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Users/irchamal...')
+#10 {main}
+CRITICAL - 2025-02-24 22:16:23 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'project_ysgj.tbl_visitors.visit_date' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT DATE_FORMAT(visit_date,\'%d\') AS tgl,COUNT(visit_ip) AS jumlah FROM tbl_visitors WHERE MONTH(visit_date)=MONTH(CURDATE()) GROUP BY DATE(visit_date)', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FORMAT(visit_date,\'%d\') AS tgl,COUNT(visit_ip) AS jumlah FROM tbl_visitors WHERE MONTH(visit_date)=MONTH(CURDATE()) GROUP BY DATE(visit_date)')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FORMAT(visit_date,\'%d\') AS tgl,COUNT(visit_ip) AS jumlah FROM tbl_visitors WHERE MONTH(visit_date)=MONTH(CURDATE()) GROUP BY DATE(visit_date)')
+ 4 APPPATH/Models/VisitorModel.php(23): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FORMAT(visit_date,\'%d\') AS tgl,COUNT(visit_ip) AS jumlah FROM tbl_visitors WHERE MONTH(visit_date)=MONTH(CURDATE()) GROUP BY DATE(visit_date)')
+ 5 APPPATH/Controllers/Admin/AdminController.php(21): App\Models\VisitorModel->visitor_statistics()
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Admin\AdminController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/irchamali/Projects/ci/yayasan/public/index.php')
+ERROR - 2025-02-24 22:16:29 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'project_ysgj.tbl_visitors.visit_date' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT DATE_FOR...', 0)
+#1 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FOR...')
+#2 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FOR...')
+#3 /Users/irchamali/Projects/ci/yayasan/app/Models/VisitorModel.php(23): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FOR...')
+#4 /Users/irchamali/Projects/ci/yayasan/app/Controllers/Admin/AdminController.php(21): App\Models\VisitorModel->visitor_statistics()
+#5 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\Admin\AdminController->index()
+#6 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+#7 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/irchamali/Projects/ci/yayasan/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Users/irchamal...')
+#10 {main}
+CRITICAL - 2025-02-24 22:16:29 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'project_ysgj.tbl_visitors.visit_date' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT DATE_FORMAT(visit_date,\'%d\') AS tgl,COUNT(visit_ip) AS jumlah FROM tbl_visitors WHERE MONTH(visit_date)=MONTH(CURDATE()) GROUP BY DATE(visit_date)', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FORMAT(visit_date,\'%d\') AS tgl,COUNT(visit_ip) AS jumlah FROM tbl_visitors WHERE MONTH(visit_date)=MONTH(CURDATE()) GROUP BY DATE(visit_date)')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FORMAT(visit_date,\'%d\') AS tgl,COUNT(visit_ip) AS jumlah FROM tbl_visitors WHERE MONTH(visit_date)=MONTH(CURDATE()) GROUP BY DATE(visit_date)')
+ 4 APPPATH/Models/VisitorModel.php(23): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FORMAT(visit_date,\'%d\') AS tgl,COUNT(visit_ip) AS jumlah FROM tbl_visitors WHERE MONTH(visit_date)=MONTH(CURDATE()) GROUP BY DATE(visit_date)')
+ 5 APPPATH/Controllers/Admin/AdminController.php(21): App\Models\VisitorModel->visitor_statistics()
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Admin\AdminController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/irchamali/Projects/ci/yayasan/public/index.php')
+ERROR - 2025-02-24 22:16:37 --> mysqli_sql_exception: Expression #16 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'project_ysgj.tbl_comment.comment_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT tbl_post...', 0)
+#1 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT tbl_post...')
+#2 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT tbl_post...')
+#3 /Users/irchamali/Projects/ci/yayasan/app/Models/PostviewModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT tbl_post...')
+#4 /Users/irchamali/Projects/ci/yayasan/app/Controllers/PostController.php(42): App\Models\PostviewModel->get_post_by_slug('pengumuman-yudi...')
+#5 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\PostController->index('pengumuman-yudi...')
+#6 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#7 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/irchamali/Projects/ci/yayasan/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Users/irchamal...')
+#10 {main}
+CRITICAL - 2025-02-24 22:16:37 --> Expression #16 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'project_ysgj.tbl_comment.comment_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT tbl_post.*,user_name,user_photo,tbl_comment.*,COUNT(comment_id) AS comment_total,tbl_category.* FROM tbl_post 
+			LEFT JOIN tbl_user ON post_user_id=user_id
+			LEFT JOIN tbl_comment ON post_id=comment_post_id
+			LEFT JOIN tbl_category ON post_category_id=category_id
+			WHERE post_slug=\'pengumuman-yudisium-unusia-tahun-2024\' GROUP BY post_id LIMIT 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT tbl_post.*,user_name,user_photo,tbl_comment.*,COUNT(comment_id) AS comment_total,tbl_category.* FROM tbl_post 
+			LEFT JOIN tbl_user ON post_user_id=user_id
+			LEFT JOIN tbl_comment ON post_id=comment_post_id
+			LEFT JOIN tbl_category ON post_category_id=category_id
+			WHERE post_slug=\'pengumuman-yudisium-unusia-tahun-2024\' GROUP BY post_id LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT tbl_post.*,user_name,user_photo,tbl_comment.*,COUNT(comment_id) AS comment_total,tbl_category.* FROM tbl_post 
+			LEFT JOIN tbl_user ON post_user_id=user_id
+			LEFT JOIN tbl_comment ON post_id=comment_post_id
+			LEFT JOIN tbl_category ON post_category_id=category_id
+			WHERE post_slug=\'pengumuman-yudisium-unusia-tahun-2024\' GROUP BY post_id LIMIT 1')
+ 4 APPPATH/Models/PostviewModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT tbl_post.*,user_name,user_photo,tbl_comment.*,COUNT(comment_id) AS comment_total,tbl_category.* FROM tbl_post 
+			LEFT JOIN tbl_user ON post_user_id=user_id
+			LEFT JOIN tbl_comment ON post_id=comment_post_id
+			LEFT JOIN tbl_category ON post_category_id=category_id
+			WHERE post_slug=\'pengumuman-yudisium-unusia-tahun-2024\' GROUP BY post_id LIMIT 1')
+ 5 APPPATH/Controllers/PostController.php(42): App\Models\PostviewModel->get_post_by_slug('pengumuman-yudisium-unusia-tahun-2024')
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\PostController->index('pengumuman-yudisium-unusia-tahun-2024')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/irchamali/Projects/ci/yayasan/public/index.php')

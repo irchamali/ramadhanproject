@@ -1,0 +1,513 @@
+CRITICAL - 2023-07-24 02:59:07 --> Undefined variable $latest_post
+in APPPATH\Views\home_view.php on line 249.
+ 1 APPPATH\Views\home_view.php(249): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $latest_post', 'APPPATH\\Views\\home_view.php', 249)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home_view', [], true)
+ 5 APPPATH\Controllers\HomeController.php(33): view('home_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\HomeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-24 02:59:09 --> Undefined variable $latest_post
+in APPPATH\Views\home_view.php on line 249.
+ 1 APPPATH\Views\home_view.php(249): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $latest_post', 'APPPATH\\Views\\home_view.php', 249)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home_view', [], true)
+ 5 APPPATH\Controllers\HomeController.php(33): view('home_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\HomeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-24 02:59:41 --> Undefined variable $latest_post
+in APPPATH\Views\home_view.php on line 249.
+ 1 APPPATH\Views\home_view.php(249): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $latest_post', 'APPPATH\\Views\\home_view.php', 249)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home_view', [], true)
+ 5 APPPATH\Controllers\HomeController.php(33): view('home_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\HomeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-24 02:59:42 --> Undefined variable $latest_post
+in APPPATH\Views\home_view.php on line 249.
+ 1 APPPATH\Views\home_view.php(249): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $latest_post', 'APPPATH\\Views\\home_view.php', 249)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home_view', [], true)
+ 5 APPPATH\Controllers\HomeController.php(33): view('home_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\HomeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-24 03:12:26 --> Undefined variable $latest_post
+in APPPATH\Views\home_view.php on line 249.
+ 1 APPPATH\Views\home_view.php(249): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $latest_post', 'APPPATH\\Views\\home_view.php', 249)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home_view', [], true)
+ 5 APPPATH\Controllers\HomeController.php(33): view('home_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\HomeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-24 03:12:50 --> Undefined variable $latest_post
+in APPPATH\Views\home_view.php on line 249.
+ 1 APPPATH\Views\home_view.php(249): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $latest_post', 'APPPATH\\Views\\home_view.php', 249)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home_view', [], true)
+ 5 APPPATH\Controllers\HomeController.php(33): view('home_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\HomeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-24 03:14:03 --> Call to a member function result() on array
+in APPPATH\Views\home_view.php on line 249.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home_view', [], true)
+ 4 APPPATH\Controllers\HomeController.php(33): view('home_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\HomeController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-24 03:16:00 --> Undefined variable $posts
+in APPPATH\Views\home_view.php on line 249.
+ 1 APPPATH\Views\home_view.php(249): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $posts', 'APPPATH\\Views\\home_view.php', 249)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home_view', [], true)
+ 5 APPPATH\Controllers\HomeController.php(33): view('home_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\HomeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-24 03:16:11 --> Attempt to read property "post_slug" on array
+in APPPATH\Views\home_view.php on line 254.
+ 1 APPPATH\Views\home_view.php(254): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "post_slug" on array', 'APPPATH\\Views\\home_view.php', 254)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home_view', [], true)
+ 5 APPPATH\Controllers\HomeController.php(33): view('home_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\HomeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-24 03:18:50 --> Call to a member function result() on array
+in APPPATH\Views\home_view.php on line 249.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home_view', [], true)
+ 4 APPPATH\Controllers\HomeController.php(35): view('home_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\HomeController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-24 03:20:47 --> Attempt to read property "post_slug" on array
+in APPPATH\Views\home_view.php on line 254.
+ 1 APPPATH\Views\home_view.php(254): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "post_slug" on array', 'APPPATH\\Views\\home_view.php', 254)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home_view', [], true)
+ 5 APPPATH\Controllers\HomeController.php(35): view('home_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\HomeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-24 03:21:23 --> Undefined variable $row
+in APPPATH\Views\home_view.php on line 254.
+ 1 APPPATH\Views\home_view.php(254): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'APPPATH\\Views\\home_view.php', 254)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home_view', [], true)
+ 5 APPPATH\Controllers\HomeController.php(35): view('home_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\HomeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-24 03:21:55 --> Attempt to read property "post_slug" on array
+in APPPATH\Views\home_view.php on line 254.
+ 1 APPPATH\Views\home_view.php(254): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "post_slug" on array', 'APPPATH\\Views\\home_view.php', 254)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home_view', [], true)
+ 5 APPPATH\Controllers\HomeController.php(35): view('home_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\HomeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-24 03:23:30 --> Attempt to read property "post_image" on array
+in APPPATH\Views\home_view.php on line 255.
+ 1 APPPATH\Views\home_view.php(255): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "post_image" on array', 'APPPATH\\Views\\home_view.php', 255)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home_view', [], true)
+ 5 APPPATH\Controllers\HomeController.php(35): view('home_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\HomeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-24 03:24:15 --> Undefined property: App\Controllers\HomeController::$postModel
+in APPPATH\Controllers\HomeController.php on line 29.
+ 1 APPPATH\Controllers\HomeController.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\HomeController::$postModel', 'APPPATH\\Controllers\\HomeController.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\HomeController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-24 03:33:59 --> Undefined array key "category_slug"
+in APPPATH\Views\home_view.php on line 259.
+ 1 APPPATH\Views\home_view.php(259): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category_slug"', 'APPPATH\\Views\\home_view.php', 259)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home_view', [], true)
+ 5 APPPATH\Controllers\HomeController.php(35): view('home_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\HomeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-24 03:41:36 --> Undefined array key "category_slug"
+in APPPATH\Views\home_view.php on line 259.
+ 1 APPPATH\Views\home_view.php(259): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category_slug"', 'APPPATH\\Views\\home_view.php', 259)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home_view', [], true)
+ 5 APPPATH\Controllers\HomeController.php(35): view('home_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\HomeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-24 03:46:51 --> Undefined array key "category_name"
+in APPPATH\Views\home_view.php on line 259.
+ 1 APPPATH\Views\home_view.php(259): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category_name"', 'APPPATH\\Views\\home_view.php', 259)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home_view', [], true)
+ 5 APPPATH\Controllers\HomeController.php(35): view('home_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\HomeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-24 04:00:55 --> Undefined variable $latest_post
+in APPPATH\Views\home_view.php on line 249.
+ 1 APPPATH\Views\home_view.php(249): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $latest_post', 'APPPATH\\Views\\home_view.php', 249)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home_view', [], true)
+ 5 APPPATH\Controllers\HomeController.php(35): view('home_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\HomeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-24 04:03:07 --> Undefined array key "post_name"
+in APPPATH\Views\home_view.php on line 259.
+ 1 APPPATH\Views\home_view.php(259): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "post_name"', 'APPPATH\\Views\\home_view.php', 259)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home_view', [], true)
+ 5 APPPATH\Controllers\HomeController.php(35): view('home_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\HomeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-24 04:35:46 --> Call to a member function result() on array
+in APPPATH\Views\home_view.php on line 249.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home_view', [], true)
+ 4 APPPATH\Controllers\HomeController.php(36): view('home_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\HomeController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-24 04:37:24 --> Cannot access offset of type string on string
+in APPPATH\Views\home_view.php on line 254.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home_view', [], true)
+ 4 APPPATH\Controllers\HomeController.php(36): view('home_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\HomeController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-24 04:37:42 --> Call to a member function result() on array
+in APPPATH\Views\home_view.php on line 249.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home_view', [], true)
+ 4 APPPATH\Controllers\HomeController.php(36): view('home_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\HomeController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-24 05:14:36 --> Call to a member function result() on array
+in APPPATH\Views\home_view.php on line 249.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home_view', [], true)
+ 4 APPPATH\Controllers\HomeController.php(36): view('home_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\HomeController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-24 05:14:36 --> Call to a member function result() on array
+in APPPATH\Views\home_view.php on line 249.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home_view', [], true)
+ 4 APPPATH\Controllers\HomeController.php(36): view('home_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\HomeController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-24 05:28:20 --> Call to a member function result() on array
+in APPPATH\Views\home_view.php on line 249.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home_view', [], true)
+ 4 APPPATH\Controllers\HomeController.php(36): view('home_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\HomeController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-24 05:28:21 --> Call to a member function result() on array
+in APPPATH\Views\home_view.php on line 249.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home_view', [], true)
+ 4 APPPATH\Controllers\HomeController.php(36): view('home_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\HomeController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-24 05:51:16 --> Call to a member function result() on array
+in APPPATH\Views\home_view.php on line 249.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home_view', [], true)
+ 4 APPPATH\Controllers\HomeController.php(36): view('home_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\HomeController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-24 05:51:57 --> Cannot access offset of type string on string
+in APPPATH\Views\home_view.php on line 254.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home_view', [], true)
+ 4 APPPATH\Controllers\HomeController.php(36): view('home_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\HomeController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-24 06:28:43 --> Call to a member function paginate() on array
+in APPPATH\Controllers\HomeController.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\HomeController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-24 08:32:46 --> Undefined array key "category_name"
+in APPPATH\Views\home_view.php on line 257.
+ 1 APPPATH\Views\home_view.php(257): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category_name"', 'APPPATH\\Views\\home_view.php', 257)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home_view', [], true)
+ 5 APPPATH\Controllers\HomeController.php(36): view('home_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\HomeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-24 08:43:16 --> Undefined array key "category_name"
+in APPPATH\Views\home_view.php on line 257.
+ 1 APPPATH\Views\home_view.php(257): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category_name"', 'APPPATH\\Views\\home_view.php', 257)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home_view', [], true)
+ 5 APPPATH\Controllers\HomeController.php(36): view('home_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\HomeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-24 20:29:59 --> Undefined array key "category_name"
+in APPPATH\Views\home_view.php on line 257.
+ 1 APPPATH\Views\home_view.php(257): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category_name"', 'APPPATH\\Views\\home_view.php', 257)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home_view', [], true)
+ 5 APPPATH\Controllers\HomeController.php(36): view('home_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\HomeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-24 20:30:32 --> Undefined array key "category_id"
+in APPPATH\Views\home_view.php on line 257.
+ 1 APPPATH\Views\home_view.php(257): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category_id"', 'APPPATH\\Views\\home_view.php', 257)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home_view', [], true)
+ 5 APPPATH\Controllers\HomeController.php(36): view('home_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\HomeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-07-24 20:47:25 --> mysqli_sql_exception: Unknown column 'tbl_user.username' in 'field list' in D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `tbl_pos...', 0)
+#1 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_pos...')
+#2 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_pos...')
+#3 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_pos...', Array, false)
+#4 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Codeigniter\lppmi-unusia\app\Models\PostModel.php(68): CodeIgniter\BaseModel->findAll()
+#7 D:\Codeigniter\lppmi-unusia\app\Controllers\PostController.php(32): App\Models\PostModel->getPostsAll()
+#8 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\PostController->index()
+#9 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#10 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Codeigniter\lppmi-unusia\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('D:\\Codeigniter\\...')
+#13 {main}
+CRITICAL - 2023-07-24 20:47:26 --> Unknown column 'tbl_user.username' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `tbl_post`.*, `tbl_user`.`username` AS `user_name`, `tbl_category`.`category_name`
+FROM `tbl_post`
+JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_post`.`user_id`
+JOIN `tbl_category` ON `tbl_category`.`category_id` = `tbl_post`.`category_id`
+WHERE `post_status` = 1
+ORDER BY `post_date` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_post`.*, `tbl_user`.`username` AS `user_name`, `tbl_category`.`category_name`
+FROM `tbl_post`
+JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_post`.`user_id`
+JOIN `tbl_category` ON `tbl_category`.`category_id` = `tbl_post`.`category_id`
+WHERE `post_status` = 1
+ORDER BY `post_date` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_post`.*, `tbl_user`.`username` AS `user_name`, `tbl_category`.`category_name`
+FROM `tbl_post`
+JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_post`.`user_id`
+JOIN `tbl_category` ON `tbl_category`.`category_id` = `tbl_post`.`category_id`
+WHERE `post_status` = 1
+ORDER BY `post_date` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_post`.*, `tbl_user`.`username` AS `user_name`, `tbl_category`.`category_name`
+FROM `tbl_post`
+JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_post`.`user_id`
+JOIN `tbl_category` ON `tbl_category`.`category_id` = `tbl_post`.`category_id`
+WHERE `post_status` = :post_status:
+ORDER BY `post_date` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\PostModel.php(68): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\PostController.php(32): App\Models\PostModel->getPostsAll()
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PostController->index()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-07-24 20:48:15 --> mysqli_sql_exception: Unknown column 'tbl_user.username' in 'field list' in D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `tbl_pos...', 0)
+#1 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_pos...')
+#2 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_pos...')
+#3 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_pos...', Array, false)
+#4 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Codeigniter\lppmi-unusia\app\Models\PostModel.php(68): CodeIgniter\BaseModel->findAll()
+#7 D:\Codeigniter\lppmi-unusia\app\Controllers\PostController.php(32): App\Models\PostModel->getPostsAll()
+#8 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\PostController->index()
+#9 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#10 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Codeigniter\lppmi-unusia\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('D:\\Codeigniter\\...')
+#13 {main}
+CRITICAL - 2023-07-24 20:48:15 --> Unknown column 'tbl_user.username' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `tbl_post`.*, `tbl_user`.`username` AS `user_name`, `tbl_category`.`category_name`
+FROM `tbl_post`
+JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_post`.`user_id`
+JOIN `tbl_category` ON `tbl_category`.`category_id` = `tbl_post`.`category_id`
+WHERE `post_status` = 1
+ORDER BY `post_date` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_post`.*, `tbl_user`.`username` AS `user_name`, `tbl_category`.`category_name`
+FROM `tbl_post`
+JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_post`.`user_id`
+JOIN `tbl_category` ON `tbl_category`.`category_id` = `tbl_post`.`category_id`
+WHERE `post_status` = 1
+ORDER BY `post_date` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_post`.*, `tbl_user`.`username` AS `user_name`, `tbl_category`.`category_name`
+FROM `tbl_post`
+JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_post`.`user_id`
+JOIN `tbl_category` ON `tbl_category`.`category_id` = `tbl_post`.`category_id`
+WHERE `post_status` = 1
+ORDER BY `post_date` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_post`.*, `tbl_user`.`username` AS `user_name`, `tbl_category`.`category_name`
+FROM `tbl_post`
+JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_post`.`user_id`
+JOIN `tbl_category` ON `tbl_category`.`category_id` = `tbl_post`.`category_id`
+WHERE `post_status` = :post_status:
+ORDER BY `post_date` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\PostModel.php(68): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\PostController.php(32): App\Models\PostModel->getPostsAll()
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PostController->index()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-24 21:44:38 --> Undefined variable $pager
+in APPPATH\Views\post_view.php on line 47.
+ 1 APPPATH\Views\post_view.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'APPPATH\\Views\\post_view.php', 47)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\post_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('post_view', [], true)
+ 5 APPPATH\Controllers\PostController.php(38): view('post_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PostController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-24 21:49:31 --> Cannot use object of type mysqli as array
+in APPPATH\Views\post_view.php on line 20.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('post_view', [], true)
+ 4 APPPATH\Controllers\PostController.php(38): view('post_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PostController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

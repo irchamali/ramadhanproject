@@ -1,0 +1,783 @@
+CRITICAL - 2023-07-27 09:02:58 --> syntax error, unexpected identifier "ORDER", expecting ")"
+in APPPATH\Models\TagModel.php on line 18.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\TagModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\TagModel')
+ 3 APPPATH\Controllers\PostController.php(21): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\TagModel')
+ 4 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\PostController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 09:11:41 --> posts is not a valid Pager template.
+in SYSTEMPATH\Pager\Pager.php on line 120.
+ 1 SYSTEMPATH\Pager\Pager.php(120): CodeIgniter\Pager\Exceptions\PagerException::forInvalidTemplate('posts')
+ 2 SYSTEMPATH\Pager\Pager.php(83): CodeIgniter\Pager\Pager->displayLinks('posts', 'posts')
+ 3 APPPATH\Views\post_category.php(51): CodeIgniter\Pager\Pager->links('posts', 'posts')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\post_category.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('post_category', [], true)
+ 7 APPPATH\Controllers\CategoryController.php(47): view('post_category', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CategoryController->index('berita')
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 09:22:43 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::paginate()
+in APPPATH\Models\CategoryModel.php on line 19.
+ 1 APPPATH\Controllers\CategoryController.php(27): App\Models\CategoryModel->get_post_by_category('berita')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CategoryController->index('berita')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 09:23:55 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::paginate()
+in APPPATH\Models\CategoryModel.php on line 19.
+ 1 APPPATH\Controllers\CategoryController.php(27): App\Models\CategoryModel->get_post_by_category('berita')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CategoryController->index('berita')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 09:23:57 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::paginate()
+in APPPATH\Models\CategoryModel.php on line 19.
+ 1 APPPATH\Controllers\CategoryController.php(27): App\Models\CategoryModel->get_post_by_category('berita')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CategoryController->index('berita')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 09:24:57 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::paginate()
+in APPPATH\Models\CategoryModel.php on line 19.
+ 1 APPPATH\Controllers\CategoryController.php(27): App\Models\CategoryModel->get_post_by_category('berita')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CategoryController->index('berita')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 09:25:47 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::paginate()
+in APPPATH\Models\CategoryModel.php on line 19.
+ 1 APPPATH\Controllers\CategoryController.php(27): App\Models\CategoryModel->get_post_by_category('berita')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CategoryController->index('berita')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 09:25:48 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::paginate()
+in APPPATH\Models\CategoryModel.php on line 19.
+ 1 APPPATH\Controllers\CategoryController.php(27): App\Models\CategoryModel->get_post_by_category('berita')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CategoryController->index('berita')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 09:34:58 --> Call to a member function links() on null
+in APPPATH\Views\post_category.php on line 51.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('post_category', [], true)
+ 4 APPPATH\Controllers\CategoryController.php(47): view('post_category', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CategoryController->index('berita')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-07-27 09:35:52 --> mysqli_sql_exception: Not unique table/alias: 'tbl_category' in D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+#6 D:\Codeigniter\lppmi-unusia\app\Models\CategoryModel.php(30): CodeIgniter\BaseModel->paginate(5, 'post_pager')
+#7 D:\Codeigniter\lppmi-unusia\app\Controllers\CategoryController.php(27): App\Models\CategoryModel->get_post_by_category('berita')
+#8 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\CategoryController->index('berita')
+#9 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryController))
+#10 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Codeigniter\lppmi-unusia\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('D:\\Codeigniter\\...')
+#13 {main}
+ERROR - 2023-07-27 09:35:52 --> mysqli_sql_exception: Not unique table/alias: 'tbl_category' in D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `tbl_pos...', 0)
+#1 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_pos...')
+#2 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_pos...')
+#3 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_pos...', Array, false)
+#4 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(5, 0)
+#6 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\BaseModel.php(1110): CodeIgniter\BaseModel->findAll(5, 0)
+#7 D:\Codeigniter\lppmi-unusia\app\Models\CategoryModel.php(30): CodeIgniter\BaseModel->paginate(5, 'post_pager')
+#8 D:\Codeigniter\lppmi-unusia\app\Controllers\CategoryController.php(27): App\Models\CategoryModel->get_post_by_category('berita')
+#9 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\CategoryController->index('berita')
+#10 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryController))
+#11 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\Codeigniter\lppmi-unusia\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('D:\\Codeigniter\\...')
+#14 {main}
+CRITICAL - 2023-07-27 09:35:52 --> Call to a member function getResult() on bool
+in SYSTEMPATH\Model.php on line 224.
+ 1 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(5, 0)
+ 2 SYSTEMPATH\BaseModel.php(1110): CodeIgniter\BaseModel->findAll(5, 0)
+ 3 APPPATH\Models\CategoryModel.php(30): CodeIgniter\BaseModel->paginate(5, 'post_pager')
+ 4 APPPATH\Controllers\CategoryController.php(27): App\Models\CategoryModel->get_post_by_category('berita')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CategoryController->index('berita')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-07-27 09:36:04 --> mysqli_sql_exception: Not unique table/alias: 'tbl_category' in D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+#6 D:\Codeigniter\lppmi-unusia\app\Models\CategoryModel.php(30): CodeIgniter\BaseModel->paginate(5, 'posts')
+#7 D:\Codeigniter\lppmi-unusia\app\Controllers\CategoryController.php(27): App\Models\CategoryModel->get_post_by_category('berita')
+#8 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\CategoryController->index('berita')
+#9 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryController))
+#10 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Codeigniter\lppmi-unusia\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('D:\\Codeigniter\\...')
+#13 {main}
+ERROR - 2023-07-27 09:36:04 --> mysqli_sql_exception: Not unique table/alias: 'tbl_category' in D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `tbl_pos...', 0)
+#1 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_pos...')
+#2 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_pos...')
+#3 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_pos...', Array, false)
+#4 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(5, 0)
+#6 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\BaseModel.php(1110): CodeIgniter\BaseModel->findAll(5, 0)
+#7 D:\Codeigniter\lppmi-unusia\app\Models\CategoryModel.php(30): CodeIgniter\BaseModel->paginate(5, 'posts')
+#8 D:\Codeigniter\lppmi-unusia\app\Controllers\CategoryController.php(27): App\Models\CategoryModel->get_post_by_category('berita')
+#9 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\CategoryController->index('berita')
+#10 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryController))
+#11 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\Codeigniter\lppmi-unusia\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('D:\\Codeigniter\\...')
+#14 {main}
+CRITICAL - 2023-07-27 09:36:04 --> Call to a member function getResult() on bool
+in SYSTEMPATH\Model.php on line 224.
+ 1 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(5, 0)
+ 2 SYSTEMPATH\BaseModel.php(1110): CodeIgniter\BaseModel->findAll(5, 0)
+ 3 APPPATH\Models\CategoryModel.php(30): CodeIgniter\BaseModel->paginate(5, 'posts')
+ 4 APPPATH\Controllers\CategoryController.php(27): App\Models\CategoryModel->get_post_by_category('berita')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CategoryController->index('berita')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-07-27 09:36:05 --> mysqli_sql_exception: Not unique table/alias: 'tbl_category' in D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+#6 D:\Codeigniter\lppmi-unusia\app\Models\CategoryModel.php(30): CodeIgniter\BaseModel->paginate(5, 'posts')
+#7 D:\Codeigniter\lppmi-unusia\app\Controllers\CategoryController.php(27): App\Models\CategoryModel->get_post_by_category('berita')
+#8 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\CategoryController->index('berita')
+#9 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryController))
+#10 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Codeigniter\lppmi-unusia\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('D:\\Codeigniter\\...')
+#13 {main}
+ERROR - 2023-07-27 09:36:05 --> mysqli_sql_exception: Not unique table/alias: 'tbl_category' in D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `tbl_pos...', 0)
+#1 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_pos...')
+#2 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_pos...')
+#3 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_pos...', Array, false)
+#4 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(5, 0)
+#6 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\BaseModel.php(1110): CodeIgniter\BaseModel->findAll(5, 0)
+#7 D:\Codeigniter\lppmi-unusia\app\Models\CategoryModel.php(30): CodeIgniter\BaseModel->paginate(5, 'posts')
+#8 D:\Codeigniter\lppmi-unusia\app\Controllers\CategoryController.php(27): App\Models\CategoryModel->get_post_by_category('berita')
+#9 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\CategoryController->index('berita')
+#10 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryController))
+#11 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\Codeigniter\lppmi-unusia\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('D:\\Codeigniter\\...')
+#14 {main}
+CRITICAL - 2023-07-27 09:36:05 --> Call to a member function getResult() on bool
+in SYSTEMPATH\Model.php on line 224.
+ 1 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(5, 0)
+ 2 SYSTEMPATH\BaseModel.php(1110): CodeIgniter\BaseModel->findAll(5, 0)
+ 3 APPPATH\Models\CategoryModel.php(30): CodeIgniter\BaseModel->paginate(5, 'posts')
+ 4 APPPATH\Controllers\CategoryController.php(27): App\Models\CategoryModel->get_post_by_category('berita')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CategoryController->index('berita')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 09:40:18 --> Too few arguments to function App\Models\CategoryModel::get_post_by_category(), 0 passed in D:\Codeigniter\lppmi-unusia\app\Controllers\CategoryController.php on line 40 and exactly 1 expected
+in APPPATH\Models\CategoryModel.php on line 13.
+ 1 APPPATH\Controllers\CategoryController.php(40): App\Models\CategoryModel->get_post_by_category()
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CategoryController->index('berita')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 09:40:19 --> Too few arguments to function App\Models\CategoryModel::get_post_by_category(), 0 passed in D:\Codeigniter\lppmi-unusia\app\Controllers\CategoryController.php on line 40 and exactly 1 expected
+in APPPATH\Models\CategoryModel.php on line 13.
+ 1 APPPATH\Controllers\CategoryController.php(40): App\Models\CategoryModel->get_post_by_category()
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CategoryController->index('berita')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 21:42:23 --> Call to undefined method App\Models\PostModel::getImagePosts
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\GalleryController.php(27): CodeIgniter\Model->__call('getImagePosts', [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\GalleryController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GalleryController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 21:45:12 --> Call to undefined method App\Models\PostModel::getImagePosts
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\GalleryController.php(27): CodeIgniter\Model->__call('getImagePosts', [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\GalleryController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GalleryController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 21:45:13 --> Call to undefined method App\Models\PostModel::getImagePosts
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\GalleryController.php(27): CodeIgniter\Model->__call('getImagePosts', [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\GalleryController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GalleryController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 21:45:33 --> Creation of dynamic property App\Controllers\GalleryController::$homeModel is deprecated
+in APPPATH\Controllers\GalleryController.php on line 15.
+ 1 APPPATH\Controllers\GalleryController.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\GalleryController::$homeModel is deprecated', 'APPPATH\\Controllers\\GalleryController.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\GalleryController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 21:48:49 --> Creation of dynamic property App\Controllers\GalleryController::$siteModel is deprecated
+in APPPATH\Controllers\GalleryController.php on line 16.
+ 1 APPPATH\Controllers\GalleryController.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\GalleryController::$siteModel is deprecated', 'APPPATH\\Controllers\\GalleryController.php', 16)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\GalleryController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 21:49:28 --> Creation of dynamic property App\Controllers\GalleryController::$homeModel is deprecated
+in APPPATH\Controllers\GalleryController.php on line 17.
+ 1 APPPATH\Controllers\GalleryController.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\GalleryController::$homeModel is deprecated', 'APPPATH\\Controllers\\GalleryController.php', 17)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\GalleryController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 21:51:22 --> Creation of dynamic property App\Controllers\GalleryController::$homeModel is deprecated
+in APPPATH\Controllers\GalleryController.php on line 16.
+ 1 APPPATH\Controllers\GalleryController.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\GalleryController::$homeModel is deprecated', 'APPPATH\\Controllers\\GalleryController.php', 16)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\GalleryController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 21:51:24 --> Creation of dynamic property App\Controllers\GalleryController::$homeModel is deprecated
+in APPPATH\Controllers\GalleryController.php on line 16.
+ 1 APPPATH\Controllers\GalleryController.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\GalleryController::$homeModel is deprecated', 'APPPATH\\Controllers\\GalleryController.php', 16)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\GalleryController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 21:51:24 --> Creation of dynamic property App\Controllers\GalleryController::$homeModel is deprecated
+in APPPATH\Controllers\GalleryController.php on line 16.
+ 1 APPPATH\Controllers\GalleryController.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\GalleryController::$homeModel is deprecated', 'APPPATH\\Controllers\\GalleryController.php', 16)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\GalleryController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 21:52:04 --> Creation of dynamic property App\Controllers\GalleryController::$homeModel is deprecated
+in APPPATH\Controllers\GalleryController.php on line 16.
+ 1 APPPATH\Controllers\GalleryController.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\GalleryController::$homeModel is deprecated', 'APPPATH\\Controllers\\GalleryController.php', 16)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\GalleryController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 21:52:04 --> Creation of dynamic property App\Controllers\GalleryController::$homeModel is deprecated
+in APPPATH\Controllers\GalleryController.php on line 16.
+ 1 APPPATH\Controllers\GalleryController.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\GalleryController::$homeModel is deprecated', 'APPPATH\\Controllers\\GalleryController.php', 16)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\GalleryController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 21:52:15 --> Creation of dynamic property App\Controllers\GalleryController::$homeModel is deprecated
+in APPPATH\Controllers\GalleryController.php on line 16.
+ 1 APPPATH\Controllers\GalleryController.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\GalleryController::$homeModel is deprecated', 'APPPATH\\Controllers\\GalleryController.php', 16)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\GalleryController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 21:52:16 --> Creation of dynamic property App\Controllers\GalleryController::$homeModel is deprecated
+in APPPATH\Controllers\GalleryController.php on line 16.
+ 1 APPPATH\Controllers\GalleryController.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\GalleryController::$homeModel is deprecated', 'APPPATH\\Controllers\\GalleryController.php', 16)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\GalleryController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 21:52:37 --> Creation of dynamic property App\Controllers\GalleryController::$homeModel is deprecated
+in APPPATH\Controllers\GalleryController.php on line 16.
+ 1 APPPATH\Controllers\GalleryController.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\GalleryController::$homeModel is deprecated', 'APPPATH\\Controllers\\GalleryController.php', 16)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\GalleryController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 21:52:38 --> Creation of dynamic property App\Controllers\GalleryController::$homeModel is deprecated
+in APPPATH\Controllers\GalleryController.php on line 16.
+ 1 APPPATH\Controllers\GalleryController.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\GalleryController::$homeModel is deprecated', 'APPPATH\\Controllers\\GalleryController.php', 16)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\GalleryController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 21:52:38 --> Creation of dynamic property App\Controllers\GalleryController::$homeModel is deprecated
+in APPPATH\Controllers\GalleryController.php on line 16.
+ 1 APPPATH\Controllers\GalleryController.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\GalleryController::$homeModel is deprecated', 'APPPATH\\Controllers\\GalleryController.php', 16)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\GalleryController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 21:52:40 --> Creation of dynamic property App\Controllers\GalleryController::$homeModel is deprecated
+in APPPATH\Controllers\GalleryController.php on line 16.
+ 1 APPPATH\Controllers\GalleryController.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\GalleryController::$homeModel is deprecated', 'APPPATH\\Controllers\\GalleryController.php', 16)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\GalleryController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 21:53:16 --> Creation of dynamic property App\Controllers\GalleryController::$homeModel is deprecated
+in APPPATH\Controllers\GalleryController.php on line 16.
+ 1 APPPATH\Controllers\GalleryController.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\GalleryController::$homeModel is deprecated', 'APPPATH\\Controllers\\GalleryController.php', 16)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\GalleryController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 21:53:17 --> Creation of dynamic property App\Controllers\GalleryController::$homeModel is deprecated
+in APPPATH\Controllers\GalleryController.php on line 16.
+ 1 APPPATH\Controllers\GalleryController.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\GalleryController::$homeModel is deprecated', 'APPPATH\\Controllers\\GalleryController.php', 16)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\GalleryController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 21:53:18 --> Creation of dynamic property App\Controllers\GalleryController::$homeModel is deprecated
+in APPPATH\Controllers\GalleryController.php on line 16.
+ 1 APPPATH\Controllers\GalleryController.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\GalleryController::$homeModel is deprecated', 'APPPATH\\Controllers\\GalleryController.php', 16)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\GalleryController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 21:53:23 --> Creation of dynamic property App\Controllers\HomeController::$homeModel is deprecated
+in APPPATH\Controllers\HomeController.php on line 15.
+ 1 APPPATH\Controllers\HomeController.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\HomeController::$homeModel is deprecated', 'APPPATH\\Controllers\\HomeController.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\HomeController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 21:53:25 --> Creation of dynamic property App\Controllers\HomeController::$homeModel is deprecated
+in APPPATH\Controllers\HomeController.php on line 15.
+ 1 APPPATH\Controllers\HomeController.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\HomeController::$homeModel is deprecated', 'APPPATH\\Controllers\\HomeController.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\HomeController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 21:54:06 --> Creation of dynamic property App\Controllers\HomeController::$homeModel is deprecated
+in APPPATH\Controllers\HomeController.php on line 15.
+ 1 APPPATH\Controllers\HomeController.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\HomeController::$homeModel is deprecated', 'APPPATH\\Controllers\\HomeController.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\HomeController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 21:55:58 --> Creation of dynamic property App\Controllers\HomeController::$homeModel is deprecated
+in APPPATH\Controllers\HomeController.php on line 15.
+ 1 APPPATH\Controllers\HomeController.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\HomeController::$homeModel is deprecated', 'APPPATH\\Controllers\\HomeController.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\HomeController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 21:56:01 --> Creation of dynamic property App\Controllers\HomeController::$homeModel is deprecated
+in APPPATH\Controllers\HomeController.php on line 15.
+ 1 APPPATH\Controllers\HomeController.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\HomeController::$homeModel is deprecated', 'APPPATH\\Controllers\\HomeController.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\HomeController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 21:56:34 --> Creation of dynamic property App\Controllers\HomeController::$homeModel is deprecated
+in APPPATH\Controllers\HomeController.php on line 15.
+ 1 APPPATH\Controllers\HomeController.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\HomeController::$homeModel is deprecated', 'APPPATH\\Controllers\\HomeController.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\HomeController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 21:57:48 --> Creation of dynamic property App\Controllers\HomeController::$homeModel is deprecated
+in APPPATH\Controllers\HomeController.php on line 15.
+ 1 APPPATH\Controllers\HomeController.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\HomeController::$homeModel is deprecated', 'APPPATH\\Controllers\\HomeController.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\HomeController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 21:57:49 --> Creation of dynamic property App\Controllers\HomeController::$homeModel is deprecated
+in APPPATH\Controllers\HomeController.php on line 15.
+ 1 APPPATH\Controllers\HomeController.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\HomeController::$homeModel is deprecated', 'APPPATH\\Controllers\\HomeController.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\HomeController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 21:57:50 --> Creation of dynamic property App\Controllers\HomeController::$homeModel is deprecated
+in APPPATH\Controllers\HomeController.php on line 15.
+ 1 APPPATH\Controllers\HomeController.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\HomeController::$homeModel is deprecated', 'APPPATH\\Controllers\\HomeController.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\HomeController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 22:01:18 --> Creation of dynamic property App\Controllers\HomeController::$homeModel is deprecated
+in APPPATH\Controllers\HomeController.php on line 15.
+ 1 APPPATH\Controllers\HomeController.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\HomeController::$homeModel is deprecated', 'APPPATH\\Controllers\\HomeController.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\HomeController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 22:12:52 --> Too few arguments to function App\Controllers\HomeController::__construct(), 0 passed in D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\CodeIgniter.php on line 889 and exactly 5 expected
+in APPPATH\Controllers\HomeController.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\HomeController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 22:14:35 --> Too few arguments to function App\Controllers\HomeController::__construct(), 0 passed in D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\CodeIgniter.php on line 889 and exactly 5 expected
+in APPPATH\Controllers\HomeController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\HomeController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 22:16:55 --> Too few arguments to function App\Controllers\HomeController::__construct(), 0 passed in D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\CodeIgniter.php on line 889 and exactly 5 expected
+in APPPATH\Controllers\HomeController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\HomeController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 22:16:56 --> Too few arguments to function App\Controllers\HomeController::__construct(), 0 passed in D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\CodeIgniter.php on line 889 and exactly 5 expected
+in APPPATH\Controllers\HomeController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\HomeController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 22:16:56 --> Too few arguments to function App\Controllers\HomeController::__construct(), 0 passed in D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\CodeIgniter.php on line 889 and exactly 5 expected
+in APPPATH\Controllers\HomeController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\HomeController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 22:16:57 --> Too few arguments to function App\Controllers\HomeController::__construct(), 0 passed in D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\CodeIgniter.php on line 889 and exactly 5 expected
+in APPPATH\Controllers\HomeController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\HomeController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 22:16:57 --> Too few arguments to function App\Controllers\HomeController::__construct(), 0 passed in D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\CodeIgniter.php on line 889 and exactly 5 expected
+in APPPATH\Controllers\HomeController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\HomeController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 22:16:58 --> Too few arguments to function App\Controllers\HomeController::__construct(), 0 passed in D:\Codeigniter\lppmi-unusia\vendor\codeigniter4\framework\system\CodeIgniter.php on line 889 and exactly 5 expected
+in APPPATH\Controllers\HomeController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\HomeController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 22:18:26 --> Creation of dynamic property App\Controllers\HomeController::$homeModel is deprecated
+in APPPATH\Controllers\HomeController.php on line 15.
+ 1 APPPATH\Controllers\HomeController.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\HomeController::$homeModel is deprecated', 'APPPATH\\Controllers\\HomeController.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\HomeController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 22:18:33 --> Creation of dynamic property App\Controllers\HomeController::$homeModel is deprecated
+in APPPATH\Controllers\HomeController.php on line 15.
+ 1 APPPATH\Controllers\HomeController.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\HomeController::$homeModel is deprecated', 'APPPATH\\Controllers\\HomeController.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\HomeController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 22:32:02 --> Creation of dynamic property App\Controllers\HomeController::$homeModel is deprecated
+in APPPATH\Controllers\HomeController.php on line 15.
+ 1 APPPATH\Controllers\HomeController.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\HomeController::$homeModel is deprecated', 'APPPATH\\Controllers\\HomeController.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\HomeController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 22:37:00 --> Creation of dynamic property App\Controllers\HomeController::$homeModel is deprecated
+in APPPATH\Controllers\HomeController.php on line 15.
+ 1 APPPATH\Controllers\HomeController.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\HomeController::$homeModel is deprecated', 'APPPATH\\Controllers\\HomeController.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\HomeController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 22:39:17 --> Creation of dynamic property App\Controllers\HomeController::$homeModel is deprecated
+in APPPATH\Controllers\HomeController.php on line 15.
+ 1 APPPATH\Controllers\HomeController.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\HomeController::$homeModel is deprecated', 'APPPATH\\Controllers\\HomeController.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\HomeController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 22:39:18 --> Creation of dynamic property App\Controllers\HomeController::$homeModel is deprecated
+in APPPATH\Controllers\HomeController.php on line 15.
+ 1 APPPATH\Controllers\HomeController.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\HomeController::$homeModel is deprecated', 'APPPATH\\Controllers\\HomeController.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\HomeController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 22:39:19 --> Creation of dynamic property App\Controllers\HomeController::$homeModel is deprecated
+in APPPATH\Controllers\HomeController.php on line 15.
+ 1 APPPATH\Controllers\HomeController.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\HomeController::$homeModel is deprecated', 'APPPATH\\Controllers\\HomeController.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\HomeController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 22:40:27 --> Creation of dynamic property App\Controllers\HomeController::$homeModel is deprecated
+in APPPATH\Controllers\HomeController.php on line 15.
+ 1 APPPATH\Controllers\HomeController.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\HomeController::$homeModel is deprecated', 'APPPATH\\Controllers\\HomeController.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\HomeController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 22:40:28 --> Creation of dynamic property App\Controllers\HomeController::$homeModel is deprecated
+in APPPATH\Controllers\HomeController.php on line 15.
+ 1 APPPATH\Controllers\HomeController.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\HomeController::$homeModel is deprecated', 'APPPATH\\Controllers\\HomeController.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\HomeController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 22:40:29 --> Creation of dynamic property App\Controllers\HomeController::$homeModel is deprecated
+in APPPATH\Controllers\HomeController.php on line 15.
+ 1 APPPATH\Controllers\HomeController.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\HomeController::$homeModel is deprecated', 'APPPATH\\Controllers\\HomeController.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\HomeController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 22:40:29 --> Creation of dynamic property App\Controllers\HomeController::$homeModel is deprecated
+in APPPATH\Controllers\HomeController.php on line 15.
+ 1 APPPATH\Controllers\HomeController.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\HomeController::$homeModel is deprecated', 'APPPATH\\Controllers\\HomeController.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\HomeController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 22:41:11 --> Creation of dynamic property App\Controllers\HomeController::$homeModel is deprecated
+in APPPATH\Controllers\HomeController.php on line 15.
+ 1 APPPATH\Controllers\HomeController.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\HomeController::$homeModel is deprecated', 'APPPATH\\Controllers\\HomeController.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\HomeController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 22:41:57 --> Cache unable to write to D:\Codeigniter\lppmi-unusia\writable\cache/.
+in SYSTEMPATH\Cache\Handlers\FileHandler.php on line 61.
+ 1 SYSTEMPATH\Cache\Handlers\FileHandler.php(61): CodeIgniter\Cache\Exceptions\CacheException::forUnableToWrite('ROOTPATH\\writable\\cache/')
+ 2 SYSTEMPATH\Cache\CacheFactory.php(60): CodeIgniter\Cache\Handlers\FileHandler->__construct(Object(Config\Cache))
+ 3 SYSTEMPATH\Config\Services.php(113): CodeIgniter\Cache\CacheFactory::getHandler(Object(Config\Cache))
+ 4 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::cache(Object(Config\Cache), false)
+ 5 SYSTEMPATH\Config\BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('cache', [...])
+ 6 SYSTEMPATH\Config\Services.php(108): CodeIgniter\Config\BaseService::getSharedInstance('cache', null)
+ 7 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::cache()
+ 8 SYSTEMPATH\Common.php(69): CodeIgniter\Config\BaseService::__callStatic('cache', [])
+ 9 SYSTEMPATH\CodeIgniter.php(683): cache()
+10 SYSTEMPATH\CodeIgniter.php(333): CodeIgniter\CodeIgniter->displayCache(Object(Config\Cache))
+11 SYSTEMPATH\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+12 ROOTPATH\spark(98): CodeIgniter\CLI\Console->run()
+CRITICAL - 2023-07-27 22:44:14 --> Creation of dynamic property App\Controllers\HomeController::$homeModel is deprecated
+in APPPATH\Controllers\HomeController.php on line 15.
+ 1 APPPATH\Controllers\HomeController.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\HomeController::$homeModel is deprecated', 'APPPATH\\Controllers\\HomeController.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\HomeController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 22:44:19 --> Creation of dynamic property App\Controllers\HomeController::$homeModel is deprecated
+in APPPATH\Controllers\HomeController.php on line 15.
+ 1 APPPATH\Controllers\HomeController.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\HomeController::$homeModel is deprecated', 'APPPATH\\Controllers\\HomeController.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\HomeController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 22:47:08 --> Creation of dynamic property App\Controllers\HomeController::$homeModel is deprecated
+in APPPATH\Controllers\HomeController.php on line 14.
+ 1 APPPATH\Controllers\HomeController.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\HomeController::$homeModel is deprecated', 'APPPATH\\Controllers\\HomeController.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\HomeController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 22:47:13 --> Creation of dynamic property App\Controllers\HomeController::$homeModel is deprecated
+in APPPATH\Controllers\HomeController.php on line 14.
+ 1 APPPATH\Controllers\HomeController.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\HomeController::$homeModel is deprecated', 'APPPATH\\Controllers\\HomeController.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\HomeController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 22:47:14 --> Creation of dynamic property App\Controllers\HomeController::$homeModel is deprecated
+in APPPATH\Controllers\HomeController.php on line 14.
+ 1 APPPATH\Controllers\HomeController.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\HomeController::$homeModel is deprecated', 'APPPATH\\Controllers\\HomeController.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\HomeController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 22:47:14 --> Creation of dynamic property App\Controllers\HomeController::$homeModel is deprecated
+in APPPATH\Controllers\HomeController.php on line 14.
+ 1 APPPATH\Controllers\HomeController.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\HomeController::$homeModel is deprecated', 'APPPATH\\Controllers\\HomeController.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\HomeController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 22:47:14 --> Creation of dynamic property App\Controllers\HomeController::$homeModel is deprecated
+in APPPATH\Controllers\HomeController.php on line 14.
+ 1 APPPATH\Controllers\HomeController.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\HomeController::$homeModel is deprecated', 'APPPATH\\Controllers\\HomeController.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\HomeController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 22:47:14 --> Creation of dynamic property App\Controllers\HomeController::$homeModel is deprecated
+in APPPATH\Controllers\HomeController.php on line 14.
+ 1 APPPATH\Controllers\HomeController.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\HomeController::$homeModel is deprecated', 'APPPATH\\Controllers\\HomeController.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\HomeController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 22:47:15 --> Creation of dynamic property App\Controllers\HomeController::$homeModel is deprecated
+in APPPATH\Controllers\HomeController.php on line 14.
+ 1 APPPATH\Controllers\HomeController.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\HomeController::$homeModel is deprecated', 'APPPATH\\Controllers\\HomeController.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\HomeController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 22:49:44 --> Creation of dynamic property App\Controllers\HomeController::$homeModel is deprecated
+in APPPATH\Controllers\HomeController.php on line 14.
+ 1 APPPATH\Controllers\HomeController.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\HomeController::$homeModel is deprecated', 'APPPATH\\Controllers\\HomeController.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\HomeController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-27 22:53:56 --> Class "Kint\Renderer\Renderer" not found
+in APPPATH\Config\Kint.php on line 38.
+ 1 SYSTEMPATH\Common.php(216): CodeIgniter\Config\Factories::__callStatic('config', [])
+ 2 SYSTEMPATH\CodeIgniter.php(272): config('Config\\Kint')
+ 3 SYSTEMPATH\CodeIgniter.php(237): CodeIgniter\CodeIgniter->configureKint()
+ 4 SYSTEMPATH\CodeIgniter.php(199): CodeIgniter\CodeIgniter->initializeKint()
+ 5 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-07-27 22:57:36 --> Class "Kint\Renderer\Renderer" not found
+in APPPATH\Config\Kint.php on line 38.
+ 1 SYSTEMPATH\Common.php(216): CodeIgniter\Config\Factories::__callStatic('config', [])
+ 2 SYSTEMPATH\CodeIgniter.php(272): config('Config\\Kint')
+ 3 SYSTEMPATH\CodeIgniter.php(237): CodeIgniter\CodeIgniter->configureKint()
+ 4 SYSTEMPATH\CodeIgniter.php(199): CodeIgniter\CodeIgniter->initializeKint()
+ 5 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-07-27 22:59:25 --> Class "Kint\Renderer\Renderer" not found
+in APPPATH\Config\Kint.php on line 38.
+ 1 SYSTEMPATH\Common.php(216): CodeIgniter\Config\Factories::__callStatic('config', [])
+ 2 SYSTEMPATH\CodeIgniter.php(272): config('Config\\Kint')
+ 3 SYSTEMPATH\CodeIgniter.php(237): CodeIgniter\CodeIgniter->configureKint()
+ 4 SYSTEMPATH\CodeIgniter.php(199): CodeIgniter\CodeIgniter->initializeKint()
+ 5 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-07-27 23:05:42 --> Class "Kint\Renderer\Renderer" not found
+in APPPATH\Config\Kint.php on line 38.
+ 1 SYSTEMPATH\Common.php(216): CodeIgniter\Config\Factories::__callStatic('config', [])
+ 2 SYSTEMPATH\CodeIgniter.php(272): config('Config\\Kint')
+ 3 SYSTEMPATH\CodeIgniter.php(237): CodeIgniter\CodeIgniter->configureKint()
+ 4 SYSTEMPATH\CodeIgniter.php(199): CodeIgniter\CodeIgniter->initializeKint()
+ 5 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-07-27 23:09:08 --> Class "Kint\Renderer\Renderer" not found
+in APPPATH\Config\Kint.php on line 38.
+ 1 SYSTEMPATH\Common.php(216): CodeIgniter\Config\Factories::__callStatic('config', [])
+ 2 SYSTEMPATH\CodeIgniter.php(272): config('Config\\Kint')
+ 3 SYSTEMPATH\CodeIgniter.php(237): CodeIgniter\CodeIgniter->configureKint()
+ 4 SYSTEMPATH\CodeIgniter.php(199): CodeIgniter\CodeIgniter->initializeKint()
+ 5 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-07-27 23:26:32 --> Class 'Kint\Renderer\Renderer' not found
+in SYSTEMPATH\Config\Factories.php on line 113.
+ 1 SYSTEMPATH\Common.php(216): CodeIgniter\Config\Factories::__callStatic('config', [])
+ 2 SYSTEMPATH\CodeIgniter.php(272): config('Config\\Kint')
+ 3 SYSTEMPATH\CodeIgniter.php(237): CodeIgniter\CodeIgniter->configureKint()
+ 4 SYSTEMPATH\CodeIgniter.php(199): CodeIgniter\CodeIgniter->initializeKint()
+ 5 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-07-27 23:38:34 --> Access to undeclared static property: Kint\Kint::$depth_limit
+in SYSTEMPATH\CodeIgniter.php on line 274.
+ 1 SYSTEMPATH\CodeIgniter.php(237): CodeIgniter\CodeIgniter->configureKint()
+ 2 SYSTEMPATH\CodeIgniter.php(199): CodeIgniter\CodeIgniter->initializeKint()
+ 3 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-07-27 23:46:13 --> Class 'Config\Renderer' not found
+in SYSTEMPATH\Config\Factories.php on line 113.
+ 1 SYSTEMPATH\Common.php(216): CodeIgniter\Config\Factories::__callStatic('config', [])
+ 2 SYSTEMPATH\CodeIgniter.php(272): config('Config\\Kint')
+ 3 SYSTEMPATH\CodeIgniter.php(237): CodeIgniter\CodeIgniter->configureKint()
+ 4 SYSTEMPATH\CodeIgniter.php(199): CodeIgniter\CodeIgniter->initializeKint()
+ 5 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-07-27 23:46:47 --> Undefined variable: latest_posts
+in APPPATH\Views\home_view.php on line 247.
+ 1 APPPATH\Views\home_view.php(247): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: latest_posts', 'D:\\Codeigniter\\lppmi-unusia\\app\\Views\\home_view.php', 247, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Codeigniter\\lppmi-unusia\\app\\Views\\home_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('home_view', [], true)
+ 5 APPPATH\Controllers\HomeController.php(30): view('home_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\lppmi-unusia\\public\\index.php')

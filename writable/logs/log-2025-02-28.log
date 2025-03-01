@@ -1,0 +1,91 @@
+CRITICAL - 2025-02-28 17:27:12 --> Invalid file: "prayer_times.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('prayer_times.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('prayer_times', [], true)
+ 3 APPPATH\Controllers\PrayerTimesController.php(48): view('prayer_times', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PrayerTimesController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrayerTimesController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\yayasan\\public\\index.php')
+CRITICAL - 2025-02-28 17:38:06 --> Undefined variable: lokasi
+in APPPATH\Views\prayertimes_view.php on line 9.
+ 1 APPPATH\Views\prayertimes_view.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: lokasi', 'D:\\Codeigniter\\yayasan\\app\\Views\\prayertimes_view.php', 9, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Codeigniter\\yayasan\\app\\Views\\prayertimes_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('prayertimes_view', [], true)
+ 5 APPPATH\Controllers\PrayerTimesController.php(13): view('prayertimes_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PrayerTimesController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrayerTimesController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\yayasan\\public\\index.php')
+CRITICAL - 2025-02-28 17:40:11 --> Undefined variable: lokasi
+in APPPATH\Views\prayertimes_view.php on line 9.
+ 1 APPPATH\Views\prayertimes_view.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: lokasi', 'D:\\Codeigniter\\yayasan\\app\\Views\\prayertimes_view.php', 9, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Codeigniter\\yayasan\\app\\Views\\prayertimes_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('prayertimes_view', [], true)
+ 5 APPPATH\Controllers\PrayerTimesController.php(13): view('prayertimes_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PrayerTimesController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrayerTimesController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\yayasan\\public\\index.php')
+CRITICAL - 2025-02-28 17:40:14 --> Undefined variable: lokasi
+in APPPATH\Views\prayertimes_view.php on line 9.
+ 1 APPPATH\Views\prayertimes_view.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: lokasi', 'D:\\Codeigniter\\yayasan\\app\\Views\\prayertimes_view.php', 9, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Codeigniter\\yayasan\\app\\Views\\prayertimes_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('prayertimes_view', [], true)
+ 5 APPPATH\Controllers\PrayerTimesController.php(13): view('prayertimes_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PrayerTimesController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrayerTimesController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\yayasan\\public\\index.php')
+CRITICAL - 2025-02-28 22:25:12 --> Class 'App\Controllers\HomeModel' not found
+in APPPATH\Controllers\PrayerTimesController.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\PrayerTimesController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\yayasan\\public\\index.php')
+CRITICAL - 2025-02-28 22:45:19 --> Undefined property: stdClass::$provinsi
+in APPPATH\Controllers\JadwalSholatController.php on line 21.
+ 1 APPPATH\Controllers\JadwalSholatController.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$provinsi', 'D:\\Codeigniter\\yayasan\\app\\Controllers\\JadwalSholatController.php', 21, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\JadwalSholatController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalSholatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\yayasan\\public\\index.php')
+CRITICAL - 2025-02-28 22:46:18 --> Undefined property: stdClass::$provinsi
+in APPPATH\Controllers\JadwalSholatController.php on line 21.
+ 1 APPPATH\Controllers\JadwalSholatController.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$provinsi', 'D:\\Codeigniter\\yayasan\\app\\Controllers\\JadwalSholatController.php', 21, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\JadwalSholatController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalSholatController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\yayasan\\public\\index.php')
+CRITICAL - 2025-02-28 22:47:31 --> Invalid file: "jadwal_sholat_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('jadwal_sholat_view.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('jadwal_sholat_view', [], true)
+ 3 APPPATH\Controllers\JadwalSholatController.php(49): view('jadwal_sholat_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\JadwalSholatController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalSholatController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\yayasan\\public\\index.php')
+CRITICAL - 2025-02-28 23:21:36 --> Undefined variable: jadwal_shalat
+in APPPATH\Views\prayertimes_view.php on line 32.
+ 1 APPPATH\Views\prayertimes_view.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: jadwal_shalat', 'D:\\Codeigniter\\yayasan\\app\\Views\\prayertimes_view.php', 32, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Codeigniter\\yayasan\\app\\Views\\prayertimes_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('prayertimes_view', [], true)
+ 5 APPPATH\Controllers\PrayerTimesController3.php(30): view('prayertimes_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PrayerTimesController3->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrayerTimesController3))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\yayasan\\public\\index.php')

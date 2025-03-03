@@ -4,7 +4,7 @@
 			<div class="inner-container d-flex justify-content-between align-items-center flex-wrap">
 				<div class="cta-two_bg" style="background-image:url(assets/quran/images/background/cta-one_bg.png)"></div>
 				<div class="cta-two_icon flaticon-nabawi-mosque"></div>
-				<h3 class="cta-two_heading">Yayasan Assyarifiyyah Sunan Gunung Jati <br> Mengajak Kamu Semua Bersedekah</h3>
+				<h3 class="cta-two_heading"><?= $site['site_name']; ?> <br> Mengajak Kamu Semua Bersedekah</h3>
 				<!-- Button Box -->
 				<div class="cta-two_button">
 					<a href="<?= $site['site_linkedin']; ?>" class="theme-btn btn-style-three">
@@ -35,10 +35,10 @@
 								<!-- Footer Column -->
 								<div class="footer-column col-lg-6 col-md-6 col-sm-12">
 									<div class="footer-widget logo-widget">
-										<div class="footer-logo"><a href="#"><img src="<?= base_url(''); ?>assets/quran/images/ysgj-logo-white.png" alt="" title=""></a></div>
+										<div class="footer-logo"><a href="#"><img src="<?= base_url(''); ?>assets/quran/images/poroz_white.png" alt="" title=""></a></div>
 										<!-- Footer List -->
 										<div class="footer_list">
-											<li>Yayasan Sunan Gunung Jati (YSGJ) merupakan yayasan pendidikan Islam yang menanamkan nilai-nilai kemandirian, inovasi dan kolaborasi.</li>
+											<li><?= $site['site_description']; ?></li>
 										</div>
 										<!-- Social Box -->
 										<div class="footer_socials">
@@ -63,9 +63,9 @@
 										<h4 class="footer-title">Main Link</h4>
 										<ul class="footer-list">
 											<li><a href="<?= base_url(''); ?>sejarah">Profil</a></li>
-											<li><a href="<?= base_url(''); ?>edu">Pendidikan</a></li>
-											<li><a href="<?= base_url(''); ?>pemberdayaan">Pemberdayaan</a></li>
-											<li><a href="<?= base_url(''); ?>sosialdakwah">Sosial dan Dakwah</a></li>
+											<li><a href="<?= base_url(''); ?>pemberdayaan">Program Z Chicken</a></li>
+											<li><a href="<?= base_url(''); ?>edu">Program Pelatihan</a></li>
+											<!-- <li><a href="<?= base_url(''); ?>sosialdakwah">Sosial dan Dakwah</a></li> -->
 										</ul>
 									</div>
 								</div>
@@ -77,7 +77,6 @@
 										<ul class="footer-list">
 											<li><a href="<?= base_url(''); ?>kerjasama">Kerjasama</a></li>
 											<li><a href="<?= base_url(''); ?>post">Rilis Berita</a></li>
-											<!-- <li><a href="#">Dokumentasi</a></li> -->
 											<li><a href="<?= base_url(''); ?>kontak">Kontak</a></li>
 										</ul>
 									</div>

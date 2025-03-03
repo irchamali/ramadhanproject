@@ -20,8 +20,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-<link rel="shortcut icon" href="<?= base_url(''); ?>assets/quran/images/favicon/favicon.ico" type="image/x-icon">
-<link rel="icon" href="<?= base_url(''); ?>assets/quran/images/favicon/favicon.icog" type="image/x-icon">
+<link rel="shortcut icon" href="<?= base_url(''); ?>assets/backend/images/site/<?= $site['site_favicon']; ?>" type="image/x-icon">
+<link rel="icon" href="<?= base_url(''); ?>assets/backend/images/favicons/apple-touch-icon.png" type="image/x-icon">
 
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -54,15 +54,15 @@
 							<!-- Info List -->
 							<ul class="header-top_list">
 								<li><span class="icon fa-solid fa-envelope fa-fw"></span><?= $site['site_mail']; ?></li>
-								<li><span class="icon fa-solid fa-location-dot fa-fw"></span>Yayasan Sunan Gunung Jati</li>
+								<li><span class="icon fa-solid fa-location-dot fa-fw"></span><?= $site['site_name']; ?></li>
 							</ul>
 							<!-- <div>Gunung Jati</div> -->
 							<div class="bismillah"><img src="<?= base_url(''); ?>assets/quran/images/icons/bismillah.png" alt="" /> </div>
 						</div>
 						<ul class="header-top_list-two">
 							<!-- <li><span class="icon fa-regular fa-sun fa-fw"></span>Sunrise At: 5:15 AM</li> -->
-							<!-- <li><span class="icon fa-solid fa-moon fa-fw"></span>Sunset At: 4:50 PM</li> -->
-							<li><span class="icon fa-solid fa-phone fa-fw"></span>+<?= $site['site_wa']; ?></li>	
+							<li><span class="fa-brands fa-instagram"></span> poroz.official</li>
+							<li><span class="fa-brands fa-whatsapp"></span> <?= $site['site_wa']; ?></li>	
 						</ul>
 					</div>
 				</div>
@@ -76,7 +76,7 @@
 					<div class="d-flex justify-content-between align-items-center flex-wrap">
 						
 						<div class="logo-box">
-							<div class="logo"><a href="/"><img src="<?= base_url(''); ?>assets/quran/images/ysgj-logo2.png" alt="" title=""></a></div>
+							<div class="logo"><a href="/"><img src="<?= base_url(''); ?>assets/backend/images/site/<?= $site['site_logo_header']; ?>" alt="" title=""></a></div>
 						</div>
 						
 						<div class="nav-outer">
@@ -92,49 +92,7 @@
 								</div>
 								
 								<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
-									<ul class="navigation clearfix">
-										<li><a href="<?= base_url(''); ?>">Home</a>
-										</li>
-										<li class="dropdown"><a href="#">Tentang</a>
-											<ul>
-												<li><a href="<?= base_url(''); ?>visimisi">Visi Misi</a></li>
-												<li><a href="<?= base_url(''); ?>nilai2">Nilai-nilai</a></li>
-												<li class="dropdown"><a href="#">Profil</a>
-													<ul>
-														<li><a href="<?= base_url(''); ?>sejarah">Sejarah</a></li>
-														<li><a href="<?= base_url(''); ?>pengelola">Struktur Organisasi</a></li>
-													</ul>
-												</li>
-											</ul>
-										</li>
-										<li class="dropdown"><a href="#">Program</a>
-											<ul>
-												<li class="dropdown"><a href="#">Pendidikan</a>
-													<ul>
-														<li><a href="<?= base_url(''); ?>edu/tk">TK</a></li>
-														<li><a href="<?= base_url(''); ?>edu/sd">SD</a></li>
-														<li><a href="<?= base_url(''); ?>edu/smp">SMP</a></li>
-														<li><a href="<?= base_url(''); ?>edu/sma">SMA</a></li>
-														<li><a href="#">PT</a></li>
-														<!-- <li><a href="#">Pusat Talenta</a></li> -->
-													</ul>
-												</li>
-												<li><a href="<?= base_url(''); ?>pemberdayaan">Pemberdayaan</a></li>
-												<li><a href="<?= base_url(''); ?>sosialdakwah">Sosial dan Dakwah</a></li>
-											</ul>
-										</li>
-										<li><a href="<?= base_url(''); ?>kerjasama">Kerjasama</a></li>
-										<li class="dropdown"><a href="#">Informasi</a>
-											<ul>
-												<li><a href="<?= base_url(''); ?>post">Berita</a></li>
-												<li><a href="<?= base_url(''); ?>category/acara">Acara</a></li>
-												<li><a href="<?= base_url(''); ?>category/pengumuman">Pengumuman</a></li>
-												<li><a href="<?= base_url(''); ?>category/artikel">Artikel</a></li>
-												<li><a href="<?= base_url(''); ?>gallery">Gallery</a></li>
-											</ul>
-										</li>
-										<li><a href="<?= base_url(''); ?>kontak">Kontak</a></li>
-									</ul>
+									<?= $this->include('layouts/navbar'); ?>
 								</div>
 							</nav>
 						</div>
@@ -166,7 +124,7 @@
 			<div class="close-btn"><span class="icon flaticon-close-1"></span></div>
 			
 			<nav class="menu-box">
-				<div class="nav-logo"><a href="/"><img src="<?= base_url(''); ?>assets/quran/images/ysgj-logo2.png" alt="" title=""></a></div>
+				<div class="nav-logo"><a href="/"><img src="<?= base_url(''); ?>assets/backend/images/site/<?= $site['site_logo_header']; ?>" alt="" title=""></a></div>
 				<div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
 			</nav>
 		</div>

@@ -4,38 +4,60 @@
 										<li class="dropdown"><a href="#">Tentang</a>
 											<ul>
 												<li><a href="<?= base_url(''); ?>visimisi">Visi Misi</a></li>
-												<li><a href="<?= base_url(''); ?>nilai2">Nilai-nilai</a></li>
+												<li><a href="<?= base_url(''); ?>fungsi">Fungsi</a></li>
+                                                <li><a href="<?= base_url(''); ?>strategi">Strategi</a></li>
 												<li class="dropdown"><a href="#">Profil</a>
 													<ul>
 														<li><a href="<?= base_url(''); ?>sejarah">Sejarah</a></li>
-														<li><a href="<?= base_url(''); ?>pengelola">Struktur Organisasi</a></li>
+														<li><a href="<?= base_url(''); ?>struktur">Struktur Organisasi</a></li>
+                                                        <li><a href="<?= base_url(''); ?>pengurus">Kepengurusan</a></li>
 													</ul>
 												</li>
+                                                <li><a href="<?= base_url(''); ?>anggota">Anggota</a></li>
 											</ul>
 										</li>
 										<li class="dropdown"><a href="#">Program</a>
 											<ul>
-												<li class="dropdown"><a href="#">Pendidikan</a>
+												<li class="dropdown"><a href="#">Program</a>
 													<ul>
-														<li><a href="<?= base_url(''); ?>edu/tk">TK</a></li>
-														<li><a href="<?= base_url(''); ?>edu/sd">SD</a></li>
-														<li><a href="<?= base_url(''); ?>edu/smp">SMP</a></li>
-														<li><a href="<?= base_url(''); ?>edu/sma">SMA</a></li>
-														<li><a href="#">PT</a></li>
+														<li><a href="<?= base_url(''); ?>program">Z Chicken</a></li>
+														<li><a href="<?= base_url(''); ?>program">Z Auto</a></li>
+														<li><a href="<?= base_url(''); ?>program">Santripreneur</a></li>
+														<li><a href="<?= base_url(''); ?>program">Edukasi Zakat</a></li>
+                                                        <li><a href="<?= base_url(''); ?>program">Capacity Building Amil</a></li>
+														<li><a href="<?= base_url(''); ?>program">Literasi Keuangan Syariah</a></li>
+														<li><a href="<?= base_url(''); ?>program">POROZ Ta'awun</a></li>
+														<li><a href="<?= base_url(''); ?>program">Pelatihan UMKM</a></li>
+                                                        <li><a href="<?= base_url(''); ?>program">Join Action for Palestina</a></li>
 													</ul>
 												</li>
-												<li><a href="/pemberdayaan">Pemberdayaan</a></li>
-												<li><a href="/sosialdakwah">Sosial dan Dakwah</a></li>
+												<li class="dropdown"><a href="#">Layanan</a>
+													<ul>
+														<li><a href="<?= base_url(''); ?>layanan">POROZ INSTITUT</a></li>
+														<li><a href="<?= base_url(''); ?>layanan">POROZ CONSULTING</a></li>
+														<li><a href="<?= base_url(''); ?>layanan">POROZ WILAYAH</a></li>
+														
+													</ul>
+												</li>
 											</ul>
 										</li>
-										<li><a href="/kerjasama">Kerjasama</a></li>
-										<li class="dropdown"><a href="#">Informasi</a>
+                                        <li class="dropdown"><a href="#">Mitra</a>
+											<ul>
+												<li><a href="<?= base_url(''); ?>mitra">Mitra-mitra</a></li>
+												<li><a href="<?= base_url(''); ?>kerjasama">Kerjasama</a></li>
+											</ul>
+										</li>
+										<li class="dropdown"><a href="#">Media</a>
 											<ul>
 												<li><a href="<?= base_url(''); ?>post">Berita</a></li>
 												<li><a href="<?= base_url(''); ?>category/acara">Acara</a></li>
-												<li><a href="<?= base_url(''); ?>category/pengumuman">Pengumuman</a></li>
 												<li><a href="<?= base_url(''); ?>category/artikel">Artikel</a></li>
-												<li><a href="<?= base_url(''); ?>gallery">Gallery</a></li>
+                                                <li class="dropdown"><a href="#">Dokumen</a>
+													<ul>
+                                                        <li><a href="<?= base_url(''); ?>dokumen/buletin">Buletin</a></li>
+                                                        <li><a href="<?= base_url(''); ?>dokumen/regulasi">Regulasi Zakat</a></li>
+													</ul>
+												</li>
 											</ul>
 										</li>
 										<li><a href="/kontak">Kontak</a></li>

@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Models\AboutModel;
-// use App\Models\CommentModel;
+use App\Models\AuthorModel;
 use App\Models\HomeModel;
 use App\Models\PostviewModel;
 use App\Models\SiteModel;
@@ -21,7 +21,7 @@ class PostController extends BaseController
         $this->postviewModel = new PostviewModel();
         $this->tagModel = new TagModel();
         $this->categoryModel = new CategoryModel();
-        // $this->commentModel = new CommentModel();
+        $this->authorModel = new AuthorModel();
     }
     public function index($slug = null)
     {
@@ -160,25 +160,26 @@ class PostController extends BaseController
         ];
         return view('posts/post_tag', $data);
     }
-    public function author($user_id)
+    public function author($author)
     {
-        $posts = $this->postviewModel->where('post_user_id', $user_id)->get();
+        // $posts = $this->authorModel->where('post_user_id', $user_id)->get();
+        $posts = $this->authorModel->get_post_by_authors($author);
         if ($posts->getNumRows() < 1) {
             $posts = $posts->getResultArray();
             $keyword = "Postingan Author tidak ditemukan";
         } else {
             $posts = $posts->getResultArray();
-            $keyword = "Author: $user_id";
+            $keyword = "Author: $author";
         }
         $data = [
             'site' => $this->siteModel->find(1),
             'home' => $this->homeModel->find(1),
             'about' => $this->aboutModel->find(1),
-            'title' => "Author $user_id",
+            'title' => "Author $author",
             'keyword' => $keyword,
             'posts' => $posts,
             'active' => 'Post'
         ];
-        return view('post_author', $data);
+        return view('posts/post_author', $data);
     }
 }

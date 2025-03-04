@@ -1,0 +1,28 @@
+CRITICAL - 2025-03-03 03:40:40 --> Invalid file: "layouts/sidebar2.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/sidebar2.php')
+ 2 SYSTEMPATH\View\View.php(452): CodeIgniter\View\View->render('layouts/sidebar2', null, true)
+ 3 APPPATH\Views\dokumen_view.php(66): CodeIgniter\View\View->include('layouts/sidebar2')
+ 4 SYSTEMPATH\View\View.php(224): include('D:\\Codeigniter\\ramadhanproject\\app\\Views\\dokumen_view.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('dokumen_view', [], true)
+ 7 APPPATH\Controllers\DocumentController.php(35): view('dokumen_view', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocumentController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+CRITICAL - 2025-03-03 07:34:04 --> Invalid file: "layouts/sidebar2.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/sidebar2.php')
+ 2 SYSTEMPATH\View\View.php(452): CodeIgniter\View\View->render('layouts/sidebar2', null, true)
+ 3 APPPATH\Views\dokumen_category.php(66): CodeIgniter\View\View->include('layouts/sidebar2')
+ 4 SYSTEMPATH\View\View.php(224): include('D:\\Codeigniter\\ramadhanproject\\app\\Views\\dokumen_category.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('dokumen_category', [], true)
+ 7 APPPATH\Controllers\CategoryDocsController.php(46): view('dokumen_category', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CategoryDocsController->index('peraturan')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryDocsController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')

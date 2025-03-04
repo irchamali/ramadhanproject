@@ -2,7 +2,7 @@
 	<section class="cta-two">
 		<div class="auto-container">
 			<div class="inner-container d-flex justify-content-between align-items-center flex-wrap">
-				<div class="cta-two_bg" style="background-image:url(assets/quran/images/background/cta-one_bg.png)"></div>
+				<div class="cta-two_bg" style="background-image:url(<?= base_url(''); ?>assets/quran/images/background/cta-one_bg.png)"></div>
 				<div class="cta-two_icon flaticon-nabawi-mosque"></div>
 				<h3 class="cta-two_heading"><?= $site['site_name']; ?> <br> Mengajak Kamu Semua Bersedekah</h3>
 				<!-- Button Box -->

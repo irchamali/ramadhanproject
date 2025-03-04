@@ -43,6 +43,6 @@ class CategoryDocsController extends BaseController
             'documents' => $documents,
             'active' => 'Dokumen'
         ];
-        return view('dokumen_category', $data);
+        return view('pages/dokumen_category', $data);
     }
 }

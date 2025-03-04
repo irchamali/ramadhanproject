@@ -75,7 +75,7 @@ class PostController extends BaseController
         $result = $this->postviewModel->search_post($query);
         if ($result->getNumRows() < 1) {
             $posts = $result->getResultArray();
-            $keyword = "Keyword '$query' tidak ditemukan";
+            $keyword = "'$query' tidak ditemukan";
         } else {
             $posts = $result->getResultArray();
             $keyword = "$query ";
@@ -144,7 +144,7 @@ class PostController extends BaseController
         $posts = $this->tagModel->get_post_by_tags($tag);
         if ($posts->getNumRows() < 1) {
             $posts = $posts->getResultArray();
-            $keyword = "Tag $tag tidak ditemukan";
+            $keyword = "$tag tidak ditemukan";
         } else {
             $posts = $posts->getResultArray();
             $keyword = "Tag: $tag";
@@ -175,7 +175,8 @@ class PostController extends BaseController
             'site' => $this->siteModel->find(1),
             'home' => $this->homeModel->find(1),
             'about' => $this->aboutModel->find(1),
-            'title' => "Author $author",
+            'categories' => $this->categoryModel->findAll(),
+            'title' => "$author",
             'keyword' => $keyword,
             'posts' => $posts,
             'active' => 'Post'

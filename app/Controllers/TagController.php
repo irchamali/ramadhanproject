@@ -29,7 +29,7 @@ class TagController extends BaseController
         $posts = $this->tagModel->get_post_by_tags($slug);
         if ($posts->getNumRows() < 1) {
             $posts = $posts->getResultArray();
-            $keyword = "Tag '$slug' tidak ditemukan";
+            $keyword = "'$slug' tidak ditemukan";
         } else {
             $posts = $posts->getResultArray();
             $keyword = "$slug ";

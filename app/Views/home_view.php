@@ -15,7 +15,7 @@
 						<!-- Content Column -->
 						<div class="slider-one_content">
 							<div class="slider-one_content-inner">
-								<div class="slider-one_title">Yayasan Sunan Gunung Jati</div>
+								<div class="slider-one_title"><?= $site['site_title']; ?></div>
 								<h1 class="slider-one_heading"><?= $sld['slider_title']; ?></h1>
 								<div class="slider-one_text"><?= $sld['slider_subtitle']; ?></div>
 								<div class="slider-one_button">
@@ -183,7 +183,7 @@
 		<div class="auto-container">
 			<!-- Sec Title -->
 			<div class="sec-title centered">
-				<div class="sec-title_title">YSGJ Goals</div>
+				<div class="sec-title_title"><?= $site['site_title']; ?> Goals</div>
 				<h2 class="sec-title_heading">Nilai-nilai <br> Kepesantrenan</h2>
 			</div>
 			<div class="row clearfix">
@@ -271,7 +271,7 @@
 												<span class="fa-regular fa-star fa-fw"></span>
 												<span class="fa-regular fa-star fa-fw"></span>
 											</div>
-											<h4 class="testimonial-block_one-heading">YSGJ Quotes</h4>
+											<h4 class="testimonial-block_one-heading"><?= $site['site_title']; ?> Quotes</h4>
 											<div class="testimonial-block_one-text"><?= $testi['testimonial_content']; ?></div>
 											<div class="testimonial-block_one-author">
 												<div class="author-image">
@@ -305,7 +305,7 @@
 		<div class="auto-container">
 			<!-- Sec Title -->
 			<div class="sec-title centered">
-				<div class="sec-title_title">YSGJ Updates</div>
+				<div class="sec-title_title"><?= $site['site_title']; ?> Updates</div>
 				<h2 class="sec-title_heading">Latest Posts</h2>
 			</div>
 			<div class="row clearfix">
@@ -319,7 +319,7 @@
 						</div>
 						<div class="news-block_one-content">
 							<ul class="news-block_one-meta">
-								<li><span class="icon fa-brands fa-rocketchat fa-fw"></span><?= $post['user_name']; ?></li>
+								<li><span class="icon fa-solid fa-user fa-fw"></span><?= $post['user_name']; ?></li>
 								<li><span class="icon fa-solid fa-clock fa-fw"></span><time datetime="2022-01-01"><?= date('d M Y', strtotime($post['post_date'])); ?></time></li>
 							</ul>
 							<h5 class="news-block_one-heading"><a href="/post/<?= $post['post_slug']; ?>"><?= $post['post_title']; ?></a></h5>

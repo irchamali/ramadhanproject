@@ -15,15 +15,16 @@
 							<div class="blog-detail_content">
 								<div class="d-flex align-items-center flex-wrap">
 									<!-- Author -->
-									<div class="blog-detail_author d-flex align-items-center">
+									<!-- <div class="blog-detail_author d-flex align-items-center">
 										<div class="image">
                                             <i class="fa-solid fa-user fa-fw"></i>
-                                            <?= $post['user_name']; ?>
+                                            
 										</div>
-									</div>
+									</div> -->
 									<!-- Post Meta -->
 									<ul class="blog-detail_meta">
-										<li><span class="icon fa-brands fa-rocketchat fa-fw"></span><?= $post['category_slug']; ?></li>
+										<li><span class="icon fa-solid fa-user fa-fw"></span><?= $post['user_name']; ?></li>
+										<li><span class="icon fa-solid fa-pen-to-square fa-fw"></span><?= $post['category_slug']; ?></li>
 										<li><span class="icon fa-solid fa-clock fa-fw"></span><time datetime="2020-01-01"><?= date('d M Y', strtotime($post['post_date'])); ?></time></li>
 									</ul>
 								</div>

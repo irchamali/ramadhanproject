@@ -10,12 +10,21 @@ class AuthorModel extends Model
     protected $primaryKey       = 'user_id';
     protected $allowedFields    = ['user_name'];
 
-    function get_post_by_authors($author)
+    public function get_post_by_authors($author)
     {
-        $query = $this->db->query("SELECT tbl_post.*,user_name,user_photo FROM tbl_post
-			LEFT JOIN tbl_user ON post_user_id=user_id
-			WHERE user_name LIKE '%$author%'
-            ORDER BY tbl_post.post_date DESC"); // Menambahkan klausa ORDER BY
+        $query = $this->db->query("
+            SELECT tbl_post.*, 
+                tbl_user.user_name, 
+                tbl_user.user_photo, 
+                tbl_category.*
+            FROM tbl_post
+            LEFT JOIN tbl_user ON tbl_post.post_user_id = tbl_user.user_id
+            LEFT JOIN tbl_category ON tbl_post.post_category_id = tbl_category.category_id
+            WHERE tbl_user.user_name LIKE '%$author%'
+            GROUP BY tbl_post.post_id
+            ORDER BY tbl_post.post_date DESC
+        ");
         return $query;
     }
+
 }

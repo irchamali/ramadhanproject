@@ -1,0 +1,59 @@
+CRITICAL - 2025-03-04 03:37:46 --> Undefined index: category_name
+in APPPATH\Views\posts\post_author.php on line 17.
+ 1 APPPATH\Views\posts\post_author.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: category_name', 'D:\\Codeigniter\\ramadhanproject\\app\\Views\\posts\\post_author.php', 17, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Codeigniter\\ramadhanproject\\app\\Views\\posts\\post_author.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('posts/post_author', [], true)
+ 5 APPPATH\Controllers\PostController.php(184): view('posts/post_author', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PostController->author('author')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+ERROR - 2025-03-04 03:49:25 --> mysqli_sql_exception: Unknown column 'tbl_post.category_id' in 'on clause' in D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tbl_pos...', 0)
+#1 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_pos...')
+#2 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_pos...')
+#3 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_pos...', Array, false)
+#4 D:\Codeigniter\ramadhanproject\app\Models\AuthorModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Codeigniter\ramadhanproject\app\Controllers\PostController.php(166): App\Models\AuthorModel->get_post_by_authors('author')
+#6 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\PostController->author('author')
+#7 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#8 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Codeigniter\ramadhanproject\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\...')
+#11 {main}
+CRITICAL - 2025-03-04 03:49:25 --> Unknown column 'tbl_post.category_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tbl_post`.*, `tbl_user`.`user_name`, `tbl_user`.`user_photo`, `tbl_category`.`category_name`
+FROM `tbl_post`
+LEFT JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_post`.`post_user_id`
+LEFT JOIN `tbl_category` ON `tbl_category`.`category_id` = `tbl_post`.`category_id`
+WHERE `tbl_user`.`user_name` LIKE \'%author%\' ESCAPE \'!\'
+ORDER BY `tbl_post`.`post_date` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_post`.*, `tbl_user`.`user_name`, `tbl_user`.`user_photo`, `tbl_category`.`category_name`
+FROM `tbl_post`
+LEFT JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_post`.`post_user_id`
+LEFT JOIN `tbl_category` ON `tbl_category`.`category_id` = `tbl_post`.`category_id`
+WHERE `tbl_user`.`user_name` LIKE \'%author%\' ESCAPE \'!\'
+ORDER BY `tbl_post`.`post_date` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_post`.*, `tbl_user`.`user_name`, `tbl_user`.`user_photo`, `tbl_category`.`category_name`
+FROM `tbl_post`
+LEFT JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_post`.`post_user_id`
+LEFT JOIN `tbl_category` ON `tbl_category`.`category_id` = `tbl_post`.`category_id`
+WHERE `tbl_user`.`user_name` LIKE \'%author%\' ESCAPE \'!\'
+ORDER BY `tbl_post`.`post_date` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_post`.*, `tbl_user`.`user_name`, `tbl_user`.`user_photo`, `tbl_category`.`category_name`
+FROM `tbl_post`
+LEFT JOIN `tbl_user` ON `tbl_user`.`user_id` = `tbl_post`.`post_user_id`
+LEFT JOIN `tbl_category` ON `tbl_category`.`category_id` = `tbl_post`.`category_id`
+WHERE `tbl_user`.`user_name` LIKE :tbl_user.user_name: ESCAPE \'!\'
+ORDER BY `tbl_post`.`post_date` DESC', [...], false)
+ 5 APPPATH\Models\AuthorModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\PostController.php(166): App\Models\AuthorModel->get_post_by_authors('author')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PostController->author('author')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')

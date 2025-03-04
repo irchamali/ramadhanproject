@@ -27,7 +27,7 @@ class CategoryController extends BaseController
         $posts = $this->categoryModel->get_post_by_category($slug);
         if ($posts->getNumRows() < 1) {
             $posts = $posts->getResultArray();
-            $keyword = "Category '$slug' tidak ditemukan";
+            $keyword = "'$slug' tidak ditemukan";
         } else {
             $posts = $posts->getResultArray();
             $keyword = "$slug ";

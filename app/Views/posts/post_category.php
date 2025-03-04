@@ -25,9 +25,9 @@
 
 			<!-- Styled Pagination -->
             <div class="col-lg-12 text-center pt-40">
-			<ul class="styled-pagination text-center">
-
-			</ul>
+				<ul class="styled-pagination text-center">
+					<?= $pager->links('posts', 'post_pagination'); ?>
+				</ul>
             </div>
 			<!-- End Styled Pagination -->
 

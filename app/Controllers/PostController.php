@@ -58,7 +58,7 @@ class PostController extends BaseController
             'post' => $post,
             'post_tags' => $post_tags,
             'related_post' => $this->postviewModel->get_related_post($category_id, $post_id)->getResultArray(),
-            'categories' => $this->categoryModel->findAll(),
+            'categories' => $this->categoryModel->getAllCategoriesWithPosts(),
             'tags' => $this->tagModel->findAll(),
             // 'comments' => $this->commentModel->show_comments($post_id)->getResultArray(),
             'title' => 'Post',

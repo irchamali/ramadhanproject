@@ -69,3 +69,283 @@ in APPPATH\Views\posts\post_search.php on line 17.
  8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+CRITICAL - 2025-03-04 08:19:45 --> Call to undefined method App\Models\CategoryModel::getAllPosts
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\CategoryController.php(39): CodeIgniter\Model->__call('getAllPosts', [])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CategoryController->index('acara')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+ERROR - 2025-03-04 08:25:44 --> mysqli_sql_exception: Not unique table/alias: 'tbl_category' in D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*)...', 0)
+#1 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\BaseModel.php(1188): CodeIgniter\Model->countAllResults(false)
+#6 D:\Codeigniter\ramadhanproject\app\Models\CategoryModel.php(30): CodeIgniter\BaseModel->paginate(9, 'posts')
+#7 D:\Codeigniter\ramadhanproject\app\Controllers\CategoryController.php(27): App\Models\CategoryModel->get_post_by_category('acara')
+#8 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\CategoryController->index('acara')
+#9 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryController))
+#10 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Codeigniter\ramadhanproject\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\...')
+#13 {main}
+CRITICAL - 2025-03-04 08:25:44 --> Not unique table/alias: 'tbl_category'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tbl_category`
+LEFT JOIN `tbl_category` ON `tbl_post`.`post_category_id` = `tbl_category`.`category_id`
+LEFT JOIN `tbl_user` ON `tbl_post`.`post_user_id` = `tbl_user`.`user_id`
+WHERE `tbl_category`.`category_slug` = \'acara\'
+AND `tbl_post`.`post_status` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tbl_category`
+LEFT JOIN `tbl_category` ON `tbl_post`.`post_category_id` = `tbl_category`.`category_id`
+LEFT JOIN `tbl_user` ON `tbl_post`.`post_user_id` = `tbl_user`.`user_id`
+WHERE `tbl_category`.`category_slug` = \'acara\'
+AND `tbl_post`.`post_status` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tbl_category`
+LEFT JOIN `tbl_category` ON `tbl_post`.`post_category_id` = `tbl_category`.`category_id`
+LEFT JOIN `tbl_user` ON `tbl_post`.`post_user_id` = `tbl_user`.`user_id`
+WHERE `tbl_category`.`category_slug` = \'acara\'
+AND `tbl_post`.`post_status` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tbl_category`
+LEFT JOIN `tbl_category` ON `tbl_post`.`post_category_id` = `tbl_category`.`category_id`
+LEFT JOIN `tbl_user` ON `tbl_post`.`post_user_id` = `tbl_user`.`user_id`
+WHERE `tbl_category`.`category_slug` = :tbl_category.category_slug:
+AND `tbl_post`.`post_status` = :tbl_post.post_status:', [...], false)
+ 5 SYSTEMPATH\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1188): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Models\CategoryModel.php(30): CodeIgniter\BaseModel->paginate(9, 'posts')
+ 8 APPPATH\Controllers\CategoryController.php(27): App\Models\CategoryModel->get_post_by_category('acara')
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CategoryController->index('acara')
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+ERROR - 2025-03-04 08:28:52 --> mysqli_sql_exception: Not unique table/alias: 'tbl_category' in D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*)...', 0)
+#1 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\BaseModel.php(1188): CodeIgniter\Model->countAllResults(false)
+#6 D:\Codeigniter\ramadhanproject\app\Models\CategoryModel.php(30): CodeIgniter\BaseModel->paginate(9, 'posts')
+#7 D:\Codeigniter\ramadhanproject\app\Controllers\CategoryController.php(27): App\Models\CategoryModel->get_post_by_category('acara')
+#8 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\CategoryController->index('acara')
+#9 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryController))
+#10 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Codeigniter\ramadhanproject\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\...')
+#13 {main}
+CRITICAL - 2025-03-04 08:28:52 --> Not unique table/alias: 'tbl_category'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tbl_category`
+LEFT JOIN `tbl_category` ON `tbl_post`.`post_category_id` = `tbl_category`.`category_id`
+LEFT JOIN `tbl_user` ON `tbl_post`.`post_user_id` = `tbl_user`.`user_id`
+WHERE `tbl_category`.`category_slug` = \'acara\'
+AND `tbl_post`.`post_status` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tbl_category`
+LEFT JOIN `tbl_category` ON `tbl_post`.`post_category_id` = `tbl_category`.`category_id`
+LEFT JOIN `tbl_user` ON `tbl_post`.`post_user_id` = `tbl_user`.`user_id`
+WHERE `tbl_category`.`category_slug` = \'acara\'
+AND `tbl_post`.`post_status` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tbl_category`
+LEFT JOIN `tbl_category` ON `tbl_post`.`post_category_id` = `tbl_category`.`category_id`
+LEFT JOIN `tbl_user` ON `tbl_post`.`post_user_id` = `tbl_user`.`user_id`
+WHERE `tbl_category`.`category_slug` = \'acara\'
+AND `tbl_post`.`post_status` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tbl_category`
+LEFT JOIN `tbl_category` ON `tbl_post`.`post_category_id` = `tbl_category`.`category_id`
+LEFT JOIN `tbl_user` ON `tbl_post`.`post_user_id` = `tbl_user`.`user_id`
+WHERE `tbl_category`.`category_slug` = :tbl_category.category_slug:
+AND `tbl_post`.`post_status` = :tbl_post.post_status:', [...], false)
+ 5 SYSTEMPATH\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1188): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Models\CategoryModel.php(30): CodeIgniter\BaseModel->paginate(9, 'posts')
+ 8 APPPATH\Controllers\CategoryController.php(27): App\Models\CategoryModel->get_post_by_category('acara')
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CategoryController->index('acara')
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+CRITICAL - 2025-03-04 08:31:25 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::paginate()
+in APPPATH\Models\CategoryModel.php on line 22.
+ 1 APPPATH\Controllers\CategoryController.php(27): App\Models\CategoryModel->get_post_by_category('acara')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CategoryController->index('acara')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+CRITICAL - 2025-03-04 08:35:19 --> Call to a member function getNumRows() on array
+in APPPATH\Controllers\CategoryController.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CategoryController->index('acara')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+CRITICAL - 2025-03-04 09:11:51 --> Undefined index: category_name
+in APPPATH\Views\posts\post_detail.php on line 99.
+ 1 APPPATH\Views\posts\post_detail.php(99): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: category_name', 'D:\\Codeigniter\\ramadhanproject\\app\\Views\\posts\\post_detail.php', 99, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Codeigniter\\ramadhanproject\\app\\Views\\posts\\post_detail.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('posts/post_detail', [], true)
+ 5 APPPATH\Controllers\PostController.php(67): view('posts/post_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PostController->index('dai-datang--seorang-ibu-terbuka-hatinya-menerima-islam')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+CRITICAL - 2025-03-04 09:12:19 --> Undefined index: category_name
+in APPPATH\Views\posts\post_detail.php on line 99.
+ 1 APPPATH\Views\posts\post_detail.php(99): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: category_name', 'D:\\Codeigniter\\ramadhanproject\\app\\Views\\posts\\post_detail.php', 99, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Codeigniter\\ramadhanproject\\app\\Views\\posts\\post_detail.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('posts/post_detail', [], true)
+ 5 APPPATH\Controllers\PostController.php(67): view('posts/post_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PostController->index('keistimewaan-angka-7-dan-harapan-bagi-poroz-di-milad-ke-7')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+CRITICAL - 2025-03-04 09:13:45 --> Undefined index: category_name
+in APPPATH\Views\posts\post_detail.php on line 99.
+ 1 APPPATH\Views\posts\post_detail.php(99): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: category_name', 'D:\\Codeigniter\\ramadhanproject\\app\\Views\\posts\\post_detail.php', 99, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Codeigniter\\ramadhanproject\\app\\Views\\posts\\post_detail.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('posts/post_detail', [], true)
+ 5 APPPATH\Controllers\PostController.php(67): view('posts/post_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PostController->index('kolaborasi-bank-indonesia-dan-lembaga-zakat-dorong-penguatan-ekonomi-syariah')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+CRITICAL - 2025-03-04 09:16:45 --> Undefined index: category_name
+in APPPATH\Views\posts\post_detail.php on line 99.
+ 1 APPPATH\Views\posts\post_detail.php(99): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: category_name', 'D:\\Codeigniter\\ramadhanproject\\app\\Views\\posts\\post_detail.php', 99, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Codeigniter\\ramadhanproject\\app\\Views\\posts\\post_detail.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('posts/post_detail', [], true)
+ 5 APPPATH\Controllers\PostController.php(67): view('posts/post_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PostController->index('keistimewaan-angka-7-dan-harapan-bagi-poroz-di-milad-ke-7')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+CRITICAL - 2025-03-04 09:18:45 --> Declaration of App\Models\CategoryModel::findAll() should be compatible with CodeIgniter\BaseModel::findAll(int $limit = 0, int $offset = 0)
+in APPPATH\Models\CategoryModel.php on line 24.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Declaration of App\\Models\\CategoryModel::findAll() should be compatible with CodeIgniter\\BaseModel::findAll(int $limit = 0, int $offset = 0)', 'D:\\Codeigniter\\ramadhanproject\\app\\Models\\CategoryModel.php', 24, [...])
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\Codeigniter\\ramadhanproject\\app\\Models\\CategoryModel.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\CategoryModel')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\CategoryModel')
+ 6 APPPATH\Controllers\PostController.php(23): spl_autoload_call('App\\Models\\CategoryModel')
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\PostController->__construct()
+ 8 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+ERROR - 2025-03-04 09:23:49 --> mysqli_sql_exception: Not unique table/alias: 'tbl_post' in D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tbl_cat...', 0)
+#1 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_cat...')
+#2 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_cat...')
+#3 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_cat...', Array, false)
+#4 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Codeigniter\ramadhanproject\app\Models\CategoryModel.php(30): CodeIgniter\BaseModel->findAll()
+#7 D:\Codeigniter\ramadhanproject\app\Controllers\PostController.php(61): App\Models\CategoryModel->getAllCategoriesWithPosts()
+#8 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\PostController->index('keistimewaan-an...')
+#9 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#10 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Codeigniter\ramadhanproject\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\...')
+#13 {main}
+CRITICAL - 2025-03-04 09:23:49 --> Not unique table/alias: 'tbl_post'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tbl_category`.`category_id`, `tbl_category`.`category_name`, `tbl_category`.`category_slug`, COUNT(tbl_post.post_id) as total_posts
+FROM `tbl_post`
+LEFT JOIN `tbl_post` ON `tbl_post`.`post_category_id` = `tbl_category`.`category_id`
+GROUP BY `tbl_category`.`category_id`
+ORDER BY `total_posts` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_category`.`category_id`, `tbl_category`.`category_name`, `tbl_category`.`category_slug`, COUNT(tbl_post.post_id) as total_posts
+FROM `tbl_post`
+LEFT JOIN `tbl_post` ON `tbl_post`.`post_category_id` = `tbl_category`.`category_id`
+GROUP BY `tbl_category`.`category_id`
+ORDER BY `total_posts` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_category`.`category_id`, `tbl_category`.`category_name`, `tbl_category`.`category_slug`, COUNT(tbl_post.post_id) as total_posts
+FROM `tbl_post`
+LEFT JOIN `tbl_post` ON `tbl_post`.`post_category_id` = `tbl_category`.`category_id`
+GROUP BY `tbl_category`.`category_id`
+ORDER BY `total_posts` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_category`.`category_id`, `tbl_category`.`category_name`, `tbl_category`.`category_slug`, COUNT(tbl_post.post_id) as total_posts
+FROM `tbl_post`
+LEFT JOIN `tbl_post` ON `tbl_post`.`post_category_id` = `tbl_category`.`category_id`
+GROUP BY `tbl_category`.`category_id`
+ORDER BY `total_posts` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\CategoryModel.php(30): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\PostController.php(61): App\Models\CategoryModel->getAllCategoriesWithPosts()
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PostController->index('keistimewaan-angka-7-dan-harapan-bagi-poroz-di-milad-ke-7')
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+ERROR - 2025-03-04 09:25:30 --> mysqli_sql_exception: Not unique table/alias: 'tbl_post' in D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tbl_cat...', 0)
+#1 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_cat...')
+#2 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_cat...')
+#3 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_cat...', Array, false)
+#4 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Codeigniter\ramadhanproject\app\Models\CategoryModel.php(30): CodeIgniter\BaseModel->findAll()
+#7 D:\Codeigniter\ramadhanproject\app\Controllers\PostController.php(61): App\Models\CategoryModel->getAllCategoriesWithPosts()
+#8 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\PostController->index('kolaborasi-bank...')
+#9 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#10 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Codeigniter\ramadhanproject\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\...')
+#13 {main}
+CRITICAL - 2025-03-04 09:25:30 --> Not unique table/alias: 'tbl_post'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tbl_category`.`category_id`, `tbl_category`.`category_name`, `tbl_category`.`category_slug`, COUNT(tbl_post.post_id) as total_posts
+FROM `tbl_post`
+LEFT JOIN `tbl_post` ON `tbl_post`.`post_category_id` = `tbl_category`.`category_id`
+GROUP BY `tbl_category`.`category_id`
+ORDER BY `total_posts` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_category`.`category_id`, `tbl_category`.`category_name`, `tbl_category`.`category_slug`, COUNT(tbl_post.post_id) as total_posts
+FROM `tbl_post`
+LEFT JOIN `tbl_post` ON `tbl_post`.`post_category_id` = `tbl_category`.`category_id`
+GROUP BY `tbl_category`.`category_id`
+ORDER BY `total_posts` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_category`.`category_id`, `tbl_category`.`category_name`, `tbl_category`.`category_slug`, COUNT(tbl_post.post_id) as total_posts
+FROM `tbl_post`
+LEFT JOIN `tbl_post` ON `tbl_post`.`post_category_id` = `tbl_category`.`category_id`
+GROUP BY `tbl_category`.`category_id`
+ORDER BY `total_posts` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_category`.`category_id`, `tbl_category`.`category_name`, `tbl_category`.`category_slug`, COUNT(tbl_post.post_id) as total_posts
+FROM `tbl_post`
+LEFT JOIN `tbl_post` ON `tbl_post`.`post_category_id` = `tbl_category`.`category_id`
+GROUP BY `tbl_category`.`category_id`
+ORDER BY `total_posts` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\CategoryModel.php(30): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\PostController.php(61): App\Models\CategoryModel->getAllCategoriesWithPosts()
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PostController->index('kolaborasi-bank-indonesia-dan-lembaga-zakat-dorong-penguatan-ekonomi-syariah')
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')

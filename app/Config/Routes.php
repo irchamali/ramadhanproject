@@ -52,13 +52,15 @@ $routes->get('gallery', 'GalleryController::index');
 $routes->get('search', 'PostController::search');
 $routes->get('post', 'PostController::index');
 $routes->get('post/(:segment)', 'PostController::index/$1');
+$routes->post('post/send_comment', 'PostController::send_comment');
 // $routes->get('author/(:num)', 'PostController::author/$1');
 $routes->get('author/(:segment)', 'PostController::author/$1');
-$routes->post('post/send_comment', 'PostController::send_comment');
 
 // CategoryController
 $routes->get('tag/(:segment)', 'TagController::index/$1');
 $routes->get('category/(:segment)', 'CategoryController::index/$1');
+// $routes->get('category/(:any)/page/(:num)', 'CategoryController::index/$1');
+
 $routes->get('dokumen/(:segment)', 'CategoryDocsController::index/$1');
 $routes->get('laporan/(:segment)', 'CategoryLapController::index/$1');
 

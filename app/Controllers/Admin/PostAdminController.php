@@ -19,6 +19,10 @@ class PostAdminController extends BaseController
         $this->postModel = new PostModel();
         $this->categoryModel = new CategoryModel();
         $this->tagModel = new TagModel();
+
+        // Tambahkan variabel ini jika digunakan
+        $this->akun = session()->get('akun');
+        $this->active = 'post';
     }
     public function index()
     {
@@ -32,12 +36,22 @@ class PostAdminController extends BaseController
             'comments' => $this->commentModel->where('comment_status', 0)->findAll(6),
             'helper_text' => helper('text'),
             'breadcrumbs' => $this->request->getUri()->getSegments(),
-
-            'posts' => $this->postModel->get_all_post()->getResultArray()
+            // 'posts' => $this->postModel->get_all_post()->getResultArray()
+            // 'posts' => $this->postModel->get_all_post() // Hanya panggil satu parameter
+            'posts' => $this->postModel->get_all_post(null, true)->getResultArray() // Admin melihat semua post
         ];
 
         return view('admin/v_post', $data);
     }
+    // admin post - toggle post status
+    public function toggle_status($post_id)
+    {
+        if ($this->postModel->toggle_post_status($post_id)) {
+            return redirect()->to('/admin/post')->with('success', 'Post status updated successfully.');
+        }
+        return redirect()->to('/admin/post')->with('error', 'Failed to update post status.');
+    }
+
     public function add_new()
     {
         $data = [

@@ -50,15 +50,16 @@
                             <div class="panel-body">
                                 <a href="/<?= session('role'); ?>/post/add_new" class="btn btn-success m-b-sm">Add New Post</a>
                                 <div class="table-responsive">
-                                    <table id="data-table" class="display table" style="width: 100%; ">
+                                    <table id="data-table" class="display table" style="width: 100%;">
                                         <thead>
                                             <tr>
-                                                <th style="width: 100px;">No</th>
+                                                <th style="width: 50px;">No</th>
                                                 <th>Title</th>
                                                 <th>Publish Date</th>
                                                 <th>Category</th>
                                                 <th>Views</th>
-                                                <th style="text-align: center;width: 120px;">Action</th>
+                                                <th>Status</th> <!-- Tambahan kolom status -->
+                                                <th style="text-align: center;width: 150px;">Action</th>
                                             </tr>
                                         </thead>
                                         <tbody id="body-table">
@@ -73,10 +74,24 @@
                                                     <td><?= $post['post_date']; ?></td>
                                                     <td><?= $post['category_name']; ?></td>
                                                     <td><?= $post['post_views']; ?></td>
+                                                    <td>
+                                                        <?php if ($post['post_status'] == 1) : ?>
+                                                            <span class="badge badge-success">✔️Publish</span>
+                                                        <?php else : ?>
+                                                            <span class="badge badge-danger">✖️Unpublish</span>
+                                                        <?php endif; ?>
+                                                    </td>
                                                     <td style="text-align: center;">
                                                         <a href="/post/<?= $post['post_slug']; ?>" class="btn btn-xs" target="_blank"><span class="fa fa-eye"></span></a>
                                                         <a href="/<?= session('role'); ?>/post/<?= $post['post_id']; ?>/edit" class="btn btn-xs"><span class="fa fa-pencil"></span></a>
                                                         <a href="javascript:void(0);" class="btn btn-xs btn-delete" data-id="<?= $post['post_id']; ?>"><span class="fa fa-trash"></span></a>
+                                                        <a href="/<?= session('role'); ?>/post/toggle_status/<?= $post['post_id']; ?>" class="btn btn-xs">
+                                                            <?php if ($post['post_status'] == 1) : ?>
+                                                                <span class="fa fa-toggle-on text-success"></span>
+                                                            <?php else : ?>
+                                                                <span class="fa fa-toggle-off text-danger"></span>
+                                                            <?php endif; ?>
+                                                        </a>
                                                     </td>
                                                 </tr>
                                             <?php endforeach; ?>
@@ -84,6 +99,7 @@
                                     </table>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div><!-- Row -->

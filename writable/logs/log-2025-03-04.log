@@ -349,3 +349,20 @@ ORDER BY `total_posts` DESC', [], false)
 11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
 12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
 13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+CRITICAL - 2025-03-04 12:09:26 --> Cannot use object of type mysqli as array
+in APPPATH\Views\admin\v_post.php on line 73.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/v_post', [], true)
+ 4 APPPATH\Controllers\Admin\PostAdminController.php(40): view('admin/v_post', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin\PostAdminController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\PostAdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+CRITICAL - 2025-03-04 12:20:59 --> Call to a member function getStatusCode() on null
+in ROOTPATH\spark on line 100.
+
+CRITICAL - 2025-03-04 12:21:36 --> Call to a member function getStatusCode() on null
+in ROOTPATH\spark on line 100.
+

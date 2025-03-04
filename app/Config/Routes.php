@@ -120,6 +120,7 @@ $routes->group('admin', ['filter' => 'authadmin'], static function ($routes) {
         $routes->put('', 'Admin\PostAdminController::update');
         $routes->get('add_new', 'Admin\PostAdminController::add_new');
         $routes->get('(:num)/edit', 'Admin\PostAdminController::edit/$1');
+        $routes->get('toggle_status/(:num)', 'Admin\PostAdminController::toggle_status/$1'); // toggle
     });
     // Category Route
     $routes->group('category', static function ($routes) {

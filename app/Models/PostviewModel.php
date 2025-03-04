@@ -69,10 +69,21 @@ class PostviewModel extends Model
 
     public function search_post($query)
     {
-        $result = $this->db->query("SELECT tbl_post.*,user_name,user_photo FROM tbl_post
-			LEFT JOIN tbl_user ON post_user_id=user_id
-			LEFT JOIN tbl_category ON post_category_id=category_id
-			WHERE post_title LIKE '%$query%' OR category_name LIKE '%$query%' OR post_tags LIKE '%$query%' LIMIT 12");
+        $result = $this->db->query("
+            SELECT tbl_post.*, 
+                tbl_user.user_name, 
+                tbl_user.user_photo, 
+                tbl_category.category_name 
+            FROM tbl_post
+            LEFT JOIN tbl_user ON tbl_post.post_user_id = tbl_user.user_id
+            LEFT JOIN tbl_category ON tbl_post.post_category_id = tbl_category.category_id
+            WHERE tbl_post.post_title LIKE '%$query%' 
+                OR tbl_category.category_name LIKE '%$query%' 
+                OR tbl_post.post_tags LIKE '%$query%' 
+            GROUP BY tbl_post.post_id
+            ORDER BY tbl_post.post_date DESC
+            LIMIT 9
+        ");
         return $result;
     }
     

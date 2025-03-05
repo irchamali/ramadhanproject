@@ -164,46 +164,32 @@
             </li>
             
             <?php if (session('role') == 'admin') : ?>
-            <!-- Dokumen == hide -->
-
+            <li class="droplink <?= ($title === "All Document") ? 'active open' : '' ?><?= ($title === "Category of Document") ? 'active open' : '' ?>"><a
+                    href="/<?= session('role'); ?>/document" class="waves-effect waves-button"><span
+                        class="menu-icon icon-link"></span>
+                    <p>Documents</p><span class="arrow"></span>
+                </a>
+                <ul class="sub-menu">
+                    <li class="<?= ($title === "All Document") ? 'active' : '' ?>"><a href="/<?= session('role'); ?>/document">Document</a></li>
+                    <li class="<?= ($title === "Category of Document") ? 'active' : '' ?>"><a href="/<?= session('role'); ?>/docscategory">Category</a></li>
+                </ul>
+            </li>
             <li class="droplink <?= ($title === "Semua Laporan") ? 'active open' : '' ?><?= ($title === "Kategori Laporan") ? 'active open' : '' ?>"><a
                     href="/<?= session('role'); ?>/laporan" class="waves-effect waves-button"><span
                         class="menu-icon icon-eye"></span>
-                    <p>Laporan</p><span class="arrow"></span>
+                    <p>Reports</p><span class="arrow"></span>
                 </a>
                 <ul class="sub-menu">                    
                     <li class="<?= ($title === "Semua Laporan") ? 'active' : '' ?>"><a href="/<?= session('role'); ?>/laporan">Laporan</a></li>
                     <li class="<?= ($title === "Kategori Laporan") ? 'active' : '' ?>"><a href="/<?= session('role'); ?>/lapcategory">Kategori</a></li>                    
                 </ul>
             </li>
-            
-            <li class="<?= ($active == 'inbox') ? 'active' : '' ?>">
-                <a href="/<?= session('role'); ?>/inbox" class="waves-effect waves-button"><span
-                        class="menu-icon icon-envelope"></span>
-                    <p>Inbox</p>
-                </a>
-            </li>
             <?php endif; ?>
-
-            <li class="<?= ($active == 'comment') ? 'active' : '' ?>">
-                <a href="/<?= session('role'); ?>/comment" class="waves-effect waves-button"><span
-                        class="menu-icon icon-bubbles"></span>
-                    <p>Comments</p>
-                </a>
-            </li>
+            
+            
+            
             <?php if (session('role') == 'admin') : ?>
-            <li class="<?= ($active == 'subscriber') ? 'active' : '' ?>">
-                <a href="/<?= session('role'); ?>/subscriber" class="waves-effect waves-button"><span
-                        class="menu-icon icon-users"></span>
-                    <p>Subscribers</p>
-                </a>
-            </li>
-            <!-- <li class="<?= ($active == 'slider') ? 'active' : '' ?>">
-                <a href="/<?= session('role'); ?>/slider" class="waves-effect waves-button"><span
-                        class="menu-icon icon-star"></span>
-                    <p>Slider</p>
-                </a>
-            </li> -->
+            
             <li class="<?= ($active == 'member') ? 'active' : '' ?>">
                 <a href="/<?= session('role'); ?>/member" class="waves-effect waves-button"><span
                         class="menu-icon icon-key"></span>

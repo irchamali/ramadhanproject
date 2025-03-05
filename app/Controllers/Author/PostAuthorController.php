@@ -49,7 +49,7 @@ class PostAuthorController extends BaseController
             'helper_text' => helper('text'),
             'breadcrumbs' => $this->request->getUri()->getSegments(),
 
-            'categories' => $this->categoryModel->findAll(),
+            'categories' => $this->categoryModel->getAllCategoriesWithPosts(),
             'tags' => $this->tagModel->findAll()
         ];
         return view('author/v_add_post', $data);
@@ -162,6 +162,7 @@ class PostAuthorController extends BaseController
         $post = $this->postModel->find($id);
         $post_tags = explode(',', $post['post_tags']);
         $data = [
+            'site' => $this->siteModel->find(1),
             'akun' => $this->akun,
             'title' => 'Edit Post',
             'active' => $this->active,
@@ -170,7 +171,7 @@ class PostAuthorController extends BaseController
             'helper_text' => helper('text'),
             'breadcrumbs' => $this->request->getUri()->getSegments(),
 
-            'categories' => $this->categoryModel->findAll(),
+            'categories' => $this->categoryModel->getAllCategoriesWithPosts(),
             'post' => $post,
             'tags' => $this->tagModel->findAll(),
             'post_tags' => $post_tags
@@ -266,7 +267,9 @@ class PostAuthorController extends BaseController
             $fileFoto->move('assets/backend/images/post/', $namaFotoUpload);
         }
 
-        // Simpan ke database
+        $postViews = $postAwal['post_views']; // Ambil jumlah views sebelumnya
+
+        // Simpan ke database tanpa mengubah views
         $this->postModel->save([
             'post_id' => $post_id,
             'post_title' => $title,
@@ -277,9 +280,10 @@ class PostAuthorController extends BaseController
             'post_tags' => $tags,
             'post_slug' => $slug,
             'post_status' => 1,
-            'post_views' => 0,
+            'post_views' => $postViews, // Gunakan nilai views sebelumnya
             'post_user_id' => session('id')
         ]);
+
         return redirect()->to('/author/post')->with('msg', 'success');
     }
 

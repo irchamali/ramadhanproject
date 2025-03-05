@@ -68,7 +68,7 @@ class PostAdminController extends BaseController
             'helper_text' => helper('text'),
             'breadcrumbs' => $this->request->getUri()->getSegments(),
 
-            'categories' => $this->categoryModel->findAll(),
+            'categories' => $this->categoryModel->getAllCategoriesWithPosts(),
             'tags' => $this->tagModel->findAll()
         ];
         return view('admin/v_add_post', $data);
@@ -190,7 +190,7 @@ class PostAdminController extends BaseController
             'helper_text' => helper('text'),
             'breadcrumbs' => $this->request->getUri()->getSegments(),
 
-            'categories' => $this->categoryModel->findAll(),
+            'categories' => $this->categoryModel->getAllCategoriesWithPosts(),
             'post' => $post,
             'tags' => $this->tagModel->findAll(),
             'post_tags' => $post_tags
@@ -285,8 +285,10 @@ class PostAdminController extends BaseController
             $namaFotoUpload = $fileFoto->getRandomName();
             $fileFoto->move('assets/backend/images/post/', $namaFotoUpload);
         }
-        
-        // Simpan ke database
+
+        $postViews = $postAwal['post_views']; // Ambil jumlah views sebelumnya
+
+        // Simpan ke database tanpa mengubah views
         $this->postModel->save([
             'post_id' => $post_id,
             'post_title' => $title,
@@ -297,9 +299,10 @@ class PostAdminController extends BaseController
             'post_tags' => $tags,
             'post_slug' => $slug,
             'post_status' => 1,
-            'post_views' => 0,
+            'post_views' => $postViews, // Gunakan nilai views sebelumnya
             'post_user_id' => session('id')
         ]);
+        
         return redirect()->to('/admin/post')->with('msg', 'success');
     }
     

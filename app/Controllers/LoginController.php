@@ -4,12 +4,22 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Models\UserModel;
+use App\Models\SiteModel;
 
 class LoginController extends BaseController
 {
+    public function __construct()
+    {
+        $this->siteModel = new SiteModel();
+    }
     public function index()
     {
-        return view('login_view', ['validation' => \Config\Services::validation()]);
+        $data = [
+            'site' => $this->siteModel->find(1),
+            'title' => 'LOGIN',
+            'active' => 'Login'
+        ];
+        return view('login_view', $data, ['validation' => \Config\Services::validation()]);
     }
     public function validasi()
     {

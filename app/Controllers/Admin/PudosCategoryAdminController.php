@@ -3,6 +3,7 @@
 namespace App\Controllers\Admin;
 
 use App\Controllers\BaseController;
+use App\Models\SiteModel;
 use App\Models\PudosCategoryModel;
 use App\Models\CommentModel;
 use App\Models\InboxModel;
@@ -19,13 +20,14 @@ class PudosCategoryAdminController extends BaseController
     {
         $this->inboxModel = new InboxModel();
         $this->commentModel = new CommentModel();
-
+        $this->siteModel = new SiteModel();
         $this->pudoscategoryModel = new PudosCategoryModel();
         $this->active = 'publikasi'; // Atur nilai default atau sesuai kebutuhan Anda
     }
     public function index()
     {
         $data = [
+            'site' => $this->siteModel->find(1),
             'akun' => $this->akun,
             'title' => 'Kategori Publikasi',
             'active' => $this->active,

@@ -3,6 +3,7 @@
 namespace App\Controllers\Author;
 
 use App\Controllers\BaseController;
+use App\Models\SiteModel;
 use App\Models\CategoryModel;
 use App\Models\CommentModel;
 use App\Models\PostModel;
@@ -13,7 +14,7 @@ class PostAuthorController extends BaseController
     public function __construct()
     {
         $this->commentModel = new CommentModel();
-
+        $this->siteModel = new SiteModel();
         $this->postModel = new PostModel();
         $this->categoryModel = new CategoryModel();
         $this->tagModel = new TagModel();
@@ -21,6 +22,7 @@ class PostAuthorController extends BaseController
     public function index()
     {
         $data = [
+            'site' => $this->siteModel->find(1),
             'akun' => $this->akun,
             'title' => 'All Post',
             'active' => $this->active,
@@ -38,6 +40,7 @@ class PostAuthorController extends BaseController
     public function add_new()
     {
         $data = [
+            'site' => $this->siteModel->find(1),
             'akun' => $this->akun,
             'title' => 'Add New Post',
             'active' => $this->active,

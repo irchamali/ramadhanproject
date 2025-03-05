@@ -8,6 +8,7 @@ use App\Models\CommentModel;
 use App\Models\InboxModel;
 use App\Models\PostModel;
 use App\Models\TagModel;
+use App\Models\SiteModel;
 
 class PostAdminController extends BaseController
 {
@@ -15,7 +16,7 @@ class PostAdminController extends BaseController
     {
         $this->inboxModel = new InboxModel();
         $this->commentModel = new CommentModel();
-
+        $this->siteModel = new SiteModel();
         $this->postModel = new PostModel();
         $this->categoryModel = new CategoryModel();
         $this->tagModel = new TagModel();
@@ -27,6 +28,7 @@ class PostAdminController extends BaseController
     public function index()
     {
         $data = [
+            'site' => $this->siteModel->find(1),
             'akun' => $this->akun,
             'title' => 'All Post',
             'active' => $this->active,
@@ -55,6 +57,7 @@ class PostAdminController extends BaseController
     public function add_new()
     {
         $data = [
+            'site' => $this->siteModel->find(1),
             'akun' => $this->akun,
             'title' => 'Add New Post',
             'active' => $this->active,
@@ -176,6 +179,7 @@ class PostAdminController extends BaseController
         $post = $this->postModel->find($id);
         $post_tags = explode(',', $post['post_tags']);
         $data = [
+            'site' => $this->siteModel->find(1),
             'akun' => $this->akun,
             'title' => 'Edit Post',
             'active' => $this->active,

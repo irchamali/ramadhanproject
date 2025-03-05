@@ -3,6 +3,7 @@
 namespace App\Controllers\Admin;
 
 use App\Controllers\BaseController;
+use App\Models\SiteModel;
 use App\Models\CommentModel;
 use App\Models\InboxModel;
 use App\Models\PublikasiModel;
@@ -19,6 +20,7 @@ class PudosAdminController extends BaseController
     public function __construct()
     {
         $this->inboxModel = new InboxModel();
+        $this->siteModel = new SiteModel();
         $this->commentModel = new CommentModel();
         $this->publikasiModel = new PublikasiModel();
         $this->pudoscategoryModel = new PudoscategoryModel();
@@ -28,6 +30,7 @@ class PudosAdminController extends BaseController
     {
 
         $data = [
+            'site' => $this->siteModel->find(1),
             'akun' => $this->akun,
             'title' => 'Semua Publikasi',
             'active' => $this->active,

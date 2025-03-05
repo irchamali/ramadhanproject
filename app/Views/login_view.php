@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>LOGIN | YSGJ</title>
+<title><?= $title; ?> - <?= $site['site_title']; ?></title>
 <!-- Stylesheets -->
 <link href="<?= base_url(''); ?>assets/quran/css/bootstrap.css" rel="stylesheet">
 <link href="<?= base_url(''); ?>assets/quran/css/style.css" rel="stylesheet">
@@ -36,12 +36,12 @@
 	<!-- Register One -->
 	<section class="register-one" style="background-image:url(<?= base_url(''); ?>assets/quran/images/icons/stars.png)">
 		<div class="auto-container">
-			<h3>Welcome to YSGJ👋</h3>
+			<h3>Hello <?= $site['site_title']; ?>👋</h3>
 			<div class="row clearfix text-center">
 
 				<!-- Column -->
 				<div class="auto-container register-one_column col-lg-6 col-md-12 col-sm-12">
-					<h4><a href="/">Home</a> > Login</h4>
+					<p><a href="/">Home</a> > Login</p>
 					<?php if (session()->getFlashData('pesan')) : ?>
                         <div class="alert alert-warning" role="alert">
                         <?= session()->getFlashData('pesan') ?>
@@ -72,6 +72,7 @@
 							</form>
 						</div>
 					</div>
+					
 				</div>
 
 			</div>

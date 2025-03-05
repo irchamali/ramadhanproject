@@ -16,7 +16,6 @@ class SettingAdminController extends BaseController
     {
         $this->inboxModel = new InboxModel();
         $this->commentModel = new CommentModel();
-
         $this->siteModel = new SiteModel();
         $this->homeModel = new HomeModel();
         $this->aboutModel = new AboutModel();
@@ -25,6 +24,7 @@ class SettingAdminController extends BaseController
     public function web()
     {
         $data = [
+            'site' => $this->siteModel->find(1),
             'akun' => $this->akun,
             'title' => 'Website Setting',
             'active' => $this->active,
@@ -205,6 +205,7 @@ class SettingAdminController extends BaseController
     public function home()
     {
         $data = [
+            'site' => $this->siteModel->find(1),
             'akun' => $this->akun,
             'title' => 'Home Setting',
             'active' => $this->active,
@@ -323,6 +324,7 @@ class SettingAdminController extends BaseController
     public function about()
     {
         $data = [
+            'site' => $this->siteModel->find(1),
             'akun' => $this->akun,
             'title' => 'About Setting',
             'active' => $this->active,
@@ -423,6 +425,7 @@ class SettingAdminController extends BaseController
     public function profile()
     {
         $data = [
+            'site' => $this->siteModel->find(1),
             'akun' => $this->akun,
             'title' => 'Profile Setting',
             'active' => $this->active,

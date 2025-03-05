@@ -3,6 +3,7 @@
 namespace App\Controllers\Author;
 
 use App\Controllers\BaseController;
+use App\Models\SiteModel;
 use App\Models\CategoryModel;
 use App\Models\CommentModel;
 use App\Models\InboxModel;
@@ -12,12 +13,13 @@ class CategoryAuthorController extends BaseController
     public function __construct()
     {
         $this->commentModel = new CommentModel();
-
+        $this->siteModel = new SiteModel();
         $this->categoryModel = new CategoryModel();
     }
     public function index()
     {
         $data = [
+            'site' => $this->siteModel->find(1),
             'akun' => $this->akun,
             'title' => 'All Category',
             'active' => $this->active,
@@ -25,8 +27,8 @@ class CategoryAuthorController extends BaseController
             'comments' => $this->commentModel->getCommentsAuthor(session('id'))->where('comment_status', 0)->get()->getResultArray(),
             'helper_text' => helper('text'),
             'breadcrumbs' => $this->request->getUri()->getSegments(),
-
-            'categories' => $this->categoryModel->findAll()
+            // 'categories' => $this->categoryModel->findAll()
+            'categories' => $this->categoryModel->getAllCategoriesWithPosts()
         ];
 
         return view('author/v_category', $data);

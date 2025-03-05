@@ -3,6 +3,7 @@
 namespace App\Controllers\Author;
 
 use App\Controllers\BaseController;
+use App\Models\SiteModel;
 use App\Models\CommentModel;
 use App\Models\VisitorModel;
 
@@ -11,7 +12,7 @@ class AuthorController extends BaseController
     public function __construct()
     {
         $this->commentModel = new CommentModel();
-
+        $this->siteModel = new SiteModel();
         $this->visitorModel = new VisitorModel();
     }
     public function index()
@@ -85,6 +86,7 @@ class AuthorController extends BaseController
         }
 
         $data = [
+            'site' => $this->siteModel->find(1),
             'akun' => $this->akun,
             'title' => 'Dashboard',
             'active' => $this->active,

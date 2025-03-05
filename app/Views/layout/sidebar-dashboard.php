@@ -6,7 +6,7 @@
             </a>
         </div>
         <div class="logo-box">
-            <a href="/<?= session('role'); ?>" class="logo-text"><span>YSGJ</span></a>
+            <a href="/<?= session('role'); ?>" class="logo-text"><span><?= $site['site_title']; ?></span></a>
         </div><!-- Logo Box -->
         <div class="topmenu-outer">
             <div class="top-menu">

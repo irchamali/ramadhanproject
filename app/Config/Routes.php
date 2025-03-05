@@ -53,8 +53,8 @@ $routes->get('search', 'PostController::search');
 $routes->get('post', 'PostController::index');
 $routes->get('post/(:segment)', 'PostController::index/$1');
 $routes->post('post/send_comment', 'PostController::send_comment');
-// $routes->get('author/(:num)', 'PostController::author/$1');
-$routes->get('author/(:segment)', 'PostController::author/$1');
+// session author on frontend
+$routes->get('authors/(:segment)', 'PostController::author/$1');
 
 // CategoryController
 $routes->get('tag/(:segment)', 'TagController::index/$1');

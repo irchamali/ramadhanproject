@@ -3,6 +3,7 @@
 namespace App\Controllers\Admin;
 
 use App\Controllers\BaseController;
+use App\Models\SiteModel;
 use App\Models\CommentModel;
 use App\Models\InboxModel;
 use App\Models\VisitorModel;
@@ -13,7 +14,7 @@ class AdminController extends BaseController
     {
         $this->inboxModel = new InboxModel();
         $this->commentModel = new CommentModel();
-
+        $this->siteModel = new SiteModel();
         $this->visitorModel = new VisitorModel();
     }
     public function index()
@@ -87,6 +88,7 @@ class AdminController extends BaseController
         }
 
         $data = [
+            'site' => $this->siteModel->find(1),
             'akun' => $this->akun,
             'title' => 'Dashboard',
             'active' => $this->active,

@@ -5,6 +5,7 @@ namespace App\Controllers\Admin;
 use App\Controllers\BaseController;
 use App\Models\SiteModel;
 use App\Models\CategoryModel;
+use App\Models\CategoryAdminModel;
 use App\Models\CommentModel;
 use App\Models\InboxModel;
 
@@ -16,6 +17,7 @@ class CategoryAdminController extends BaseController
         $this->commentModel = new CommentModel();
         $this->siteModel = new SiteModel();
         $this->categoryModel = new CategoryModel();
+        $this->categoryAdminModel = new CategoryAdminModel();
     }
     public function index()
     {
@@ -31,7 +33,7 @@ class CategoryAdminController extends BaseController
             'helper_text' => helper('text'),
             'breadcrumbs' => $this->request->getUri()->getSegments(),
 
-            'categories' => $this->categoryModel->getAllCategoriesWithPosts()
+            'categories' => $this->categoryAdminModel->getAllCategoriesWithPosts()
         ];
 
         return view('admin/v_category', $data);
@@ -42,31 +44,34 @@ class CategoryAdminController extends BaseController
         $string   = preg_replace('/[^a-zA-Z0-9 \&%|{.}=,?!*()"-_+$@;<>\']/', '', $category);
         $trim     = trim($string);
         $slug     = strtolower(str_replace(" ", "-", $trim));
-        $this->categoryModel->save([
+        $this->categoryAdminModel->save([
             'category_name' => $category,
             'category_slug' => $slug
         ]);
 
         return redirect()->to('admin/category')->with('msg', 'success');
     }
+
     public function edit()
     {
-        $id          = $this->request->getPost('kode');
+        $id       = $this->request->getPost('kode');
         $category = strip_tags(htmlspecialchars($this->request->getPost('category2'), ENT_QUOTES));
         $string   = preg_replace('/[^a-zA-Z0-9 \&%|{.}=,?!*()"-_+$@;<>\']/', '', $category);
         $trim     = trim($string);
         $slug     = strtolower(str_replace(" ", "-", $trim));
-        $this->categoryModel->save([
+        $this->categoryAdminModel->save([
             'category_id' => $id,
             'category_name' => $category,
             'category_slug' => $slug
         ]);
         return redirect()->to('admin/category')->with('msg', 'info');
     }
+    
+
     public function delete()
     {
         $id = $this->request->getPost('id');
-        $this->categoryModel->delete($id);
+        $this->categoryAdminModel->delete($id);
 
         return redirect()->to('admin/category')->with('msg', 'success-delete');
     }

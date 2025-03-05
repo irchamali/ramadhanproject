@@ -55,6 +55,7 @@
                                                 <th>No</th>
                                                 <th>Category</th>
                                                 <th>Slug</th>
+                                                <th>Total Post</th>
                                                 <th style="text-align: center;">Action</th>
                                             </tr>
                                         </thead>
@@ -66,8 +67,9 @@
                                             ?>
                                                 <tr>
                                                     <td><?= $no; ?></td>
-                                                    <td><?= $row['category_name']; ?></td>
-                                                    <td><?= $row['category_slug']; ?></td>
+                                                    <td><?= esc($row['category_name']); ?></td>
+                                                    <td><?= esc($row['category_slug']); ?></td>
+                                                    <td><?= esc($row['total_posts']); ?></td> <!-- Menampilkan total post -->
                                                     <td style="text-align: center;">
                                                         <a href="javascript:void(0);" class="btn btn-xs btn-edit" data-id="<?= $row['category_id']; ?>" data-category="<?= $row['category_name']; ?>"><span class="fa fa-pencil"></span></a>
                                                         <a href="javascript:void(0);" class="btn btn-xs btn-delete" data-id="<?= $row['category_id']; ?>"><span class="fa fa-trash"></span></a>

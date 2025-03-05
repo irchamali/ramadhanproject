@@ -72,7 +72,7 @@
                                                     <td><?= $row['category_slug']; ?></td>
                                                     <td style="text-align: center;">
                                                         <a href="javascript:void(0);" class="btn btn-xs btn-edit" data-id="<?= $row['category_id']; ?>" data-category="<?= $row['category_name']; ?>"><span class="fa fa-pencil"></span></a>
-                                                        <a href="javascript:void(0);" class="btn btn-xs btn-delete" data-id="<?= $row['category_id']; ?>"><span class="fa fa-trash"></span></a>
+                                                        <!-- <a href="javascript:void(0);" class="btn btn-xs btn-delete" data-id="<?= $row['category_id']; ?>"><span class="fa fa-trash"></span></a> -->
                                                     </td>
                                                 </tr>
                                             <?php endforeach; ?>

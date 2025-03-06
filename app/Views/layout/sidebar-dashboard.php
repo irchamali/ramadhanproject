@@ -164,6 +164,26 @@
             </li>
             
             <?php if (session('role') == 'admin') : ?>
+            <!-- Programs menu -->
+            <li class="droplink <?= in_array($title, ["All Program", "Add New Program", "All Program Category"]) ? 'active open' : '' ?>">
+                <a href="#" class="waves-effect waves-button">
+                    <span class="menu-icon icon-pin"></span>
+                    <p>Programs</p>
+                    <span class="arrow"></span>
+                </a>
+                <ul class="sub-menu">
+                    <li class="<?= ($title === "All Program") ? 'active' : '' ?>">
+                        <a href="/<?= session('role'); ?>/program">All Program</a>
+                    </li>
+                    <li class="<?= ($title === "Add New Program") ? 'active' : '' ?>">
+                        <a href="/<?= session('role'); ?>/program/add_new">Add New</a>
+                    </li>
+                    <li class="<?= ($title === "Program Categories") ? 'active' : '' ?>">
+                        <a href="/<?= session('role'); ?>/procat">Category</a>
+                    </li>
+                </ul>
+            </li>
+
             <li class="droplink <?= ($title === "All Document") ? 'active open' : '' ?><?= ($title === "Category of Document") ? 'active open' : '' ?>"><a
                     href="/<?= session('role'); ?>/document" class="waves-effect waves-button"><span
                         class="menu-icon icon-link"></span>

@@ -112,6 +112,23 @@ $routes->get('logout', 'LoginController::logout');
 // Admin Routes
 $routes->group('admin', ['filter' => 'authadmin'], static function ($routes) {
     $routes->get('', 'Admin\AdminController::index');
+    // Program Route
+    $routes->group('program', static function ($routes) {
+        $routes->get('', 'Admin\ProgramAdminController::index');
+        $routes->post('', 'Admin\ProgramAdminController::publish');
+        $routes->delete('', 'Admin\ProgramAdminController::delete');
+        $routes->put('', 'Admin\ProgramAdminController::update');
+        $routes->get('add_new', 'Admin\ProgramAdminController::add_new');
+        $routes->get('(:num)/edit', 'Admin\ProgramAdminController::edit/$1');
+        $routes->get('toggle_status/(:num)', 'Admin\ProgramAdminController::toggle_status/$1'); // toggle
+    });
+    // ProgramCategory Route
+    $routes->group('procat', static function ($routes) {
+        $routes->get('', 'Admin\ProgramCategoryController::index');
+        $routes->post('', 'Admin\ProgramCategoryController::save');
+        $routes->put('', 'Admin\ProgramCategoryController::edit');
+        $routes->delete('', 'Admin\ProgramCategoryController::delete');
+    });
     // Post Route
     $routes->group('post', static function ($routes) {
         $routes->get('', 'Admin\PostAdminController::index');

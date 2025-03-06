@@ -165,7 +165,7 @@
             
             <?php if (session('role') == 'admin') : ?>
             <!-- Programs menu -->
-            <li class="droplink <?= in_array($title, ["All Program", "Add New Program", "All Program Category"]) ? 'active open' : '' ?>">
+            <li class="droplink <?= in_array($title, ["All Program", "Add New Program", "Program Categories"]) ? 'active open' : '' ?>">
                 <a href="#" class="waves-effect waves-button">
                     <span class="menu-icon icon-pin"></span>
                     <p>Programs</p>
@@ -176,10 +176,10 @@
                         <a href="/<?= session('role'); ?>/program">All Program</a>
                     </li>
                     <li class="<?= ($title === "Add New Program") ? 'active' : '' ?>">
-                        <a href="/<?= session('role'); ?>/program/add_new">Add New</a>
+                        <a href="/<?= session('role'); ?>/program/add_new">Add New Program</a>
                     </li>
                     <li class="<?= ($title === "Program Categories") ? 'active' : '' ?>">
-                        <a href="/<?= session('role'); ?>/procat">Category</a>
+                        <a href="/<?= session('role'); ?>/procat">Program Categories</a>
                     </li>
                 </ul>
             </li>

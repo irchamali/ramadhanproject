@@ -156,76 +156,6 @@ class ProgramAdminController extends BaseController
         return redirect()->to('/admin/program')->with('msg', 'success');
     }
 
-
-    public function save()
-    {
-        $title = $this->request->getPost('title');
-        $slug = strtolower(str_replace(" ", "-", trim($title)));
-        $desc = $this->request->getPost('description');
-        $date = $this->request->getPost('date');
-        $status = $this->request->getPost('status');
-        $category_id = $this->request->getPost('category_id');
-
-        // Upload image
-        $image = $this->request->getFile('program_image');
-        $imageName = 'default.jpg'; // Default image
-        
-        if ($image->isValid() && !$image->hasMoved()) {
-            $imageName = $image->getRandomName();
-            $image->move('uploads/programs/', $imageName);
-        }
-
-        $this->programModel->save([
-            'program_title' => $title,
-            'program_slug' => $slug,
-            'program_description' => $desc,
-            'program_date' => $date,
-            'program_status' => $status,
-            'category_id' => $category_id,
-            'program_image' => $imageName
-        ]);
-
-        return redirect()->to('/admin/program')->with('msg', 'success');
-    }
-
-    public function edit()
-    {
-        $id = $this->request->getPost('id');
-        $title = $this->request->getPost('title');
-        $slug = strtolower(str_replace(" ", "-", trim($title)));
-        $desc = $this->request->getPost('description');
-        $date = $this->request->getPost('date');
-        $status = $this->request->getPost('status');
-        $category_id = $this->request->getPost('category_id');
-
-        $program = $this->programModel->find($id);
-        $image = $this->request->getFile('program_image');
-
-        if ($image->isValid() && !$image->hasMoved()) {
-            $imageName = $image->getRandomName();
-            $image->move('uploads/programs/', $imageName);
-
-            // Hapus file lama jika bukan default
-            if ($program['program_image'] !== 'default.jpg' && file_exists('uploads/programs/' . $program['program_image'])) {
-                unlink('uploads/programs/' . $program['program_image']);
-            }
-        } else {
-            $imageName = $program['program_image'];
-        }
-
-        $this->programModel->update($id, [
-            'program_title' => $title,
-            'program_slug' => $slug,
-            'program_description' => $desc,
-            'program_date' => $date,
-            'program_status' => $status,
-            'category_id' => $category_id,
-            'program_image' => $imageName
-        ]);
-
-        return redirect()->to('/admin/program')->with('msg', 'info');
-    }
-
     public function delete()
     {
         $program_id = $this->request->getPost('id');
@@ -245,6 +175,131 @@ class ProgramAdminController extends BaseController
         }
 
         return redirect()->to('/admin/program')->with('msg', 'Status updated');
+    }
+
+    public function edit($id)
+    {
+        $program = $this->programModel->find($id);
+        $data = [
+            'site' => $this->siteModel->find(1),
+            'akun' => $this->akun,
+            'title' => 'Edit Program',
+            'active' => $this->active,
+            'total_inbox' => $this->inboxModel->where('inbox_status', 0)->get()->getNumRows(),
+            'inboxs' => $this->inboxModel->where('inbox_status', 0)->findAll(),
+            'total_comment' => $this->commentModel->where('comment_status', 0)->get()->getNumRows(),
+            'comments' => $this->commentModel->where('comment_status', 0)->findAll(),
+            'helper_text' => helper('text'),
+            'breadcrumbs' => $this->request->getUri()->getSegments(),
+
+            'categories' => $this->categoryModel->getAllCategoriesWithPrograms(),
+            'program' => $program
+        ];
+        return view('admin/v_program_edit', $data);
+    }
+    
+    public function update()
+    {
+        $program_id = $this->request->getPost('program_id');
+        // Validasi
+        if (!$this->validate([
+            'program_title' => [
+                'rules' => 'required|alpha_numeric_space',
+                'errors' => [
+                    'required' => 'Kolom {field} harus diisi!',
+                    'alpha_numeric_space' => 'inputan tidak boleh mengandung karakter aneh'
+                ]
+            ],
+            'slug' => [
+                'rules' => 'required|alpha_dash',
+                'errors' => [
+                    'required' => 'Kolom {field} harus diisi!',
+                    'alpha_dash' => 'inputan harus berupa alphaber dan strip'
+                ]
+            ],
+            'description' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Kolom {field} harus diisi!'
+                ]
+            ],
+            'program_date' => [
+                'rules' => 'required|valid_date[Y-m-d]',
+                'errors' => [
+                    'required' => 'Kolom {field} harus diisi!',
+                    'valid_date' => 'Format tanggal tidak valid (YYYY-MM-DD)'
+                ]
+            ],
+            'filefoto' => [
+                'rules' => 'max_size[filefoto,2048]|is_image[filefoto]|mime_in[filefoto,image/jpg,image/jpeg,image/png]',
+                'errors' => [
+                    'max_size' => 'Ukuran gambar tidak boleh lebih dari 2MB',
+                    'is_image' => 'Yang anda pilih bukan gambar',
+                    'mime_in' => 'Yang anda pilih bukan gambar'
+                ]
+            ],
+            'category' => [
+                'rules' => 'required|numeric',
+                'errors' => [
+                    'required' => 'Kolom {field} harus diisi!',
+                    'numeric' => 'inputan harus angka'
+                ]
+            ]
+        ])) {
+            return redirect()->to("/admin/program/$program_id/edit")->withInput()->with('peringatan', 'Data gagal disimpan dikarenakan ada penginputan yang tidak sesuai. silakan coba lagi!');
+        }
+        
+        // Ambil data dari input form
+        $programTitle = strip_tags(htmlspecialchars($this->request->getPost('program_title'), ENT_QUOTES));
+        $description = $this->request->getPost('description');
+        $programDate = strip_tags(htmlspecialchars($this->request->getPost('program_date'), ENT_QUOTES));
+        $category = strip_tags(htmlspecialchars($this->request->getPost('category'), ENT_QUOTES));
+        $slug = strip_tags(htmlspecialchars($this->request->getPost('slug'), ENT_QUOTES));
+
+        // Jika slug sudah ada, tambahkan angka unik
+        if ($this->programModel->where('program_slug', $slug)->countAllResults() > 0) {
+            $uniqueNum = rand(1, 999);
+            $slug = $slug . '-' . $uniqueNum;
+        }
+        
+        // Cek foto
+        $programAwal = $this->programModel->find($program_id);
+        $fotoAwal = $programAwal['program_image'];
+        $fileFoto = $this->request->getFile('filefoto');
+
+        // Jika tidak ada file yang diunggah
+        if ($fileFoto->getError() == UPLOAD_ERR_NO_FILE) {
+            $namaFotoUpload = $fotoAwal; // Gunakan foto lama
+        } else {
+            // Hapus foto lama jika bukan foto default dan bukan sama dengan foto baru
+            if ($fotoAwal != 'default-program.png' && $fotoAwal != $fileFoto->getName()) {
+                $pathToFotoAwal = 'assets/backend/images/programs/' . $fotoAwal;
+                if (file_exists($pathToFotoAwal) && is_file($pathToFotoAwal)) {
+                    unlink($pathToFotoAwal); // Hapus hanya jika itu adalah file, bukan direktori
+                }
+            }
+
+            // Simpan gambar baru
+            $namaFotoUpload = $fileFoto->getRandomName();
+            $fileFoto->move('assets/backend/images/programs/', $namaFotoUpload);
+        }
+
+        // $postViews = $postAwal['post_views']; // Ambil jumlah views sebelumnya
+
+        // Simpan ke database
+        $this->programModel->save([
+            'program_id' => $program_id,
+            'program_title' => $programTitle,
+            'program_description' => $description,
+            'program_image' => $namaFotoUpload,
+            'program_date' => $programDate, // Menyimpan tanggal program
+            'category_id' => $category,
+            'program_slug' => $slug,
+            'created_by' => session('id'),
+            'program_status' => 1 // 1 = active
+        ]);
+        
+        return redirect()->to('/admin/program')->with('msg', 'success');
     }
     
 }

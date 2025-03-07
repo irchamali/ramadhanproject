@@ -74,7 +74,7 @@
                                                     <td><?= esc($program['program_date']); ?></td>
                                                     <td><?= esc($program['category_name']); ?></td>
                                                     <td>
-                                                        <img src="<?= base_url('assests/backend/images/programs/' . $program['program_image']); ?>" alt="Program Image" width="50">
+                                                        <img src="<?= base_url('assets/backend/images/programs/' . $program['program_image']); ?>" alt="Program Image" width="50">
                                                     </td>
                                                     <td>
                                                         <?php if ($program['program_status'] === 'active') : ?>

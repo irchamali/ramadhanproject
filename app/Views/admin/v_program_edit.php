@@ -24,8 +24,7 @@
     <link href="/assets/backend/plugins/slidepushmenus/css/component.css" rel="stylesheet" type="text/css" />
     <link href="/assets/backend/plugins/datatables/css/jquery.datatables.min.css" rel="stylesheet" type="text/css" />
     <link href="/assets/backend/plugins/datatables/css/jquery.datatables_themeroller.css" rel="stylesheet" type="text/css" />
-    <link href="/assets/backend/css/dropify.min.css" rel="stylesheet" type="text/css">
-    <!-- <link href="/assets/backend/plugins/summernote-master/summernote.css" rel="stylesheet" type="text/css" /> -->
+    <link href="/assets/backend/css/dropify.min.css" rel="stylesheet" type="text/css" media="screen,projection">
     <link href="/assets/backend/plugins/sum/summernote-lite.min.css" rel="stylesheet">
     <!-- Theme Styles -->
     <link href="/assets/backend/css/modern.min.css" rel="stylesheet" type="text/css" />
@@ -37,14 +36,13 @@
 
 </head>
 
-<body class="page-header-fixed compact-menu pace-done page-sidebar-fixed">
+<body class="page-header-fixed  compact-menu  pace-done page-sidebar-fixed">
     <div class="overlay"></div>
     <main class="page-content content-wrap">
         <?= $this->include('layout/sidebar-dashboard'); ?>
         <div class="page-inner">
             <?= $this->include('layout/title-dashboard'); ?>
-            <!-- Status -->
-            <!-- Main Content -->
+            <!-- Session Message -->
             <?php if (session()->getFlashData('pesan') || session()->getFlashData('peringatan')) : ?>
                 <div class="alert alert-<?= session()->getFlashData('pesan') ? "success" : "warning" ?>" role="alert" style="padding: 1rem 3rem;">
                     <?= session()->getFlashdata('pesan') ?? session()->getFlashdata('peringatan') ?>
@@ -53,20 +51,24 @@
             <div id="main-wrapper">
                 <div class="row">
                     <form action="/<?= session('role'); ?>/program" method="POST" enctype="multipart/form-data">
+                        <input type="hidden" name="_method" value="PUT">
                         <div class="col-md-8">
                             <div class="panel panel-white">
+
                                 <div class="panel-body">
+
                                     <div class="form-group">
-                                        <label>Program Name</label>
-                                        <input type="text" name="program_title" class="form-control title" placeholder="Title" required>
+                                        <label>Title</label>
+                                        <input type="text" name="program_title" value="<?= $program['program_title']; ?>" class="form-control" placeholder="Title" required>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" name="slug" class="form-control slug" placeholder="contoh-slug-yang-benar-seperti-ini" style="background-color: #F8F8F8;outline-color: none;border:0;color:blue;" required>
+                                        <input type="text" name="slug" class="form-control" value="<?= $program['program_slug']; ?>" placeholder="Permalink" style="background-color: #F8F8F8;outline-color: none;border:0;color:blue;" required>
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label">Description</label>
-                                        <textarea name="description" id="summernote" required></textarea>
+                                        <textarea name="description" id="summernote1"><?= $program['program_description']; ?></textarea>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
@@ -76,50 +78,50 @@
                                 <div class="panel-body">
                                     <div class="form-group">
                                         <label>Image</label>
-                                        <input type="file" name="filefoto" class="dropify" data-height="190">
+                                        <input type="file" name="filefoto" class="dropify" data-height="190" data-default-file="/assets/backend/images/programs/<?= $program['program_image']; ?>">
                                     </div>
                                     <div class="form-group">
                                         <label>Program Date</label>
-                                        <input type="date" name="program_date" class="form-control" placeholder="Pilih tanggal" required>
+                                        <input type="date" name="program_date" value="<?= $program['program_date']; ?>" class="form-control" placeholder="Tanggal acara" required>
                                     </div>
                                     <div class="form-group">
                                         <label>Category</label>
                                         <select class="form-control" name="category" required>
-                                            <option value="">-Select Option-</option>
                                             <?php foreach ($categories as $row) : ?>
-                                                <option value="<?= $row['category_id']; ?>"><?= $row['category_name']; ?></option>
+                                                <?php if ($program['category_id'] == $row['category_id']) : ?>
+                                                    <option value="<?= $row['category_id']; ?>" selected><?= $row['category_name']; ?></option>
+                                                <?php else : ?>
+                                                    <option value="<?= $row['category_id']; ?>"><?= $row['category_name']; ?></option>
+                                                <?php endif; ?>
                                             <?php endforeach; ?>
                                         </select>
                                     </div>
-                                    
-                                    <div class="btn-group btn-group-justified" role="group">
-                                        <button type="submit" class="btn btn-primary btn-lg" style="width:100%"><span class="icon-cursor"></span> PUBLISH</button>
+                                    <div class="form-group">
+                                        <input type="hidden" name="program_id" value="<?= $program['program_id']; ?>" required>
+                                        <button type="submit" class="btn btn-primary btn-lg" style="width:100%"><span class="icon-cursor"></span> UPDATE</button>
                                     </div>
+                                    <div class="form-group">
+                                        <a href="/<?= session('role'); ?>/program" class="btn btn-danger m-b-lg" style="width:100%"><span class="icon-user"></span> CANCEL</a>
+                                    </div>
+                                    
                                 </div>
                             </div>
 
-                            <!-- <div class="panel panel-white">
-                                <div class="panel-body">
-                                    <div class="form-group">
-                                        <label>Meta Description</label>
-                                        <textarea name="description" cols="6" rows="6" class="form-control" placeholder="Meta Description"></textarea>
-                                    </div>
+                            <!-- description meta -->
 
-                                </div>
-                            </div> -->
                         </div>
+
                     </form>
                 </div><!-- Row -->
-            </div>
-            <!-- End Main Content -->
-
+            </div><!-- Main Wrapper -->
             <div class="page-footer">
                 <p class="no-s"><?= date('Y'); ?> &copy; Powered by Ircham Ali.</p>
             </div>
-        </div>
-    </main>
+        </div><!-- Page Inner -->
+    </main><!-- Page Content -->
 
     <!-- Javascripts -->
+    <!-- jquery jquery-3.4.1.slim.min.js gak cocok untuk dropify lama, jd pakai yg 2.1.4 aja -->
     <script src="/assets/backend/plugins/jquery/jquery-2.1.4.min.js"></script>
     <script src="/assets/backend/plugins/jquery-ui/jquery-ui.min.js"></script>
     <script src="/assets/backend/plugins/pace-master/pace.min.js"></script>
@@ -137,10 +139,11 @@
     <script src="/assets/backend/plugins/datatables/js/jquery.datatables.min.js"></script>
     <script src="/assets/backend/js/modern.min.js"></script>
     <script src="/assets/backend/js/dropify.min.js"></script>
+
     <script src="/assets/backend/plugins/sum/summernote-lite.min.js"></script>
     <script>
         $(document).ready(function() {
-            $('#summernote').summernote({
+            $('#summernote1').summernote({
                 height: 400,
                 toolbar: [
                     ['style', ['style']],
@@ -156,6 +159,7 @@
                 onImageUpload: function(files, editor, welEditable) {
                     sendFile(files[0], editor, welEditable);
                 }
+
             });
 
             function sendFile(file, editor, welEditable) {
@@ -183,14 +187,9 @@
                 }
             });
 
-            $('.title').keyup(function() {
-                var title = $(this).val().toLowerCase().replace(/[&\/\\#^, +()$~%.'":*?<>{}]/g, '-');
-                $('.slug').val(title);
-            });
-
-
         });
     </script>
+
 </body>
 
 </html>

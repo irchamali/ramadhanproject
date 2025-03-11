@@ -57,3 +57,20 @@ WHERE `tbl_team`.`team_id` IN :tbl_team.team_id:', [...], false)
 11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
 12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
 13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+CRITICAL - 2025-03-11 17:52:26 --> Class 'App\Models\PartnerAdminModel' not found
+in APPPATH\Controllers\Admin\PartnerCategoryController.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\PartnerCategoryController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+CRITICAL - 2025-03-11 17:54:27 --> Invalid file: "admin/v_partner_categories.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/v_partner_categories.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/v_partner_categories', [], true)
+ 3 APPPATH\Controllers\Admin\PartnerCategoryController.php(50): view('admin/v_partner_categories', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin\PartnerCategoryController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\PartnerCategoryController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')

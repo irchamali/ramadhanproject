@@ -183,6 +183,22 @@
                     </li>
                 </ul>
             </li>
+            <!-- Partners menu -->
+            <li class="droplink <?= in_array($title, ["All Partner", "Partner Categories"]) ? 'active open' : '' ?>">
+                <a href="#" class="waves-effect waves-button">
+                    <span class="menu-icon icon-pin"></span>
+                    <p>Partners</p>
+                    <span class="arrow"></span>
+                </a>
+                <ul class="sub-menu">
+                    <li class="<?= ($title === "All Partner") ? 'active' : '' ?>">
+                        <a href="/<?= session('role'); ?>/partner">All Partner</a>
+                    </li>
+                    <li class="<?= ($title === "Partner Categories") ? 'active' : '' ?>">
+                        <a href="/<?= session('role'); ?>/partcat">Partner Categories</a>
+                    </li>
+                </ul>
+            </li>
 
             <li class="droplink <?= ($title === "All Document") ? 'active open' : '' ?><?= ($title === "Category of Document") ? 'active open' : '' ?>"><a
                     href="/<?= session('role'); ?>/document" class="waves-effect waves-button"><span

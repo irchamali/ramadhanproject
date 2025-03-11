@@ -1,0 +1,59 @@
+CRITICAL - 2025-03-11 02:06:16 --> Undefined index: team_jabatan
+in APPPATH\Views\admin\v_team.php on line 85.
+ 1 APPPATH\Views\admin\v_team.php(85): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: team_jabatan', 'D:\\Codeigniter\\ramadhanproject\\app\\Views\\admin\\v_team.php', 85, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Codeigniter\\ramadhanproject\\app\\Views\\admin\\v_team.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/v_team', [], true)
+ 5 APPPATH\Controllers\Admin\TeamAdminController.php(37): view('admin/v_team', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin\TeamAdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\TeamAdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+CRITICAL - 2025-03-11 02:07:29 --> Undefined index: team_jabatan
+in APPPATH\Views\admin\v_team.php on line 199.
+ 1 APPPATH\Views\admin\v_team.php(199): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: team_jabatan', 'D:\\Codeigniter\\ramadhanproject\\app\\Views\\admin\\v_team.php', 199, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Codeigniter\\ramadhanproject\\app\\Views\\admin\\v_team.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/v_team', [], true)
+ 5 APPPATH\Controllers\Admin\TeamAdminController.php(37): view('admin/v_team', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin\TeamAdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\TeamAdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+ERROR - 2025-03-11 02:26:55 --> mysqli_sql_exception: Unknown column 'team_jabatan' in 'field list' in D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tbl_tea...', 0)
+#1 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_tea...')
+#2 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_tea...')
+#3 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_tea...', Array, false)
+#4 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 D:\Codeigniter\ramadhanproject\app\Controllers\Admin\TeamAdminController.php(196): CodeIgniter\Model->update('10', Array)
+#8 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Admin\TeamAdminController->update()
+#9 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\TeamAdminController))
+#10 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Codeigniter\ramadhanproject\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\...')
+#13 {main}
+CRITICAL - 2025-03-11 02:26:55 --> Unknown column 'team_jabatan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tbl_team` SET `team_name` = \'Syahrudin C Asho x\', `team_jabatan` = \'Departemen I\', `team_twitter` = \'https://twitter.com/\', `team_facebook` = \'https://facebook.com/\', `team_instagram` = \'https://instagram.com/\', `team_linked` = \'https://linkedin.com/\', `team_image` = \'50e24eaea0e4569ece68d2bc190455f7.jpg\'
+WHERE `tbl_team`.`team_id` IN (\'10\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_team` SET `team_name` = \'Syahrudin C Asho x\', `team_jabatan` = \'Departemen I\', `team_twitter` = \'https://twitter.com/\', `team_facebook` = \'https://facebook.com/\', `team_instagram` = \'https://instagram.com/\', `team_linked` = \'https://linkedin.com/\', `team_image` = \'50e24eaea0e4569ece68d2bc190455f7.jpg\'
+WHERE `tbl_team`.`team_id` IN (\'10\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_team` SET `team_name` = \'Syahrudin C Asho x\', `team_jabatan` = \'Departemen I\', `team_twitter` = \'https://twitter.com/\', `team_facebook` = \'https://facebook.com/\', `team_instagram` = \'https://instagram.com/\', `team_linked` = \'https://linkedin.com/\', `team_image` = \'50e24eaea0e4569ece68d2bc190455f7.jpg\'
+WHERE `tbl_team`.`team_id` IN (\'10\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_team` SET `team_name` = :team_name:, `team_jabatan` = :team_jabatan:, `team_twitter` = :team_twitter:, `team_facebook` = :team_facebook:, `team_instagram` = :team_instagram:, `team_linked` = :team_linked:, `team_image` = :team_image:
+WHERE `tbl_team`.`team_id` IN :tbl_team.team_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\Admin\TeamAdminController.php(196): CodeIgniter\Model->update('10', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin\TeamAdminController->update()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\TeamAdminController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')

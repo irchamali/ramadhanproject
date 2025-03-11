@@ -107,7 +107,7 @@ class TeamAdminController extends BaseController
         // Simpan ke database
         $this->teamModel->save([
             'team_name' => $nama,
-            'team_jabatan' => $jabatan,
+            'team_org' => $jabatan,
             'team_twitter' => $twitter,
             'team_facebook' => $facebook,
             'team_instagram' => $instagram,
@@ -188,7 +188,7 @@ class TeamAdminController extends BaseController
         // Simpan ke database
         $this->teamModel->update($team_id, [
             'team_name' => $nama,
-            'team_jabatan' => $jabatan,
+            'team_org' => $jabatan,
             'team_twitter' => $twitter,
             'team_facebook' => $facebook,
             'team_instagram' => $instagram,

@@ -142,13 +142,13 @@
                     <p>Settings</p><span class="arrow"></span>
                 </a>
                 <ul class="sub-menu">
-                    <li class="<?= ($title === "Profile Setting") ? 'active' : '' ?>"><a href="/<?= session('role'); ?>/setting/profile">My Profile</a></li>
                     <?php if (session('role') == 'admin') : ?>
                     <li class="<?= ($title === "Website Setting") ? 'active' : '' ?>"><a href="/<?= session('role'); ?>/setting/web">Website</a></li>
                     <li class="<?= ($title === "Home Setting") ? 'active' : '' ?>"><a href="/<?= session('role'); ?>/setting/home">Home</a></li>
                     <li class="<?= ($title === "All Slider") ? 'active' : '' ?>"><a href="/<?= session('role'); ?>/slider">Slider</a></li>
                     <li class="<?= ($title === "About Setting") ? 'active' : '' ?>"><a href="/<?= session('role'); ?>/setting/about">About</a></li>
                     <?php endif; ?>
+                    <li class="<?= ($title === "Profile Setting") ? 'active' : '' ?>"><a href="/<?= session('role'); ?>/setting/profile">My Profile</a></li>
                 </ul>
             </li>
             <li class="droplink <?= ($title === "All Post") ? 'active open' : '' ?><?= ($title === "Add New Post") ? 'active open' : '' ?><?= ($title === "All Category") ? 'active open' : '' ?><?= ($title === "All Tag") ? 'active open' : '' ?>"><a href="#"

@@ -58,10 +58,6 @@
                                             <th>Photo</th>
                                             <th>Name</th>
                                             <th>Jabatan</th>
-                                            <th>Portofolio</th>
-                                            <th>Facebook</th>
-                                            <th>Instagram</th>
-                                            <th>linkedin</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
@@ -82,16 +78,9 @@
                                                 </td>
                                                 <td style="vertical-align: middle;"><?= $row['team_name']; ?>
                                                 </td>
-                                                <td style="vertical-align: middle;"><?= $row['team_jabatan']; ?>
+                                                <td style="vertical-align: middle;"><?= $row['team_org']; ?>
                                                 </td>
-                                                <td style="vertical-align: middle;"><?= $row['team_twitter']; ?>
-                                                </td>
-                                                <td style="vertical-align: middle;"><?= $row['team_facebook']; ?>
-                                                </td>
-                                                <td style="vertical-align: middle;"><?= $row['team_instagram']; ?>
-                                                </td>
-                                                <td style="vertical-align: middle;"><?= $row['team_linked']; ?>
-                                                </td>
+                                                
                                                 <td style="vertical-align: middle;">
                                                     <div class="btn-group">
                                                         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
@@ -146,7 +135,7 @@
                                     <input type="text" name="jabatan" class="form-control" placeholder="Jabatan" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" name="twitter" class="form-control" placeholder="link cv anda!" required>
+                                    <input type="text" name="twitter" class="form-control" placeholder="https://google.com/" required>
                                 </div>
                                 <div class="form-group">
                                     <input type="text" name="facebook" class="form-control" placeholder="https://facebook.com/" required>
@@ -196,10 +185,10 @@
                                         <input type="text" name="nama" value="<?= $row['team_name']; ?>" class="form-control" placeholder="Name" required>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" name="jabatan" value="<?= $row['team_jabatan']; ?>" class="form-control" placeholder="Jabatan" required>
+                                        <input type="text" name="jabatan" value="<?= $row['team_org']; ?>" class="form-control" placeholder="Jabatan" required>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" name="twitter" value="<?= $row['team_twitter']; ?>" class="form-control" placeholder="link cv anda!" required>
+                                        <input type="text" name="twitter" value="<?= $row['team_twitter']; ?>" class="form-control" placeholder="https://google.com/" required>
                                     </div>
                                     <div class="form-group">
                                         <input type="text" name="facebook" value="<?= $row['team_facebook']; ?>" class="form-control" placeholder="https://facebook.com/" required>

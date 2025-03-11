@@ -52,7 +52,7 @@
 					<div class="feature-block_one col-lg-4 col-md-6 col-sm-12">
 						<div class="feature-block_one-inner">
 							<div class="feature-block_one-icon flaticon-quran"></div>
-							Pendidikan <br> Pesantren
+							POROZ <br> CONSULTING
 						</div>
 					</div>
 
@@ -60,7 +60,7 @@
 					<div class="feature-block_one col-lg-4 col-md-6 col-sm-12">
 						<div class="feature-block_one-inner">
 							<div class="feature-block_one-icon flaticon-education"></div>
-							Pemberdayaan <br> Masyarakat
+							POROZ <br> INSTITUTE
 						</div>
 					</div>
 
@@ -68,7 +68,7 @@
 					<div class="feature-block_one col-lg-4 col-md-6 col-sm-12">
 						<div class="feature-block_one-inner">
 							<div class="feature-block_one-icon flaticon-islamic"></div>
-							Sosial dan <br> Dakwah
+							POROZ <br> REGIONAL
 						</div>
 					</div>
 
@@ -99,7 +99,7 @@
 							<!-- Title Box -->
 							<div class="students-one_title-box">
 								<h3 class="students-one_title">Alhamdulillah.. Selamat Datang</h3>
-								<div class="students-one_text">Dengan senang hati kami menyambut akhi ukhti di Yayasan Sunan Gunung Jati.</div>
+								<div class="students-one_text">Dengan senang hati kami persembahkan POROZ (Perkumpulan Organisasi Pengelola Zakat).</div>
 							</div>
 							<!-- Counter Two -->
 							<div class="students-one_counter">
@@ -107,8 +107,8 @@
 									<div class="students-one_counter-icon">
 										<i class="flaticon-give"></i>
 									</div>
-									<div class="students-one_counter-count"><span class="odometer" data-count="18000"></span></div>
-									<div class="students-one_counter-text">Santri</div>
+									<div class="students-one_counter-count"><span class="odometer" data-count="11"></span></div>
+									<div class="students-one_counter-text">Anggota/Lembaga</div>
 								</div>
 							</div>
 						</div>
@@ -132,8 +132,8 @@
 											<span class="fa-regular fa-star fa-fw"></span>
 										</div>
 									</div>
-									<h4 class="top-rated_heading">Pendidikan</h4>
-									<div class="top-rated_text">Sistem pendidikan berbasis keislaman yang menekankan pembelajaran kitab kuning, pembentukan karakter, serta penguatan akhlak dan spiritualitas santri melalui metode halaqah, sorogan, dan bandongan.</div>
+									<h4 class="top-rated_heading">Profil</h4>
+									<div class="top-rated_text"><?= $home['home_caption_1']; ?></div>
 								</div>
 							</div>
 
@@ -144,8 +144,8 @@
 									<span class="fa-regular fa-moon fa-fw"></span>
 									<!-- <span class="fa-regular fa-star fa-fw"></span> -->
 									</div>
-									<h4 class="passout_heading">Pemberdayaan</h4>
-									<div class="passout_text">Pemberdayaan dilakukan melalui berbagai program yang bertujuan meningkatkan kesejahteraan, kemandirian, serta keterampilan masyarakat sekitar, seperti pelatihan wirausaha, koperasi pesantren, dan dakwah berbasis komunitas.</div>
+									<h4 class="passout_heading">Anggota</h4>
+									<div class="passout_text"><?= $home['home_caption_2']; ?></div>
 								</div>
 							</div>
 
@@ -166,7 +166,7 @@
 				<h3 class="cta-one_heading">Mari bergabung bersama kami <br> dengan senang hati!</h3>
 				<!-- Button Box -->
 				<div class="cta-one_button">
-					<a href="/kontak" class="theme-btn btn-style-one">
+					<a href="<?= $home['home_video']; ?>" class="theme-btn btn-style-one">
 						<span class="btn-wrap">
 							<span class="text-one">Quick Start Now</span>
 							<span class="text-two">Quick Start Now</span>
@@ -180,15 +180,14 @@
 
 	<!-- Institute One -->
 	<section class="institute-one">
-		<div class="auto-container">
-			<!-- Sec Title -->
+		<!-- <div class="auto-container">
+			
 			<div class="sec-title centered">
 				<div class="sec-title_title"><?= $site['site_title']; ?> Goals</div>
 				<h2 class="sec-title_heading">Nilai-nilai <br> Kepesantrenan</h2>
 			</div>
 			<div class="row clearfix">
 
-				<!-- Institute Block One -->
 				<div class="institute-block_one col-xl-3 col-lg-6 col-md-6 col-sm-12">
 					<div class="institute-block_one-inner wow fadeInLeft"  data-wow-delay="150ms" data-wow-duration="1000ms">
 						<div class="institute-block_one-bismillah" style="background-image:url(<?= base_url(''); ?>assets/quran/images/icons/bismillah-5.png)"></div>
@@ -198,7 +197,6 @@
 					</div>
 				</div>
 
-				<!-- Institute Block One -->
 				<div class="institute-block_one color-two col-xl-3 col-lg-6 col-md-6 col-sm-12">
 					<div class="institute-block_one-inner wow fadeInLeft"  data-wow-delay="150ms" data-wow-duration="1000ms">
 						<div class="institute-block_one-bismillah" style="background-image:url(<?= base_url(''); ?>assets/quran/images/icons/bismillah-5.png)"></div>
@@ -208,7 +206,6 @@
 					</div>
 				</div>
 
-				<!-- Institute Block One -->
 				<div class="institute-block_one color-three col-xl-3 col-lg-6 col-md-6 col-sm-12">
 					<div class="institute-block_one-inner wow fadeInLeft"  data-wow-delay="150ms" data-wow-duration="1000ms">
 						<div class="institute-block_one-bismillah" style="background-image:url(<?= base_url(''); ?>assets/quran/images/icons/bismillah-5.png)"></div>
@@ -218,7 +215,6 @@
 					</div>
 				</div>
 
-				<!-- Institute Block One -->
 				<div class="institute-block_one color-four col-xl-3 col-lg-6 col-md-6 col-sm-12">
 					<div class="institute-block_one-inner wow fadeInLeft"  data-wow-delay="150ms" data-wow-duration="1000ms">
 						<div class="institute-block_one-bismillah" style="background-image:url(<?= base_url(''); ?>assets/quran/images/icons/bismillah-5.png)"></div>
@@ -229,7 +225,7 @@
 				</div>
 
 			</div>
-		</div>
+		</div> -->
 	</section>
 	<!-- End Institute One -->
 
@@ -241,7 +237,7 @@
 				<!-- Image Column -->
 				<div class="testimonial-one_image-column col-lg-4 col-md-12 col-sm-12">
 					<div class="testimonial-one_image">
-						<img src="<?= base_url(''); ?>assets/quran/images/resource/testimonial.jpg" alt="" />
+						<img src="<?= base_url(''); ?>assets/backend/images/home/<?= $home['home_bg_testimonial']; ?>" alt="" />
 					</div>
 				</div>
 

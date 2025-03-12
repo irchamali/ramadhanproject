@@ -40,7 +40,7 @@ class PartnerAdminController extends BaseController
             'helper_text' => helper('text'),
             'breadcrumbs' => $this->request->getUri()->getSegments(),
             'categories' => $this->categoryModel->findAll(), // Tambahkan ini
-            'partners' => $this->partnerModel->findAll()
+            'partners' => $this->partnerModel->getAllPartners()
         ];
 
         return view('admin/v_partners', $data);

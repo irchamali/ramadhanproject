@@ -112,15 +112,19 @@ $routes->get('logout', 'LoginController::logout');
 // Admin Routes
 $routes->group('admin', ['filter' => 'authadmin'], static function ($routes) {
     $routes->get('', 'Admin\AdminController::index');
+    // Services Route
+    $routes->group('service', static function ($routes) {
+        $routes->get('', 'Admin\ServiceAdminController::index');
+        $routes->post('', 'Admin\ServiceAdminController::insert');
+        $routes->put('', 'Admin\ServiceAdminController::update');
+        $routes->delete('', 'Admin\ServiceAdminController::delete');
+    });
     // Partners Route
     $routes->group('partner', static function ($routes) {
         $routes->get('', 'Admin\PartnerAdminController::index');
         $routes->post('', 'Admin\PartnerAdminController::insert');
-        $routes->delete('', 'Admin\PartnerAdminController::delete');
         $routes->put('', 'Admin\PartnerAdminController::update');
-
-        $routes->get('add_new', 'Admin\PartnerAdminController::add_new');
-        $routes->get('(:num)/edit', 'Admin\PartnerAdminController::edit/$1');
+        $routes->delete('', 'Admin\PartnerAdminController::delete');
         $routes->get('toggle_status/(:num)', 'Admin\PartnerAdminController::toggle_status/$1'); // toggle
     });
     // PartnerCategory Route

@@ -152,8 +152,8 @@
                 </ul>
             </li>
             <li class="droplink <?= ($title === "All Post") ? 'active open' : '' ?><?= ($title === "Add New Post") ? 'active open' : '' ?><?= ($title === "All Category") ? 'active open' : '' ?><?= ($title === "All Tag") ? 'active open' : '' ?>"><a href="#"
-                    class="waves-effect waves-button"><span class="menu-icon icon-pin"></span>
-                    <p>Post</p><span class="arrow"></span>
+                    class="waves-effect waves-button"><span class="menu-icon icon-book-open"></span>
+                    <p>Posts</p><span class="arrow"></span>
                 </a>
                 <ul class="sub-menu">
                     <li class="<?= ($title === "All Post") ? 'active' : '' ?>"><a href="/<?= session('role'); ?>/post">All Post</a></li>
@@ -220,12 +220,17 @@
                     <li class="<?= ($title === "Kategori Laporan") ? 'active' : '' ?>"><a href="/<?= session('role'); ?>/lapcategory">Kategori</a></li>                    
                 </ul>
             </li>
+            <!-- Additional menu -->
             <?php endif; ?>
             
             
-            
             <?php if (session('role') == 'admin') : ?>
-            
+            <li class="<?= ($active == 'service') ? 'active' : '' ?>">
+                <a href="/<?= session('role'); ?>/service" class="waves-effect waves-button"><span
+                        class="menu-icon icon-pencil"></span>
+                    <p>Services</p>
+                </a>
+            </li>
             <li class="<?= ($active == 'member') ? 'active' : '' ?>">
                 <a href="/<?= session('role'); ?>/member" class="waves-effect waves-button"><span
                         class="menu-icon icon-key"></span>

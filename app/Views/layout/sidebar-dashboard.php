@@ -186,7 +186,7 @@
             <!-- Partners menu -->
             <li class="droplink <?= in_array($title, ["All Partner", "Partner Categories"]) ? 'active open' : '' ?>">
                 <a href="#" class="waves-effect waves-button">
-                    <span class="menu-icon icon-pin"></span>
+                    <span class="menu-icon icon-star"></span>
                     <p>Partners</p>
                     <span class="arrow"></span>
                 </a>

@@ -115,7 +115,7 @@ $routes->group('admin', ['filter' => 'authadmin'], static function ($routes) {
     // Partners Route
     $routes->group('partner', static function ($routes) {
         $routes->get('', 'Admin\PartnerAdminController::index');
-        $routes->post('', 'Admin\PartnerAdminController::publish');
+        $routes->post('', 'Admin\PartnerAdminController::insert');
         $routes->delete('', 'Admin\PartnerAdminController::delete');
         $routes->put('', 'Admin\PartnerAdminController::update');
 

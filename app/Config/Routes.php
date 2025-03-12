@@ -71,11 +71,12 @@ $routes->get('publikasidosen/(:segment)', 'CategoryPudosController::index/$1');
 $routes->get('publikasimahasiswa/(:segment)', 'CategoryLapController::index/$1');
 
 // AboutController
-$routes->get('visimisi', 'TtgVmtsController::index');
+$routes->get('vmts', 'TtgVmtsController::index');
 $routes->get('fungsi', 'TtgFungsiController::index');
-$routes->get('strategi', 'TtgStrategiController::index');
 $routes->get('sejarah', 'TtgSejarahController::index');
+$routes->get('struktur', 'TtgStrukturController::index');
 $routes->get('pengurus', 'TtgPengelolaController::index');
+$routes->get('anggota', 'TtgAnggotaController::index');
 
 # Program 
 $routes->get('edu', 'PrgPendidikanController::index');

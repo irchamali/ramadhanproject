@@ -21,7 +21,7 @@ class TtgVmtsController extends BaseController
             'site' => $this->siteModel->find(1),
             'home' => $this->homeModel->find(1),
             'about' => $this->aboutModel->find(1),
-            'title' => 'Visi Misi',
+            'title' => 'Visi Misi Tujuan Strategi',
             'active' => 'Tentang'
         ];
         return view('about/visimisi_view', $data);

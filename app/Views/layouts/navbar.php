@@ -3,9 +3,8 @@
 										</li>
 										<li class="dropdown"><a href="#">Tentang</a>
 											<ul>
-												<li><a href="<?= base_url(''); ?>visimisi">Visi Misi</a></li>
+												<li><a href="<?= base_url(''); ?>vmts">Visi Misi</a></li>
 												<li><a href="<?= base_url(''); ?>fungsi">Fungsi</a></li>
-                                                <li><a href="<?= base_url(''); ?>strategi">Strategi</a></li>
 												<li class="dropdown"><a href="#">Profil</a>
 													<ul>
 														<li><a href="<?= base_url(''); ?>sejarah">Sejarah</a></li>

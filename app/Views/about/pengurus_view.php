@@ -11,15 +11,15 @@
 				<div class="scholar-block_one col-lg-4 col-md-6 col-sm-12">
 					<div class="scholar-block_one-inner wow fadeInLeft"  data-wow-delay="0ms" data-wow-duration="1000ms">
 						<div class="scholar-block_one-image">
-							<a href="#"><img src="/assets/backend/images/team/<?= $row['team_image']; ?>" alt="Pengelola Yayasan" /></a>
+							<a href="#"><img src="/assets/backend/images/team/<?= $row['team_image']; ?>" alt="Pengurus" /></a>
 						</div>
 						<div class="scholar-block_one-content">
 							<h4 class="scholar-block_one-heading"><a href="#"><?= $row['team_name']; ?></a></h4>
-							<div class="scholar-block_one-designation"><?= $row['team_jabatan']; ?></div>
+							<div class="scholar-block_one-designation"><?= $row['team_org']; ?></div>
 							<!-- Social Box -->
 							<div class="scholar-block_one-socials">
-								<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-								<a href="#"><i class="fa-brands fa-instagram"></i></a>
+								<a href="<?= $row['team_facebook']; ?>"><i class="fa-brands fa-facebook-f"></i></a>
+								<a href="<?= $row['team_instagram']; ?>"><i class="fa-brands fa-instagram"></i></a>
 							</div>
 						</div>
 					</div>

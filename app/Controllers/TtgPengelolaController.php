@@ -24,9 +24,9 @@ class TtgPengelolaController extends BaseController
             'home' => $this->homeModel->find(1),
             'about' => $this->aboutModel->find(1),
             'teams' => $this->teamModel->findAll(),
-            'title' => 'Pengelola',
+            'title' => 'Kepengurusan',
             'active' => 'Tentang'
         ];
-        return view('about/pengelola_view', $data);
+        return view('about/pengurus_view', $data);
     }
 }

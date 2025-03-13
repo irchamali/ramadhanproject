@@ -268,3 +268,11 @@ in APPPATH\Views\about\pengelola_view.php on line 18.
  8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+CRITICAL - 2025-03-12 22:52:06 --> Undefined property: App\Controllers\TtgAnggotaController::$memberModel
+in APPPATH\Controllers\TtgAnggotaController.php on line 24.
+ 1 APPPATH\Controllers\TtgAnggotaController.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\TtgAnggotaController::$memberModel', 'D:\\Codeigniter\\ramadhanproject\\app\\Controllers\\TtgAnggotaController.php', 24, [])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TtgAnggotaController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TtgAnggotaController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')

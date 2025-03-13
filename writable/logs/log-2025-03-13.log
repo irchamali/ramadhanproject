@@ -1,0 +1,74 @@
+ERROR - 2025-03-13 01:24:22 --> mysqli_sql_exception: Unknown column 'created_at' in 'order clause' in D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Codeigniter\ramadhanproject\app\Models\MemberModel.php(18): CodeIgniter\BaseModel->findAll()
+#7 D:\Codeigniter\ramadhanproject\app\Controllers\Admin\MemberAdminController.php(35): App\Models\MemberModel->getAllMembers()
+#8 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Admin\MemberAdminController->index()
+#9 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\MemberAdminController))
+#10 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Codeigniter\ramadhanproject\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\...')
+#13 {main}
+CRITICAL - 2025-03-13 01:24:22 --> Unknown column 'created_at' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `tbl_member`
+ORDER BY `created_at` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_member`
+ORDER BY `created_at` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_member`
+ORDER BY `created_at` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_member`
+ORDER BY `created_at` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\MemberModel.php(18): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Admin\MemberAdminController.php(35): App\Models\MemberModel->getAllMembers()
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin\MemberAdminController->index()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\MemberAdminController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+ERROR - 2025-03-13 01:29:08 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tbl_mem...', 0)
+#1 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_mem...')
+#2 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_mem...')
+#3 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_mem...', Array, false)
+#4 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 D:\Codeigniter\ramadhanproject\app\Controllers\Admin\MemberAdminController.php(146): CodeIgniter\Model->update('8', Array)
+#8 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Admin\MemberAdminController->update()
+#9 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\MemberAdminController))
+#10 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Codeigniter\ramadhanproject\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\...')
+#13 {main}
+CRITICAL - 2025-03-13 01:29:08 --> Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tbl_member` SET `member_name` = \'LAZ X 12\', `member_link` = \'https://google.com/ok\', `member_desc` = \'ok deh ok deh 1234\', `member_image` = \'1741846664_50429ee5e9de6c6d5368.png\', `updated_at` = \'2025-03-13 01:29:08\'
+WHERE `tbl_member`.`member_id` IN (\'8\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_member` SET `member_name` = \'LAZ X 12\', `member_link` = \'https://google.com/ok\', `member_desc` = \'ok deh ok deh 1234\', `member_image` = \'1741846664_50429ee5e9de6c6d5368.png\', `updated_at` = \'2025-03-13 01:29:08\'
+WHERE `tbl_member`.`member_id` IN (\'8\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_member` SET `member_name` = \'LAZ X 12\', `member_link` = \'https://google.com/ok\', `member_desc` = \'ok deh ok deh 1234\', `member_image` = \'1741846664_50429ee5e9de6c6d5368.png\', `updated_at` = \'2025-03-13 01:29:08\'
+WHERE `tbl_member`.`member_id` IN (\'8\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_member` SET `member_name` = :member_name:, `member_link` = :member_link:, `member_desc` = :member_desc:, `member_image` = :member_image:, `updated_at` = :updated_at:
+WHERE `tbl_member`.`member_id` IN :tbl_member.member_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\Admin\MemberAdminController.php(146): CodeIgniter\Model->update('8', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin\MemberAdminController->update()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\MemberAdminController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')

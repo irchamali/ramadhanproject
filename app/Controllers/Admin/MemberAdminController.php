@@ -17,6 +17,7 @@ class MemberAdminController extends BaseController
         $this->siteModel = new SiteModel();
         $this->memberModel = new MemberModel();
     }
+
     public function index()
     {
 
@@ -32,19 +33,19 @@ class MemberAdminController extends BaseController
             'helper_text' => helper('text'),
             'breadcrumbs' => $this->request->getUri()->getSegments(),
 
-            'members' => $this->memberModel->findAll()
+            'members' => $this->memberModel->getAllMembers()
         ];
 
         return view('admin/v_member', $data);
     }
+
     public function insert()
     {
         if (!$this->validate([
             'nama' => [
-                'rules' => 'required|alpha_space',
+                'rules' => 'required',
                 'errors' => [
-                    'required' => 'Kolom {field} harus diisi!',
-                    'alpha_space' => 'inputan tidak boleh mengandung karakter aneh'
+                    'required' => 'Kolom {field} harus diisi!'
                 ]
             ],
             'link' => [
@@ -92,14 +93,14 @@ class MemberAdminController extends BaseController
         ]);
         return redirect()->to('/admin/member')->with('msg', 'success');
     }
+
     public function update()
     {
         if (!$this->validate([
             'nama' => [
-                'rules' => 'required|alpha_space',
+                'rules' => 'required',
                 'errors' => [
-                    'required' => 'Kolom {field} harus diisi!',
-                    'alpha_space' => 'inputan tidak boleh mengandung karakter aneh'
+                    'required' => 'Kolom {field} harus diisi!'
                 ]
             ],
             'link' => [
@@ -130,16 +131,28 @@ class MemberAdminController extends BaseController
         $nama = strip_tags(htmlspecialchars($this->request->getPost('nama'), ENT_QUOTES));
         $link = strip_tags(htmlspecialchars($this->request->getPost('link'), ENT_QUOTES));
         $desc = strip_tags(htmlspecialchars($this->request->getPost('desc'), ENT_QUOTES));
+        
         // Cek Foto
         $member = $this->memberModel->find($member_id);
         $fotoAwal = $member['member_image'];
         $fileFoto = $this->request->getFile('filefoto');
-        if ($fileFoto->getName() == '') {
-            $namaFotoUpload = $fotoAwal;
+
+        // Jika tidak ada file yang diunggah
+        if ($fileFoto->getError() == UPLOAD_ERR_NO_FILE) {
+            $namaFotoUpload = $fotoAwal; // Gunakan foto lama
         } else {
+            // Hapus foto lama jika bukan foto default dan bukan sama dengan foto baru
+            if ($fotoAwal != 'default-image.png' && $fotoAwal != $fileFoto->getName()) {
+                $pathToFotoAwal = 'assets/backend/images/member/' . $fotoAwal;
+                if (file_exists($pathToFotoAwal) && is_file($pathToFotoAwal)) {
+                    unlink($pathToFotoAwal); // Hapus hanya jika itu adalah file, bukan direktori
+                }
+            }
+            // Simpan gambar baru
             $namaFotoUpload = $fileFoto->getRandomName();
             $fileFoto->move('assets/backend/images/member/', $namaFotoUpload);
         }
+
         // Simpan ke database
         $this->memberModel->update($member_id, [
             'member_name' => $nama,
@@ -149,6 +162,7 @@ class MemberAdminController extends BaseController
         ]);
         return redirect()->to('/admin/member')->with('msg', 'info');
     }
+    
     public function delete()
     {
         $member_id = $this->request->getPost('kode');

@@ -78,12 +78,10 @@ $routes->get('struktur', 'TtgStrukturController::index');
 $routes->get('pengurus', 'TtgPengelolaController::index');
 $routes->get('anggota', 'TtgAnggotaController::index');
 
-# Program 
-$routes->get('edu', 'PrgPendidikanController::index');
-$routes->get('edu/tk', 'PrgPendidikanController::tk/$1');
-$routes->get('edu/sd', 'PrgPendidikanController::sd/$1');
-$routes->get('edu/smp', 'PrgPendidikanController::smp/$1');
-$routes->get('edu/sma', 'PrgPendidikanController::sma/$1');
+# Programs Controller 
+$routes->get('programs', 'ProgramsController::index');
+$routes->get('program/(:segment)', 'ProgramsController::index/$1');
+
 $routes->get('pemberdayaan', 'PrgPemberdayaanController::index');
 $routes->get('sosialdakwah', 'PrgSosdakController::index');
 

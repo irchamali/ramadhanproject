@@ -26,6 +26,22 @@ class ProgramAdminModel extends Model
         return $builder->findAll();
     }
 
+    public function get_program_by_slug($slug) 
+    {
+        $query = $this->db->query("
+            SELECT tbl_programs.*, 
+                tbl_program_categories.category_name,
+                tbl_program_categories.category_slug
+            FROM tbl_programs
+            LEFT JOIN tbl_program_categories 
+                ON tbl_programs.program_category_id = tbl_program_categories.category_id
+            WHERE tbl_programs.program_slug = '$slug'
+            GROUP BY tbl_programs.program_id
+            LIMIT 1
+        ");
+        return $query;
+    }
+
     public function getProgramBySlug($slug)
     {
         return $this->select('tbl_programs.*, tbl_program_categories.category_name')

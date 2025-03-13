@@ -188,3 +188,250 @@ in APPPATH\Views\pages\partner_category.php on line 29.
  7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
  9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+CRITICAL - 2025-03-13 06:40:55 --> Undefined index: user_name
+in APPPATH\Views\pages\programs_view.php on line 17.
+ 1 APPPATH\Views\pages\programs_view.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: user_name', 'D:\\Codeigniter\\ramadhanproject\\app\\Views\\pages\\programs_view.php', 17, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Codeigniter\\ramadhanproject\\app\\Views\\pages\\programs_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/programs_view', [], true)
+ 5 APPPATH\Controllers\ProgramsController.php(35): view('pages/programs_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\ProgramsController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProgramsController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+CRITICAL - 2025-03-13 06:41:30 --> Call to a member function links() on null
+in APPPATH\Views\pages\programs_view.php on line 28.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/programs_view', [], true)
+ 4 APPPATH\Controllers\ProgramsController.php(35): view('pages/programs_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\ProgramsController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProgramsController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+CRITICAL - 2025-03-13 06:41:55 --> Call to a member function links() on null
+in APPPATH\Views\pages\programs_view.php on line 28.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/programs_view', [], true)
+ 4 APPPATH\Controllers\ProgramsController.php(35): view('pages/programs_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\ProgramsController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProgramsController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+CRITICAL - 2025-03-13 06:43:21 --> Call to a member function links() on null
+in APPPATH\Views\pages\programs_view.php on line 28.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/programs_view', [], true)
+ 4 APPPATH\Controllers\ProgramsController.php(35): view('pages/programs_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\ProgramsController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProgramsController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+CRITICAL - 2025-03-13 06:43:35 --> Call to a member function links() on null
+in APPPATH\Views\pages\programs_view.php on line 28.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/programs_view', [], true)
+ 4 APPPATH\Controllers\ProgramsController.php(35): view('pages/programs_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\ProgramsController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProgramsController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+CRITICAL - 2025-03-13 06:43:36 --> Call to a member function links() on null
+in APPPATH\Views\pages\programs_view.php on line 28.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/programs_view', [], true)
+ 4 APPPATH\Controllers\ProgramsController.php(35): view('pages/programs_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\ProgramsController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProgramsController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+CRITICAL - 2025-03-13 06:44:05 --> Call to a member function links() on null
+in APPPATH\Views\pages\programs_view.php on line 28.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/programs_view', [], true)
+ 4 APPPATH\Controllers\ProgramsController.php(35): view('pages/programs_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\ProgramsController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProgramsController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+CRITICAL - 2025-03-13 06:46:10 --> Call to a member function links() on null
+in APPPATH\Views\pages\programs_view.php on line 28.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/programs_view', [], true)
+ 4 APPPATH\Controllers\ProgramsController.php(35): view('pages/programs_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\ProgramsController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProgramsController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+CRITICAL - 2025-03-13 06:46:46 --> Undefined index: program_name
+in APPPATH\Views\pages\programs_view.php on line 18.
+ 1 APPPATH\Views\pages\programs_view.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: program_name', 'D:\\Codeigniter\\ramadhanproject\\app\\Views\\pages\\programs_view.php', 18, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Codeigniter\\ramadhanproject\\app\\Views\\pages\\programs_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/programs_view', [], true)
+ 5 APPPATH\Controllers\ProgramsController.php(35): view('pages/programs_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\ProgramsController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProgramsController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+CRITICAL - 2025-03-13 06:59:36 --> Call to undefined method App\Models\ProgramAdminModel::get_program_by_slug
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\ProgramsController.php(37): CodeIgniter\Model->__call('get_program_by_slug', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\ProgramsController->index('program-kedua-dengan-kategori-literasi')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProgramsController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+CRITICAL - 2025-03-13 07:00:39 --> Call to undefined method App\Models\ProgramAdminModel::get_program_by_slug
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\ProgramsController.php(37): CodeIgniter\Model->__call('get_program_by_slug', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\ProgramsController->index('program-kedua-dengan-kategori-literasi')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProgramsController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+ERROR - 2025-03-13 07:05:06 --> mysqli_sql_exception: Unknown column 'tbl_programs.program_category_id' in 'on clause' in D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n            S...', 0)
+#1 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n            S...')
+#2 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n            S...')
+#3 D:\Codeigniter\ramadhanproject\app\Models\ProgramAdminModel.php(38): CodeIgniter\Database\BaseConnection->query('\r\n            S...')
+#4 D:\Codeigniter\ramadhanproject\app\Controllers\ProgramsController.php(37): App\Models\ProgramAdminModel->get_program_by_slug('program-kedua-d...')
+#5 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\ProgramsController->index('program-kedua-d...')
+#6 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProgramsController))
+#7 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\Codeigniter\ramadhanproject\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 D:\Codeigniter\ramadhanproject\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\...')
+#10 {main}
+CRITICAL - 2025-03-13 07:05:06 --> Unknown column 'tbl_programs.program_category_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+            SELECT tbl_programs.*, 
+                tbl_program_categories.category_name,
+                tbl_program_categories.category_slug
+            FROM tbl_programs
+            LEFT JOIN tbl_program_categories 
+                ON tbl_programs.program_category_id = tbl_program_categories.category_id
+            WHERE tbl_programs.program_slug = \'program-kedua-dengan-kategori-literasi\'
+            GROUP BY tbl_programs.program_id
+            LIMIT 1
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT tbl_programs.*, 
+                tbl_program_categories.category_name,
+                tbl_program_categories.category_slug
+            FROM tbl_programs
+            LEFT JOIN tbl_program_categories 
+                ON tbl_programs.program_category_id = tbl_program_categories.category_id
+            WHERE tbl_programs.program_slug = \'program-kedua-dengan-kategori-literasi\'
+            GROUP BY tbl_programs.program_id
+            LIMIT 1
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT tbl_programs.*, 
+                tbl_program_categories.category_name,
+                tbl_program_categories.category_slug
+            FROM tbl_programs
+            LEFT JOIN tbl_program_categories 
+                ON tbl_programs.program_category_id = tbl_program_categories.category_id
+            WHERE tbl_programs.program_slug = \'program-kedua-dengan-kategori-literasi\'
+            GROUP BY tbl_programs.program_id
+            LIMIT 1
+        ')
+ 4 APPPATH\Models\ProgramAdminModel.php(38): CodeIgniter\Database\BaseConnection->query('
+            SELECT tbl_programs.*, 
+                tbl_program_categories.category_name,
+                tbl_program_categories.category_slug
+            FROM tbl_programs
+            LEFT JOIN tbl_program_categories 
+                ON tbl_programs.program_category_id = tbl_program_categories.category_id
+            WHERE tbl_programs.program_slug = \'program-kedua-dengan-kategori-literasi\'
+            GROUP BY tbl_programs.program_id
+            LIMIT 1
+        ')
+ 5 APPPATH\Controllers\ProgramsController.php(37): App\Models\ProgramAdminModel->get_program_by_slug('program-kedua-dengan-kategori-literasi')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\ProgramsController->index('program-kedua-dengan-kategori-literasi')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProgramsController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+CRITICAL - 2025-03-13 07:09:07 --> Call to a member function getRowArray() on array
+in APPPATH\Controllers\ProgramsController.php on line 37.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\ProgramsController->index('program-kedua-dengan-kategori-literasi')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProgramsController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+CRITICAL - 2025-03-13 08:03:39 --> Undefined variable: post
+in APPPATH\Views\pages\program_detail.php on line 20.
+ 1 APPPATH\Views\pages\program_detail.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: post', 'D:\\Codeigniter\\ramadhanproject\\app\\Views\\pages\\program_detail.php', 20, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Codeigniter\\ramadhanproject\\app\\Views\\pages\\program_detail.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/program_detail', [], true)
+ 5 APPPATH\Controllers\ProgramsController.php(60): view('pages/program_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\ProgramsController->index('program-kedua-dengan-kategori-literasi')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProgramsController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+CRITICAL - 2025-03-13 08:04:11 --> Undefined index: post_title
+in APPPATH\Views\pages\program_detail.php on line 20.
+ 1 APPPATH\Views\pages\program_detail.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: post_title', 'D:\\Codeigniter\\ramadhanproject\\app\\Views\\pages\\program_detail.php', 20, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Codeigniter\\ramadhanproject\\app\\Views\\pages\\program_detail.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/program_detail', [], true)
+ 5 APPPATH\Controllers\ProgramsController.php(60): view('pages/program_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\ProgramsController->index('program-kedua-dengan-kategori-literasi')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProgramsController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+CRITICAL - 2025-03-13 08:04:27 --> Undefined variable: post
+in APPPATH\Views\layouts\header-post.php on line 5.
+ 1 APPPATH\Views\layouts\header-post.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: post', 'D:\\Codeigniter\\ramadhanproject\\app\\Views\\layouts\\header-post.php', 5, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Codeigniter\\ramadhanproject\\app\\Views\\layouts\\header-post.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(452): CodeIgniter\View\View->render('layouts/header-post', null, true)
+ 5 APPPATH\Views\layouts\template-post.php(1): CodeIgniter\View\View->include('layouts/header-post')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\Codeigniter\\ramadhanproject\\app\\Views\\layouts\\template-post.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/template-post', [], true)
+ 9 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/program_detail', [], true)
+10 APPPATH\Controllers\ProgramsController.php(60): view('pages/program_detail', [...])
+11 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\ProgramsController->index('program-kedua-dengan-kategori-literasi')
+12 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProgramsController))
+13 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+CRITICAL - 2025-03-13 08:11:16 --> Undefined variable: post
+in APPPATH\Views\layouts\header-program.php on line 10.
+ 1 APPPATH\Views\layouts\header-program.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: post', 'D:\\Codeigniter\\ramadhanproject\\app\\Views\\layouts\\header-program.php', 10, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Codeigniter\\ramadhanproject\\app\\Views\\layouts\\header-program.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(452): CodeIgniter\View\View->render('layouts/header-program', null, true)
+ 5 APPPATH\Views\layouts\template-program.php(1): CodeIgniter\View\View->include('layouts/header-program')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\Codeigniter\\ramadhanproject\\app\\Views\\layouts\\template-program.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/template-program', [], true)
+ 9 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/program_detail', [], true)
+10 APPPATH\Controllers\ProgramsController.php(60): view('pages/program_detail', [...])
+11 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\ProgramsController->index('program-kedua-dengan-kategori-literasi')
+12 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProgramsController))
+13 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')

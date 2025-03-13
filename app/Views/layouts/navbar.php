@@ -19,15 +19,15 @@
 											<ul>
 												<li class="dropdown"><a href="#">Program</a>
 													<ul>
-														<li><a href="<?= base_url(''); ?>program">Z Chicken</a></li>
-														<li><a href="<?= base_url(''); ?>program">Z Auto</a></li>
-														<li><a href="<?= base_url(''); ?>program">Santripreneur</a></li>
-														<li><a href="<?= base_url(''); ?>program">Edukasi Zakat</a></li>
-                                                        <li><a href="<?= base_url(''); ?>program">Capacity Building Amil</a></li>
-														<li><a href="<?= base_url(''); ?>program">Literasi Keuangan Syariah</a></li>
-														<li><a href="<?= base_url(''); ?>program">POROZ Ta'awun</a></li>
-														<li><a href="<?= base_url(''); ?>program">Pelatihan UMKM</a></li>
-                                                        <li><a href="<?= base_url(''); ?>program">Join Action for Palestina</a></li>
+														<li><a href="<?= base_url(''); ?>program/program-z-chicken">Z Chicken</a></li>
+														<li><a href="<?= base_url(''); ?>program/program-z-auto">Z Auto</a></li>
+														<li><a href="<?= base_url(''); ?>program/program-santripreneur">Santripreneur</a></li>
+														<li><a href="<?= base_url(''); ?>program/program-edukasi-zakat">Edukasi Zakat</a></li>
+                                                        <li><a href="<?= base_url(''); ?>program/program-capacity-building-amil">Capacity Building Amil</a></li>
+														<li><a href="<?= base_url(''); ?>program/program-literasi-keuangan-syariah">Literasi Keuangan Syariah</a></li>
+														<li><a href="<?= base_url(''); ?>program/program-poroz-taawun">POROZ Ta'awun</a></li>
+														<li><a href="<?= base_url(''); ?>program/program-pelatihan-umkm">Pelatihan UMKM</a></li>
+                                                        <li><a href="<?= base_url(''); ?>program/join-action-for-palestine">Join Action for Palestine</a></li>
 													</ul>
 												</li>
 												<li class="dropdown"><a href="#">Layanan</a>

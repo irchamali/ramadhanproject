@@ -50,7 +50,7 @@ $routes->get('gallery', 'GalleryController::index');
 
 // PostController
 $routes->get('search', 'PostController::search');
-$routes->get('post', 'PostController::index');
+$routes->get('posts', 'PostController::index');
 $routes->get('post/(:segment)', 'PostController::index/$1');
 $routes->post('post/send_comment', 'PostController::send_comment');
 // session author on frontend
@@ -88,7 +88,8 @@ $routes->get('pemberdayaan', 'PrgPemberdayaanController::index');
 $routes->get('sosialdakwah', 'PrgSosdakController::index');
 
 // KerjasamaController
-$routes->get('kerjasama', 'PartnershipController::index');
+$routes->get('partners', 'PartnershipController::index');
+$routes->get('partner/(:segment)', 'CategoryPartController::index/$1');
 
 // DocumentController
 $routes->get('dokumen', 'DocumentController::index');

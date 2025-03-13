@@ -17,4 +17,14 @@ class PartnerCategoryModel extends Model
                     ->orderBy('total_partners', 'DESC')
                     ->findAll();
     }
+    public function getPartner_by_category($slug)
+    {
+        $query = $this->db->query("SELECT tbl_partners.*, tbl_partner_categories.* 
+            FROM tbl_partners 
+            LEFT JOIN tbl_partner_categories ON tbl_partners.category_id = tbl_partner_categories.category_id 
+            WHERE tbl_partner_categories.category_slug = ?", [$slug]);
+
+        return $query->getResultArray(); // Mengembalikan dalam bentuk array
+    }
+
 }

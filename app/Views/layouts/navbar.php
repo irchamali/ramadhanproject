@@ -40,15 +40,16 @@
 												</li>
 											</ul>
 										</li>
-                                        <li class="dropdown"><a href="#">Mitra</a>
+										<li><a href="/partners">Mitra</a></li>
+                                        <!-- <li class="dropdown"><a href="#">Mitra</a>
 											<ul>
 												<li><a href="<?= base_url(''); ?>mitra">Mitra-mitra</a></li>
 												<li><a href="<?= base_url(''); ?>kerjasama">Kerjasama</a></li>
 											</ul>
-										</li>
+										</li> -->
 										<li class="dropdown"><a href="#">Media</a>
 											<ul>
-												<li><a href="<?= base_url(''); ?>post">Berita</a></li>
+												<li><a href="<?= base_url(''); ?>posts">Berita</a></li>
 												<li><a href="<?= base_url(''); ?>category/acara">Acara</a></li>
 												<li><a href="<?= base_url(''); ?>category/artikel">Artikel</a></li>
                                                 <li class="dropdown"><a href="#">Dokumen</a>

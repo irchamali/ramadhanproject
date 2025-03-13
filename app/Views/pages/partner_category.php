@@ -4,6 +4,7 @@
 <!-- Contact Info -->
 <section class="contact-info">
     <div class="auto-container">
+    <h2 class="text-center"><?= $keyword; ?></h2><br>
         <div class="inner-container">
             <div class="bg-white px-3 mt-0 px-0 py-5 px-lg-5 rounded-3">
                 <div class="panel panel-white">

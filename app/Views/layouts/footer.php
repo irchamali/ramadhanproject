@@ -3,7 +3,7 @@
 		<div class="auto-container">
 			<div class="inner-container d-flex justify-content-between align-items-center flex-wrap">
 				<div class="cta-two_bg" style="background-image:url(<?= base_url(''); ?>assets/quran/images/background/cta-one_bg.png)"></div>
-				<div class="cta-two_icon flaticon-nabawi-mosque"></div>
+				<div class="cta-two_icon flaticon-give"></div>
 				<h3 class="cta-two_heading"><?= $site['site_name']; ?> <br> Mengajak Kamu Semua Bersedekah</h3>
 				<!-- Button Box -->
 				<div class="cta-two_button">
@@ -63,8 +63,8 @@
 										<h4 class="footer-title">Main Link</h4>
 										<ul class="footer-list">
 											<li><a href="<?= base_url(''); ?>sejarah">Profil</a></li>
-											<li><a href="<?= base_url(''); ?>pemberdayaan">Program Z Chicken</a></li>
-											<li><a href="<?= base_url(''); ?>edu">Program Pelatihan</a></li>
+											<li><a href="<?= base_url(''); ?>programs">Program Pilihan</a></li>
+											<li><a href="<?= base_url(''); ?>anggota">Keanggotaan</a></li>
 											<!-- <li><a href="<?= base_url(''); ?>sosialdakwah">Sosial dan Dakwah</a></li> -->
 										</ul>
 									</div>
@@ -75,8 +75,8 @@
 									<div class="footer-widget links-widget">
 										<h4 class="footer-title">Other Link</h4>
 										<ul class="footer-list">
-											<li><a href="<?= base_url(''); ?>kerjasama">Kerjasama</a></li>
-											<li><a href="<?= base_url(''); ?>post">Rilis Berita</a></li>
+											<li><a href="<?= base_url(''); ?>partners">Kerjasama</a></li>
+											<li><a href="<?= base_url(''); ?>posts">Rilis Berita</a></li>
 											<li><a href="<?= base_url(''); ?>kontak">Kontak</a></li>
 										</ul>
 									</div>

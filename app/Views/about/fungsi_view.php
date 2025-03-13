@@ -15,9 +15,9 @@
 				<div class="institute-block_one col-xl-3 col-lg-6 col-md-6 col-sm-12">
 					<div class="institute-block_one-inner wow fadeInLeft"  data-wow-delay="150ms" data-wow-duration="1000ms">
 						<div class="institute-block_one-bismillah" style="background-image:url(<?= base_url(''); ?>assets/images/icons/bismillah-5.png)"></div>
-						<div class="institute-block_one-icon flaticon-quran-1"></div>
+						<div class="institute-block_one-icon flaticon-star"></div>
 						<h4 class="institute-block_one-heading"><a href="#">Koordinasi</a></h4>
-						<div class="institute-block_one-text">Menghubungkan dan menyelaraskan langkah-langkah pengelola zakat agar tercipta sinergi yang lebih kuat dan dampak yang lebih luas.</div>
+						<div class="institute-block_one-text">Menghubungkan dan menyelaraskan langkah-langkah pengelola zakat agar tercipta sinergi yang lebih kokoh serta memberikan manfaat yang lebih luas.</div>
 					</div>
 				</div>
 
@@ -25,9 +25,9 @@
 				<div class="institute-block_one color-two col-xl-3 col-lg-6 col-md-6 col-sm-12">
 					<div class="institute-block_one-inner wow fadeInLeft"  data-wow-delay="150ms" data-wow-duration="1000ms">
 						<div class="institute-block_one-bismillah" style="background-image:url(<?= base_url(''); ?>assets/images/icons/bismillah-5.png)"></div>
-						<div class="institute-block_one-icon flaticon-pray-1"></div>
+						<div class="institute-block_one-icon flaticon-education"></div>
 						<h4 class="institute-block_one-heading"><a href="#">Edukasi</a></h4>
-						<div class="institute-block_one-text">meningkatkan literasi dan kesadaran masyarakat dalam menunaikan zakat, serta memberikan pemahaman yang lebih mendalam mengenai manfaat zakat bagi individu dan sosial-ekonomi umat.</div>
+						<div class="institute-block_one-text">Meningkatkan literasi dan kesadaran masyarakat dalam menunaikan zakat, serta memperdalam pemahaman tentang manfaatnya bagi individu dan sosial-ekonomi umat.</div>
 					</div>
 				</div>
 
@@ -35,9 +35,9 @@
 				<div class="institute-block_one color-three col-xl-3 col-lg-6 col-md-6 col-sm-12">
 					<div class="institute-block_one-inner wow fadeInLeft"  data-wow-delay="150ms" data-wow-duration="1000ms">
 						<div class="institute-block_one-bismillah" style="background-image:url(<?= base_url(''); ?>assets/images/icons/bismillah-5.png)"></div>
-						<div class="institute-block_one-icon flaticon-education"></div>
+						<div class="institute-block_one-icon flaticon-globe"></div>
 						<h4 class="institute-block_one-heading"><a href="#">Informasi</a></h4>
-						<div class="institute-block_one-text">Menyampaikan berbagai data, wawasan, dan kebijakan terkait zakat kepada pengelola zakat serta memberikan penerangan, pencerahan, dan pencerdasan kepada masyarakat.</div>
+						<div class="institute-block_one-text">Menyampaikan berbagai data, wawasan, dan kebijakan terkait zakat kepada pengelola serta memberikan pencerahan dan pemahaman bagi masyarakat.</div>
 					</div>
 				</div>
 
@@ -45,9 +45,9 @@
 				<div class="institute-block_one color-four col-xl-3 col-lg-6 col-md-6 col-sm-12">
 					<div class="institute-block_one-inner wow fadeInLeft"  data-wow-delay="150ms" data-wow-duration="1000ms">
 						<div class="institute-block_one-bismillah" style="background-image:url(<?= base_url(''); ?>assets/images/icons/bismillah-5.png)"></div>
-						<div class="institute-block_one-icon flaticon-time-management"></div>
+						<div class="institute-block_one-icon flaticon-book"></div>
 						<h4 class="institute-block_one-heading"><a href="#">Konsultasi<br> dan Aspirasi</a></h4>
-						<div class="institute-block_one-text">Menjadi ruang diskusi dan penyampaian aspirasi antara pengelola zakat dengan masyarakat dalam rangka meningkatkan efektivitas pengelolaan zakat.</div>
+						<div class="institute-block_one-text">Menjadi ruang diskusi serta penyampaian gagasan antara pengelola zakat dan masyarakat guna meningkatkan efektivitas pengelolaan.</div>
 					</div>
 				</div>
 
@@ -55,9 +55,9 @@
 				<div class="institute-block_one col-xl-3 col-lg-6 col-md-6 col-sm-12">
 					<div class="institute-block_one-inner wow fadeInLeft"  data-wow-delay="150ms" data-wow-duration="1000ms">
 						<div class="institute-block_one-bismillah" style="background-image:url(<?= base_url(''); ?>assets/images/icons/bismillah-5.png)"></div>
-						<div class="institute-block_one-icon flaticon-quran-1"></div>
+						<div class="institute-block_one-icon flaticon-user"></div>
 						<h4 class="institute-block_one-heading"><a href="#">Advokasi</a></h4>
-						<div class="institute-block_one-text">Memperjuangkan kebijakan publik yang berpihak pada optimalisasi pengelolaan zakat serta melakukan persuasi kepada masyarakat, pemerintah, dan pihak terkait.</div>
+						<div class="institute-block_one-text">Memperjuangkan kebijakan publik yang mendukung optimalisasi zakat serta melakukan persuasi kepada masyarakat, pemerintah, dan pemangku kepentingan terkait.</div>
 					</div>
 				</div>
 
@@ -65,9 +65,9 @@
 				<div class="institute-block_one color-two col-xl-3 col-lg-6 col-md-6 col-sm-12">
 					<div class="institute-block_one-inner wow fadeInLeft"  data-wow-delay="150ms" data-wow-duration="1000ms">
 						<div class="institute-block_one-bismillah" style="background-image:url(<?= base_url(''); ?>assets/images/icons/bismillah-5.png)"></div>
-						<div class="institute-block_one-icon flaticon-pray-1"></div>
+						<div class="institute-block_one-icon flaticon-share"></div>
 						<h4 class="institute-block_one-heading"><a href="#">Kolaborasi</a></h4>
-						<div class="institute-block_one-text">membangun kemitraan dengan berbagai lembaga guna memperluas jangkauan dan efektivitas program zakat.</div>
+						<div class="institute-block_one-text">Membangun kemitraan dengan berbagai lembaga strategis guna memperluas jangkauan serta meningkatkan efektivitas dalam implementasi program zakat.</div>
 					</div>
 				</div>
 
@@ -75,9 +75,9 @@
 				<div class="institute-block_one color-three col-xl-3 col-lg-6 col-md-6 col-sm-12">
 					<div class="institute-block_one-inner wow fadeInLeft"  data-wow-delay="150ms" data-wow-duration="1000ms">
 						<div class="institute-block_one-bismillah" style="background-image:url(<?= base_url(''); ?>assets/images/icons/bismillah-5.png)"></div>
-						<div class="institute-block_one-icon flaticon-education"></div>
+						<div class="institute-block_one-icon flaticon-address"></div>
 						<h4 class="institute-block_one-heading"><a href="#">Pengembangan <br> Jaringan</a></h4>
-						<div class="institute-block_one-text">Memperkuat hubungan antara pengelola zakat, baik di tingkat lokal, nasional, maupun internasional, demi peningkatan kapasitas dan dampak zakat yang lebih luas.</div>
+						<div class="institute-block_one-text">Memperkuat hubungan antar-pengelola zakat di tingkat lokal, nasional, dan global guna meningkatkan kapasitas serta memperluas dampak zakat.</div>
 					</div>
 				</div>
 
@@ -87,7 +87,7 @@
 						<div class="institute-block_one-bismillah" style="background-image:url(<?= base_url(''); ?>assets/images/icons/bismillah-5.png)"></div>
 						<div class="institute-block_one-icon flaticon-time-management"></div>
 						<h4 class="institute-block_one-heading"><a href="#">Kaderisasi</a></h4>
-						<div class="institute-block_one-text">Mengader generasi amil zakat yang profesional dan tersertifikasi dengan target minimal 1 (satu) amil tersertifikasi di setiap desa, guna memastikan keberlanjutan dan peningkatan kualitas pengelolaan zakat.</div>
+						<div class="institute-block_one-text">Menyiapkan generasi amil zakat profesional dan tersertifikasi dengan target minimal satu amil di setiap desa guna menjamin keberlanjutan pengelolaan zakat.</div>
 					</div>
 				</div>
 

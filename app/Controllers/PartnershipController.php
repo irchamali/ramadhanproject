@@ -6,7 +6,7 @@ use App\Controllers\BaseController;
 use App\Models\AboutModel;
 use App\Models\HomeModel;
 use App\Models\SiteModel;
-use App\Models\MemberModel;
+use App\Models\PartnerAdminModel;
 
 class PartnershipController extends BaseController
 {
@@ -15,7 +15,7 @@ class PartnershipController extends BaseController
         $this->homeModel = new HomeModel();
         $this->siteModel = new SiteModel();
         $this->aboutModel = new AboutModel();
-        $this->memberModel = new MemberModel();
+        $this->partnerModel = new PartnerAdminModel();
     }
     public function index()
     {
@@ -23,7 +23,7 @@ class PartnershipController extends BaseController
             'site' => $this->siteModel->find(1),
             'home' => $this->homeModel->find(1),
             'about' => $this->aboutModel->find(1),
-            'partners' => $this->memberModel->findAll(),
+            'partners' => $this->partnerModel->getAllPartners(),
             'title' => 'Kerjasama',
             'active' => 'Tentang'
         ];

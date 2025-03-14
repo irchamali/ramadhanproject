@@ -8,7 +8,7 @@ class ServiceAdminModel extends Model
 {
     protected $table            = 'tbl_services';
     protected $primaryKey       = 'service_id';
-    protected $allowedFields    = ['service_name', 'service_slug', 'service_desc', 'service_link', 'service_image'];
+    protected $allowedFields    = ['service_name', 'service_slug', 'service_desc', 'service_desc2', 'service_link', 'service_image'];
     protected $useTimestamps    = true;
     protected $createdField     = 'created_at';
     protected $updatedField     = 'updated_at';

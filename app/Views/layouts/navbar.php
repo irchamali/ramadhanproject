@@ -32,9 +32,9 @@
 												</li>
 												<li class="dropdown"><a href="#">Layanan</a>
 													<ul>
-														<li><a href="<?= base_url(''); ?>layanan">POROZ INSTITUT</a></li>
-														<li><a href="<?= base_url(''); ?>layanan">POROZ CONSULTING</a></li>
-														<li><a href="<?= base_url(''); ?>layanan">POROZ WILAYAH</a></li>
+														<li><a href="<?= base_url(''); ?>service/poroz-institute">POROZ INSTITUT</a></li>
+														<li><a href="<?= base_url(''); ?>service/poroz-consulting">POROZ CONSULTING</a></li>
+														<li><a href="<?= base_url(''); ?>service/poroz-wilayah">POROZ WILAYAH</a></li>
 														
 													</ul>
 												</li>

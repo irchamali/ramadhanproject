@@ -66,6 +66,12 @@ class ServiceAdminController extends BaseController
                     'required' => 'Kolom {field} harus diisi!'
                 ]
             ],
+            'desc2' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Kolom {field} harus diisi!'
+                ]
+            ],
             'link' => [
                 'rules' => 'required|valid_url_strict',
                 'errors' => [
@@ -102,6 +108,7 @@ class ServiceAdminController extends BaseController
         $nama = strip_tags(htmlspecialchars($this->request->getPost('nama'), ENT_QUOTES));
         $link = strip_tags(htmlspecialchars($this->request->getPost('link'), ENT_QUOTES));
         $desc = strip_tags(htmlspecialchars($this->request->getPost('desc'), ENT_QUOTES));
+        $desc2 = strip_tags(htmlspecialchars($this->request->getPost('desc2'), ENT_QUOTES));
         $slug = strip_tags(htmlspecialchars($this->request->getPost('slug'), ENT_QUOTES));
 
         if ($this->serviceModel->where('service_slug', $slug)->get()->getNumRows() > 0) {
@@ -114,6 +121,7 @@ class ServiceAdminController extends BaseController
             'service_name' => $nama,
             'service_slug' => $slug,
             'service_desc' => $desc,
+            'service_desc2' => $desc2,
             'service_link' => $link,
             'service_image' => $namaFotoUpload
         ]);
@@ -143,6 +151,12 @@ class ServiceAdminController extends BaseController
                     'required' => 'Kolom {field} harus diisi!'
                 ]
             ],
+            'desc2' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Kolom {field} harus diisi!'
+                ]
+            ],
             'link' => [
                 'rules' => 'required|valid_url_strict',
                 'errors' => [
@@ -166,6 +180,7 @@ class ServiceAdminController extends BaseController
         $nama = strip_tags(htmlspecialchars($this->request->getPost('nama'), ENT_QUOTES));
         $link = strip_tags(htmlspecialchars($this->request->getPost('link'), ENT_QUOTES));
         $desc = strip_tags(htmlspecialchars($this->request->getPost('desc'), ENT_QUOTES));
+        $desc2 = strip_tags(htmlspecialchars($this->request->getPost('desc2'), ENT_QUOTES));
         $slug = strip_tags(htmlspecialchars($this->request->getPost('slug'), ENT_QUOTES));
         if ($this->serviceModel->where('service_slug', $slug)->get()->getNumRows() > 1) {
             $uniqe_num = rand(1, 999);
@@ -180,13 +195,14 @@ class ServiceAdminController extends BaseController
             $namaFotoUpload = $fotoAwal;
         } else {
             $namaFotoUpload = $fileFoto->getRandomName();
-            $fileFoto->move('assets/backend/images/service/', $namaFotoUpload);
+            $fileFoto->move('assets/backend/images/services/', $namaFotoUpload);
         }
         // Simpan ke database
         $this->serviceModel->update($service_id, [
             'service_name' => $nama,
             'service_slug' => $slug,
             'service_desc' => $desc,
+            'service_desc2' => $desc2,
             'service_link' => $link,
             'service_image' => $namaFotoUpload
         ]);

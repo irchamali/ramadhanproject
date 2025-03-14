@@ -15,11 +15,11 @@
 							<div class="service-block_two-big_icon">
 								<img src="<?= base_url(''); ?>assets/quran/images/icons/featured.png" alt="" />
 							</div>
-							<h4 class="service-block_two-heading"><a href="<?= $service['service_slug']; ?>"><?= $service['service_name']; ?></a></h4>
+							<h4 class="service-block_two-heading"><a href="/service/<?= $service['service_slug']; ?>"><?= $service['service_name']; ?></a></h4>
 							<div class="service-block_two-text"><?= $service['service_desc']; ?></div>
 						</div>
 						<div class="service-block_two-lower">
-							<a class="service-block_two-more" href="<?= $service['service_link']; ?>">Read More<i class="fa-solid fa-arrow-right fa-fw"></i></a>
+							<a class="service-block_two-more" href="/service/<?= $service['service_slug']; ?>">Read More<i class="fa-solid fa-arrow-right fa-fw"></i></a>
 						</div>
 					</div>
 				</div>

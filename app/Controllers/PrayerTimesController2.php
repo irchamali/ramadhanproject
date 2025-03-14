@@ -3,9 +3,15 @@
 namespace App\Controllers;
 
 use CodeIgniter\Controller;
+use App\Models\SiteModel;
 
 class PrayerTimesController2 extends Controller
 {
+    public function __construct()
+    {
+        $this->siteModel = new SiteModel();
+    }
+
     public function index()
     {
         helper('url');
@@ -24,7 +30,9 @@ class PrayerTimesController2 extends Controller
         $jadwal_sholat = json_decode($jadwal_data)->data->jadwal ?? [];
 
         // Kirim data ke view
-        return view('prayertimes_view', [
+        return view('pages/imsakiyah_view', [
+            'site' => $this->siteModel->find(1),
+            'title' => 'Jadwal Imsakiyah',
             'list_kota' => $list_kota,
             'kota_terpilih' => $kota_terpilih,
             'jadwal_sholat' => $jadwal_sholat

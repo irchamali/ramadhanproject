@@ -137,7 +137,10 @@
                                     <input type="text" name="slug" class="form-control slug" placeholder="contoh-slug-yang-benar-seperti-ini" style="background-color: #F8F8F8;outline-color: none;border:0;color:blue;" required>
                                 </div>
                                 <div class="form-group">
-                                    <textarea name="desc" class="form-control" rows="6" placeholder="Description" required></textarea>
+                                    <textarea name="desc" class="form-control" rows="3" placeholder="Deskripsi singkat" required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="desc2" class="form-control" rows="6" placeholder="Deskripsi panjang" required></textarea>
                                 </div>
                                 <div class="form-group">
                                     <input type="url" name="link" class="form-control" placeholder="https://" required>
@@ -185,7 +188,10 @@
                                         <input type="text" name="slug" class="form-control" value="<?= $row['service_slug']; ?>" placeholder="Permalink" style="background-color: #F8F8F8;outline-color: none;border:0;color:blue;" required>
                                     </div>
                                     <div class="form-group">
-                                        <textarea name="desc" class="form-control" rows="6" placeholder="Deskripsi" required><?= $row['service_desc']; ?></textarea>
+                                        <textarea name="desc" class="form-control" rows="3" placeholder="Deskripsi" required><?= $row['service_desc']; ?></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea name="desc2" class="form-control" rows="6" placeholder="Deskripsi Panjang" required><?= $row['service_desc2']; ?></textarea>
                                     </div>
                                     <div class="form-group">
                                         <input type="text" name="link" value="<?= $row['service_link']; ?>" class="form-control" placeholder="Link" required>

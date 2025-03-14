@@ -63,9 +63,9 @@
 										<h4 class="footer-title">Main Link</h4>
 										<ul class="footer-list">
 											<li><a href="<?= base_url(''); ?>sejarah">Profil</a></li>
-											<li><a href="<?= base_url(''); ?>programs">Program Pilihan</a></li>
+											<li><a href="<?= base_url(''); ?>services">Layanan</a></li>
 											<li><a href="<?= base_url(''); ?>anggota">Keanggotaan</a></li>
-											<!-- <li><a href="<?= base_url(''); ?>sosialdakwah">Sosial dan Dakwah</a></li> -->
+											<li><a href="<?= base_url(''); ?>programs">Program Pilihan</a></li>
 										</ul>
 									</div>
 								</div>

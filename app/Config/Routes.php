@@ -40,10 +40,10 @@ $routes->set404Override();
 $routes->get('/', 'HomeController::index', ['filter' => 'logedin']);
 
 // SubscribeController
-$routes->get('subscribe', static function () {
-    return redirect()->to('/#footer');
-});
-$routes->post('subscribe', 'SubscribeController::index');
+// $routes->get('subscribe', static function () {
+//     return redirect()->to('/#footer');
+// });
+// $routes->post('subscribe', 'SubscribeController::index');
 
 // GalleryController
 $routes->get('gallery', 'GalleryController::index');
@@ -82,6 +82,10 @@ $routes->get('anggota', 'TtgAnggotaController::index');
 $routes->get('programs', 'ProgramsController::index');
 $routes->get('program/(:segment)', 'ProgramsController::index/$1');
 
+# Services Controller
+$routes->get('services', 'ServicesController::index');
+$routes->get('service/(:segment)', 'ServicesController::index/$1');
+
 $routes->get('pemberdayaan', 'PrgPemberdayaanController::index');
 $routes->get('sosialdakwah', 'PrgSosdakController::index');
 
@@ -98,10 +102,10 @@ $routes->get('laporan', 'LaporanController::index');
 
 // ContactController
 $routes->get('kontak', 'ContactController::index');
-$routes->post('contact', 'ContactController::inbox');
+// $routes->post('contact', 'ContactController::inbox');
 
 // PengaduanController
-$routes->get('pengaduan', 'PengaduanController::index');
+// $routes->get('pengaduan', 'PengaduanController::index');
 
 // LoginController & Logout
 $routes->group('', ['filter' => 'logedin'], static function ($routes) {

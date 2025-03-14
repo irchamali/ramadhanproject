@@ -1,0 +1,12 @@
+CRITICAL - 2025-03-14 06:20:12 --> Undefined variable: program
+in APPPATH\Views\pages\services_view.php on line 18.
+ 1 APPPATH\Views\pages\services_view.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: program', 'D:\\Codeigniter\\ramadhanproject\\app\\Views\\pages\\services_view.php', 18, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Codeigniter\\ramadhanproject\\app\\Views\\pages\\services_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pages/services_view', [], true)
+ 5 APPPATH\Controllers\ServicesController.php(34): view('pages/services_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\ServicesController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServicesController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')

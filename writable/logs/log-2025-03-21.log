@@ -61,3 +61,83 @@ in APPPATH\Views\layout\sidebar-dashboard.php on line 86.
 12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
 13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
 14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+CRITICAL - 2025-03-21 06:42:01 --> Call to a member function getResultArray() on array
+in APPPATH\Controllers\PostController.php on line 60.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PostController->index('poroz-lepas-delegasi-join-action-for-palestine-2--bangun--kampung-poroz--di-gaza')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+CRITICAL - 2025-03-21 06:45:40 --> Cannot use object of type mysqli as array
+in APPPATH\Views\posts\post_detail.php on line 81.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('posts/post_detail', [], true)
+ 4 APPPATH\Controllers\PostController.php(68): view('posts/post_detail', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PostController->index('poroz-lepas-delegasi-join-action-for-palestine-2--bangun--kampung-poroz--di-gaza')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+CRITICAL - 2025-03-21 06:46:01 --> Cannot use object of type stdClass as array
+in APPPATH\Views\posts\post_detail.php on line 81.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('posts/post_detail', [], true)
+ 4 APPPATH\Controllers\PostController.php(68): view('posts/post_detail', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PostController->index('poroz-lepas-delegasi-join-action-for-palestine-2--bangun--kampung-poroz--di-gaza')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+CRITICAL - 2025-03-21 06:47:45 --> Cannot use object of type stdClass as array
+in APPPATH\Views\posts\post_detail.php on line 81.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('posts/post_detail', [], true)
+ 4 APPPATH\Controllers\PostController.php(68): view('posts/post_detail', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PostController->index('poroz-lepas-delegasi-join-action-for-palestine-2--bangun--kampung-poroz--di-gaza')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+CRITICAL - 2025-03-21 06:48:00 --> Call to a member function getResultArray() on array
+in APPPATH\Controllers\PostController.php on line 60.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PostController->index('poroz-lepas-delegasi-join-action-for-palestine-2--bangun--kampung-poroz--di-gaza')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+CRITICAL - 2025-03-21 06:48:49 --> Cannot use object of type stdClass as array
+in APPPATH\Views\posts\post_detail.php on line 81.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('posts/post_detail', [], true)
+ 4 APPPATH\Controllers\PostController.php(68): view('posts/post_detail', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PostController->index('poroz-lepas-delegasi-join-action-for-palestine-2--bangun--kampung-poroz--di-gaza')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+CRITICAL - 2025-03-21 06:50:01 --> Cannot use object of type mysqli as array
+in APPPATH\Views\posts\post_detail.php on line 81.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('posts/post_detail', [], true)
+ 4 APPPATH\Controllers\PostController.php(68): view('posts/post_detail', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PostController->index('poroz-lepas-delegasi-join-action-for-palestine-2--bangun--kampung-poroz--di-gaza')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+CRITICAL - 2025-03-21 06:50:54 --> Cannot use object of type mysqli as array
+in APPPATH\Views\posts\post_detail.php on line 81.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('posts/post_detail', [], true)
+ 4 APPPATH\Controllers\PostController.php(68): view('posts/post_detail', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PostController->index('poroz-lepas-delegasi-join-action-for-palestine-2--bangun--kampung-poroz--di-gaza')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')

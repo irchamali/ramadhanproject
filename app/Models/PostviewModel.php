@@ -43,11 +43,18 @@ class PostviewModel extends Model
             return FALSE;
         }
     }
+    
     public function get_related_post($category_id, $kode)
     {
-        $query = $this->db->query("SELECT * FROM tbl_post LEFT JOIN tbl_user ON post_user_id=user_id 
-			WHERE post_category_id='$category_id' AND NOT post_id='$kode' ORDER BY post_views DESC LIMIT 4");
-        return $query;
+        return $this->db->table('tbl_post')
+            ->select('*')
+            ->join('tbl_user', 'tbl_post.post_user_id = tbl_user.user_id', 'left')
+            ->where('post_category_id', $category_id)
+            ->where('post_id !=', $kode)
+            ->orderBy('post_date', 'DESC') // Urutkan berdasarkan tanggal terbaru
+            ->limit(4)
+            ->get()
+            ->getResultArray();
     }
 
     // Fungsi untuk mendapatkan latest_post dengan pagination dan batasan 3 post

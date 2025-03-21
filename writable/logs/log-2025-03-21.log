@@ -1,0 +1,63 @@
+CRITICAL - 2025-03-21 04:01:41 --> Class 'App\Models\UserModel' not found
+in APPPATH\Controllers\Admin\UsersAdminController.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\UsersAdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+CRITICAL - 2025-03-21 04:34:31 --> No validation rules for the placeholder: user_id
+in SYSTEMPATH\Validation\Validation.php on line 731.
+ 1 SYSTEMPATH\Validation\Validation.php(141): CodeIgniter\Validation\Validation->fillPlaceholders([...], [...])
+ 2 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 3 APPPATH\Controllers\Admin\UsersAdminController.php(162): CodeIgniter\Controller->validate([...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin\UsersAdminController->update()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\UsersAdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+CRITICAL - 2025-03-21 04:34:49 --> No validation rules for the placeholder: user_id
+in SYSTEMPATH\Validation\Validation.php on line 731.
+ 1 SYSTEMPATH\Validation\Validation.php(141): CodeIgniter\Validation\Validation->fillPlaceholders([...], [...])
+ 2 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 3 APPPATH\Controllers\Admin\UsersAdminController.php(162): CodeIgniter\Controller->validate([...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin\UsersAdminController->update()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\UsersAdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+CRITICAL - 2025-03-21 04:57:06 --> No validation rules for the placeholder: user_id
+in SYSTEMPATH\Validation\Validation.php on line 731.
+ 1 SYSTEMPATH\Validation\Validation.php(141): CodeIgniter\Validation\Validation->fillPlaceholders([...], [...])
+ 2 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 3 APPPATH\Controllers\Admin\UsersAdminController.php(148): CodeIgniter\Controller->validate([...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin\UsersAdminController->update()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\UsersAdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+CRITICAL - 2025-03-21 04:57:43 --> No validation rules for the placeholder: user_id
+in SYSTEMPATH\Validation\Validation.php on line 731.
+ 1 SYSTEMPATH\Validation\Validation.php(141): CodeIgniter\Validation\Validation->fillPlaceholders([...], [...])
+ 2 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 3 APPPATH\Controllers\Admin\UsersAdminController.php(149): CodeIgniter\Controller->validate([...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin\UsersAdminController->update()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\UsersAdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')
+CRITICAL - 2025-03-21 05:35:57 --> Trying to access array offset on value of type null
+in APPPATH\Views\layout\sidebar-dashboard.php on line 86.
+ 1 APPPATH\Views\layout\sidebar-dashboard.php(86): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'D:\\Codeigniter\\ramadhanproject\\app\\Views\\layout\\sidebar-dashboard.php', 86, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Codeigniter\\ramadhanproject\\app\\Views\\layout\\sidebar-dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(452): CodeIgniter\View\View->render('layout/sidebar-dashboard', null, true)
+ 5 APPPATH\Views\admin\v_users.php(45): CodeIgniter\View\View->include('layout/sidebar-dashboard')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\Codeigniter\\ramadhanproject\\app\\Views\\admin\\v_users.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/v_users', [], true)
+ 9 APPPATH\Controllers\Admin\UsersAdminController.php(37): view('admin/v_users', [...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin\UsersAdminController->index()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\UsersAdminController))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\ramadhanproject\\public\\index.php')

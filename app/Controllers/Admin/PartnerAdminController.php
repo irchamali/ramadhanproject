@@ -186,7 +186,7 @@ class PartnerAdminController extends BaseController
             $namaFotoUpload = $fotoAwal;
         } else {
             $namaFotoUpload = $fileFoto->getRandomName();
-            $fileFoto->move('assets/backend/images/partner/', $namaFotoUpload);
+            $fileFoto->move('assets/backend/images/partners/', $namaFotoUpload);
         }
         // Simpan ke database
         $this->partnerModel->update($partner_id, [

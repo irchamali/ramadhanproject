@@ -136,6 +136,7 @@
 <script src="<?= base_url(''); ?>assets/quran/js/ScrollSmoother.min.js"></script>
 
 <script src="<?= base_url(''); ?>assets/quran/js/magnific-popup.min.js"></script>
+<script src="<?= base_url(''); ?>assets/quran/js/jquery.countdown.js"></script>
 <script src="<?= base_url(''); ?>assets/quran/js/nav-tool.js"></script>
 <script src="<?= base_url(''); ?>assets/quran/js/jquery-ui.js"></script>
 <script src="<?= base_url(''); ?>assets/quran/js/element-in-view.js"></script>

@@ -368,7 +368,7 @@ $routes->group('author', ['filter' => 'authauthor'], static function ($routes) {
 });
 
 // Edisi Ramadhan
-$routes->get('/jadwal-sholat', 'PrayerTimesController::index');
+$routes->get('/sholat', 'PrayerTimesController::index');
 $routes->get('/jadwalsholat', 'PrayerTimesController2::index');
 
 /*

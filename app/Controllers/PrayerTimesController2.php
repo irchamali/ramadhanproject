@@ -25,7 +25,10 @@ class PrayerTimesController2 extends Controller
         $kota_terpilih = $this->request->getGet('kota') ?? '1301';
 
         // API untuk mendapatkan jadwal sholat
-        $api_jadwal = 'https://api.myquran.com/v2/sholat/jadwal/' . $kota_terpilih . '/2025/3';
+        $tahun = $this->request->getGet('tahun') ?? date('Y');
+        $bulan = $this->request->getGet('bulan') ?? date('n');
+        $api_jadwal = 'https://api.myquran.com/v2/sholat/jadwal/' . $kota_terpilih . '/' . $tahun . '/' . $bulan;
+        // $api_jadwal = 'https://api.myquran.com/v2/sholat/jadwal/' . $kota_terpilih . '/2025/3';
         $jadwal_data = file_get_contents($api_jadwal);
         $jadwal_sholat = json_decode($jadwal_data)->data->jadwal ?? [];
 

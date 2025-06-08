@@ -881,7 +881,7 @@
 	left: 0px;
 	top: 0px;
 	right: 0px;
-	bottom: -90px;
+	bottom: -40px;
 	border-radius: 46px 46px;
 	background-color: var(--white-color);
 }
@@ -892,7 +892,7 @@
 	left: -12px;
 	top: -12px;
 	right: -12px;
-	height: 430px;
+	/* height: 430px; */
 	z-index: -1;
 	background: url(../images/background/students-one_pattern.png) no-repeat;
 	background-size: cover;

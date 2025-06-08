@@ -58,7 +58,7 @@ class PostviewModel extends Model
     }
 
     // Fungsi untuk mendapatkan latest_post dengan pagination dan batasan 3 post
-    public function getLatestPosts($limit = 3)
+    public function getLatestPosts($limit = 4)
     {
         $this->orderBy('post_date', 'DESC')
              ->where(['post_status' => 1]);

@@ -39,8 +39,9 @@
 	top: 0px;
 	bottom: 0px;
 	width: 100%;
-	background: rgb(243,184,21);
-	background: linear-gradient(to left, rgb(243,184,21) 0%, rgb(255,255,255,0) 100%);
+	/* background: rgb(243,184,21); */
+	background: rgb(37, 70, 54);
+	background: linear-gradient(to left, rgb(37, 70, 54) 0%, rgb(255,255,255,0) 100%);
 }
 
 .header-top .left-box::after{

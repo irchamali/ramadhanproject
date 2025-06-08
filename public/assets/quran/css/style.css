@@ -1992,7 +1992,7 @@
 	overflow: hidden;
 	background: #50bc84;
 	padding: 27px 90px 23px;
-    background: linear-gradient(to right, #50bc84 0%, #F3B815 100%);
+    background: linear-gradient(to right, #50bc84 0%, rgb(37, 70, 54) 100%);
 }
 
 /* CTA Two Heading */

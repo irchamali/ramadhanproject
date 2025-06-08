@@ -49,13 +49,19 @@
 										</li> -->
 										<li class="dropdown"><a href="#">Media</a>
 											<ul>
-												<li><a href="<?= base_url(''); ?>posts">Berita</a></li>
+												<li><a href="<?= base_url(''); ?>category/berita">Berita</a></li>
 												<li><a href="<?= base_url(''); ?>category/acara">Acara</a></li>
 												<li><a href="<?= base_url(''); ?>category/artikel">Artikel</a></li>
                                                 <li class="dropdown"><a href="#">Dokumen</a>
 													<ul>
                                                         <li><a href="<?= base_url(''); ?>dokumen/buletin">Buletin</a></li>
                                                         <li><a href="<?= base_url(''); ?>dokumen/regulasi">Regulasi Zakat</a></li>
+													</ul>
+												</li>
+												<li class="dropdown"><a href="#">Jadwal Sholat</a>
+													<ul>
+                                                        <li><a href="<?= base_url(''); ?>sholat">Dalam satu hari</a></li>
+                                                        <li><a href="<?= base_url(''); ?>jadwalsholat">Dalam satu bulan</a></li>
 													</ul>
 												</li>
 											</ul>

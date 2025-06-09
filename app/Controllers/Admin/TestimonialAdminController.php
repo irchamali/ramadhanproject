@@ -40,18 +40,17 @@ class TestimonialAdminController extends BaseController
     {
         if (!$this->validate([
             'nama' => [
-                'rules' => 'required|alpha_space',
+                'rules' => 'required',
                 'errors' => [
-                    'required' => 'Kolom {field} harus diisi!',
-                    'alpha_space' => 'inputan tidak boleh mengandung karakter aneh'
+                    'required' => 'Kolom {field} harus diisi!'
                 ]
             ],
             'angkatan' => [
-                'rules' => 'required|alpha_space',
+                'rules' => 'required',
                 // 'rules' => 'required|exact_length[9]|alpha_numeric_punct',
                 'errors' => [
-                    'required' => 'Kolom {field} harus diisi!',
-                    'alpha_space' => 'inputan tidak boleh mengandung karakter aneh'
+                    'required' => 'Kolom {field} harus diisi!'
+                    // 'alpha_space' => 'inputan tidak boleh mengandung karakter aneh'
                     // 'exact_length' => 'Inputan harus berformat 2007-2010',
                     // 'alpha_numeric_punct' => 'Inputan harus berformat 2007-2010'
                 ]
@@ -98,18 +97,18 @@ class TestimonialAdminController extends BaseController
     {
         if (!$this->validate([
             'nama' => [
-                'rules' => 'required|alpha_space',
+                'rules' => 'required',
                 'errors' => [
                     'required' => 'Kolom {field} harus diisi!',
-                    'alpha_space' => 'inputan tidak boleh mengandung karakter aneh'
+                    // 'alpha_space' => 'inputan tidak boleh mengandung karakter aneh'
                 ]
             ],
             'angkatan' => [
                 // 'rules' => 'required|exact_length[9]|alpha_numeric_punct',
-                'rules' => 'required|alpha_space',
+                'rules' => 'required',
                 'errors' => [
-                    'required' => 'Kolom {field} harus diisi!',
-                    'alpha_space' => 'inputan tidak boleh mengandung karakter aneh'
+                    'required' => 'Kolom {field} harus diisi!'
+                    // 'alpha_space' => 'inputan tidak boleh mengandung karakter aneh'
                     // 'exact_length' => 'Inputan harus berformat 2007-2010',
                     // 'alpha_numeric_punct' => 'Inputan harus berformat 2007-2010'
                 ]

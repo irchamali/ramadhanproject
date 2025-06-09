@@ -179,12 +179,30 @@ class TeamAdminController extends BaseController
         $team = $this->teamModel->find($team_id);
         $fotoAwal = $team['team_image'];
         $fileFoto = $this->request->getFile('filefoto');
-        if ($fileFoto->getName() == '') {
-            $namaFotoUpload = $fotoAwal;
+
+        // if ($fileFoto->getName() == '') {
+        //     $namaFotoUpload = $fotoAwal;
+        // } else {
+        //     $namaFotoUpload = $fileFoto->getRandomName();
+        //     $fileFoto->move('assets/backend/images/team/', $namaFotoUpload);
+        // }
+
+        // Jika tidak ada file yang diunggah
+        if ($fileFoto->getError() == UPLOAD_ERR_NO_FILE) {
+            $namaFotoUpload = $fotoAwal; // Gunakan foto lama
         } else {
+            // Hapus foto lama jika bukan foto default dan bukan sama dengan foto baru
+            if ($fotoAwal != 'user_blank.jpg' && $fotoAwal != $fileFoto->getName()) {
+                $pathToFotoAwal = 'assets/backend/images/team/' . $fotoAwal;
+                if (file_exists($pathToFotoAwal) && is_file($pathToFotoAwal)) {
+                    unlink($pathToFotoAwal); // Hapus hanya jika itu adalah file, bukan direktori
+                }
+            }
+            // Simpan gambar baru
             $namaFotoUpload = $fileFoto->getRandomName();
             $fileFoto->move('assets/backend/images/team/', $namaFotoUpload);
         }
+        
         // Simpan ke database
         $this->teamModel->update($team_id, [
             'team_name' => $nama,

@@ -196,7 +196,18 @@ class PartnerAdminController extends BaseController
             $namaFotoUpload = $fileFoto->getRandomName();
             $fileFoto->move('assets/backend/images/partners/', $namaFotoUpload);
         }
-        
+
+        // validasi: Cek apakah link sudah digunakan oleh data lain
+        if (!empty($link)) {
+            $existing = $this->partnerModel
+                ->where('partner_link', $link)
+                ->where('partner_id !=', $partner_id) // penting!
+                ->first();
+            if ($existing) {
+                return redirect()->to('/admin/partner')->with('msg', 'error');
+            }
+        }
+
         // Simpan ke database
         $this->partnerModel->update($partner_id, [
             'partner_name' => $nama,

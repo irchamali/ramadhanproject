@@ -23,7 +23,8 @@ class PartnershipController extends BaseController
             'site' => $this->siteModel->find(1),
             'home' => $this->homeModel->find(1),
             'about' => $this->aboutModel->find(1),
-            'partners' => $this->partnerModel->getAllPartners(),
+            // 'partners' => $this->partnerModel->getAllPartners(),
+            'partners' => $this->partnerModel->getAllPartners(true), // hanya yg berstatus 'active'
             'title' => 'Kerjasama',
             'active' => 'Tentang'
         ];

@@ -255,17 +255,22 @@ class ProgramAdminController extends BaseController
         $programDate = strip_tags(htmlspecialchars($this->request->getPost('program_date'), ENT_QUOTES));
         $category = strip_tags(htmlspecialchars($this->request->getPost('category'), ENT_QUOTES));
         $slug = strip_tags(htmlspecialchars($this->request->getPost('slug'), ENT_QUOTES));
-
-        // Jika slug sudah ada, tambahkan angka unik
-        if ($this->programModel->where('program_slug', $slug)->countAllResults() > 0) {
-            $uniqueNum = rand(1, 999);
-            $slug = $slug . '-' . $uniqueNum;
-        }
         
         // Cek foto
         $programAwal = $this->programModel->find($program_id);
         $fotoAwal = $programAwal['program_image'];
         $fileFoto = $this->request->getFile('filefoto');
+        $slugLama = $programAwal['program_slug']; // pertahankan slug lama
+
+        // Jika slug berubah, baru cek unik
+        if ($slug !== $slugLama) {
+            if ($this->programModel->where('program_slug', $slug)->countAllResults() > 0) {
+                $uniqueNum = rand(1, 999);
+                $slug = $slug . '-' . $uniqueNum;
+            }
+        } else {
+            $slug = $slugLama; // Tetap pakai slug lama
+        }
 
         // Jika tidak ada file yang diunggah
         if ($fileFoto->getError() == UPLOAD_ERR_NO_FILE) {

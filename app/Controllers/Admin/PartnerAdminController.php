@@ -56,9 +56,9 @@ class PartnerAdminController extends BaseController
                 ]
             ],
             'link' => [
-                'rules' => 'required|valid_url_strict',
+                'rules' => 'permit_empty|valid_url_strict',
                 'errors' => [
-                    'required' => 'Kolom {field} harus diisi!',
+                    // 'required' => 'Kolom {field} harus diisi!',
                     'valid_url_strict' => 'inputan harus berupa link'
                 ]
             ],
@@ -135,10 +135,9 @@ class PartnerAdminController extends BaseController
                 ]
             ],
             'link' => [
-                'rules' => 'required|valid_url_strict',
+                'rules' => 'permit_empty|valid_url_strict',
                 'errors' => [
-                    'required' => 'Kolom {field} harus diisi!',
-                    'valid_url_strict' => 'inputan harus berupa link'
+                    'valid_url_strict' => 'Inputan harus berupa link yang valid'
                 ]
             ],
             'date' => [
@@ -182,12 +181,22 @@ class PartnerAdminController extends BaseController
         $partner = $this->partnerModel->find($partner_id);
         $fotoAwal = $partner['partner_image'];
         $fileFoto = $this->request->getFile('filefoto');
-        if ($fileFoto->getName() == '') {
-            $namaFotoUpload = $fotoAwal;
+        // Jika tidak ada file yang diunggah
+        if ($fileFoto->getError() == UPLOAD_ERR_NO_FILE) {
+            $namaFotoUpload = $fotoAwal; // Gunakan foto lama
         } else {
+            // Hapus foto lama jika bukan foto default dan bukan sama dengan foto baru
+            if ($fotoAwal != 'default-partner.png' && $fotoAwal != $fileFoto->getName()) {
+                $pathToFotoAwal = 'assets/backend/images/partners/' . $fotoAwal;
+                if (file_exists($pathToFotoAwal) && is_file($pathToFotoAwal)) {
+                    unlink($pathToFotoAwal); // Hapus hanya jika itu adalah file, bukan direktori
+                }
+            }
+            // Simpan gambar baru
             $namaFotoUpload = $fileFoto->getRandomName();
             $fileFoto->move('assets/backend/images/partners/', $namaFotoUpload);
         }
+        
         // Simpan ke database
         $this->partnerModel->update($partner_id, [
             'partner_name' => $nama,

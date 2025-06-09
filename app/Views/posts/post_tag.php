@@ -10,13 +10,13 @@
                 <?php foreach ($posts as $post) : ?>
 				<div class="event-block_one col-lg-4 col-md-6 col-sm-12">
 					<div class="event-block_one-inner">
-						<div class="event-block_one-image">
-							<a href="/post/<?= $post['post_slug']; ?>"><img src="<?= base_url(''); ?>/assets/backend/images/post/<?= $post['post_image']; ?>" alt="Image of post" /></a>
+						<div class="event-block_one-image"><br>
+							<!-- <a href="/post/<?= $post['post_slug']; ?>"><img src="<?= base_url(''); ?>/assets/backend/images/post/<?= $post['post_image']; ?>" alt="Image of post" /></a> -->
 						</div>
 						<div class="event-block_one-content">
                             <div class="event-block_one-time"><?= $keyword; ?></div>
 							<div class="event-block_one-location"><i class="fa-solid fa-user fa-fw"></i> <?= $post['user_name']; ?> | <time datetime="2020-01-01"><?= date('d M Y', strtotime($post['post_date'])); ?></time></div>
-							<h5 class="event-block_one-heading"><a href="/post/<?= $post['post_slug']; ?>"><?= $post['post_title']; ?></a></h5>
+							<h6 class="event-block_one-heading"><a href="/post/<?= $post['post_slug']; ?>"><?= $post['post_title']; ?></a></h6>
 							
 						</div>
 					</div>

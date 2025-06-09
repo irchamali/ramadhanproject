@@ -108,7 +108,7 @@
 								<li><span class="icon fa-solid fa-user fa-fw"></span><?= $post['user_name']; ?></li>
 								<li><span class="icon fa-solid fa-clock fa-fw"></span><time datetime="2022-01-01"><?= date('d M Y', strtotime($post['post_date'])); ?></time></li>
 							</ul>
-							<h5 class="news-block_one-heading"><a href="/post/<?= $post['post_slug']; ?>"><?= substr($post['post_title'], 0, 65) . '...'; ?></a></h5>
+							<h6 class="news-block_one-heading"><a href="/post/<?= $post['post_slug']; ?>"><?= substr($post['post_title'], 0, 65) . '...'; ?></a></h6>
 							<!-- <div class="news-block"><?= substr($post['post_description'], 0, 70) . '...'; ?></div> -->
 						</div>
 					</div>

@@ -485,13 +485,54 @@
 	});
 
 
-
+	// Gallery Slider -- twoz
+	var slider = new Swiper('.gallery-twoz_carousel', {
+		slidesPerView: 4,
+		spaceBetween: 30,
+		loop: true,
+		autoplay: {
+			enabled: true,
+			delay: 6000
+		},
+		// Navigation arrows
+		navigation: {
+			nextEl: '.gallery-twoz_next',
+			prevEl: '.gallery-twoz_prev',
+			clickable: true,
+		},
+		//Pagination
+		pagination: {
+			el: ".gallery-twoz_pagination",
+			clickable: true,
+		},
+		speed: 500,
+		breakpoints: {
+			'1600': {
+				slidesPerView: 4,
+			},
+			'1200': {
+				slidesPerView: 4,
+			},
+			'992': {
+				slidesPerView: 3,
+			},
+			'768': {
+				slidesPerView: 3,
+			},
+			'576': {
+				slidesPerView: 2,
+			},
+			'0': {
+				slidesPerView: 2,
+			},
+		},
+	});
 
 
 
 	// Gallery Slider
 	var slider = new Swiper('.gallery-two_carousel', {
-		slidesPerView: 4,
+		slidesPerView: 6,
 		spaceBetween: 0,
 		loop: true,
 		autoplay: {
@@ -512,22 +553,22 @@
 		speed: 500,
 		breakpoints: {
 			'1600': {
-				slidesPerView: 4,
+				slidesPerView: 6,
 			},
 			'1200': {
-				slidesPerView: 4,
+				slidesPerView: 6,
 			},
 			'992': {
-				slidesPerView: 2,
+				slidesPerView: 3,
 			},
 			'768': {
-				slidesPerView: 2,
+				slidesPerView: 3,
 			},
 			'576': {
-				slidesPerView: 2,
+				slidesPerView: 3,
 			},
 			'0': {
-				slidesPerView: 1,
+				slidesPerView: 2,
 			},
 		},
 	});

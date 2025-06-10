@@ -2804,7 +2804,82 @@
 	transform: translateX(-50%) translateY(-50%) scale(1,1);
 }
 
+/* twoz -- tambahan */
+.gallery-twoz{
+	position: relative;
+}
+
+.gallery-twoz.style-twoz{
+	position: relative;
+	padding-bottom: var(--padding-bottom-100);
+}
+
+.gallery-block_twoz{
+	position: relative;
+}
+
+.gallery-block_twoz-inner{
+	position: relative;
+}
+
+.gallery-block_twoz-image{
+	position: relative;
+	border-radius: 0px;
+	overflow: hidden;
+}
+
+.gallery-block_twoz-image img{
+	position: relative;
+	width: 100%;
+	display: block;
+}
+
+.gallery-block_twoz-arrow{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 92px;
+	height: 92px;
+	z-index: 1;
+	opacity: 0;
+	line-height: 92px;
+	border-radius: 50px;
+	text-align: center;
+	font-size: var(--font-30);
+	color: var(--white-color);
+	transform: translateX(-50%) translateY(-50%) scale(1,0.1);
+	background-color: var(--color-seven);
+	
+	outline: 1px solid var(--white-color);
+	outline-offset: 100px;
+	
+	transition:all 600ms ease;
+	-moz-transition:all 600ms ease;
+	-webkit-transition:all 600ms ease;
+	-ms-transition:all 600ms ease;
+	-o-transition:all 600ms ease;
+	font-family: "flaticon_afbd3404a2e1104832d0";
+}
+
+.gallery-block_twoz-arrow::before{
+	color: var(--color-six);
+}
+
+.gallery-block_twoz-arrow:hover::before{
+	color: var(--white-color);
+}
+
+.gallery-block_twoz-arrow:hover{
+	color: var(--white-color);
+	background-color: var(--main-color);
+}
+
+.gallery-block_twoz-inner:hover .gallery-block_twoz-arrow{
+	opacity: 1;
+	transform: translateX(-50%) translateY(-50%) scale(1,1);
+}
 /*** 
+
 
 ====================================================================
 	Testimonial Two

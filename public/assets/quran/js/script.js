@@ -394,10 +394,10 @@
 
 
 
-
+	// semula 2 jadi 1
 	// Testimonial Slider
 	var slider = new Swiper('.testimonial-two_carousel', {
-		slidesPerView: 2,
+		slidesPerView: 1,
 		spaceBetween: 30,
 		loop: true,
 		autoplay: {
@@ -418,19 +418,19 @@
 		speed: 500,
 		breakpoints: {
 			'1600': {
-				slidesPerView: 2,
+				slidesPerView: 1,
 			},
 			'1200': {
-				slidesPerView: 2,
+				slidesPerView: 1,
 			},
 			'992': {
 				slidesPerView: 2,
 			},
 			'768': {
-				slidesPerView: 1,
+				slidesPerView: 2,
 			},
 			'576': {
-				slidesPerView: 1,
+				slidesPerView: 2,
 			},
 			'0': {
 				slidesPerView: 1,

@@ -87,11 +87,19 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="input1" class="col-sm-2 control-label">Image Testimonial2</label>
+                                        <label for="input1" class="col-sm-2 control-label">Image Struktur Organisasi 1</label>
                                         <div class="col-sm-10">
                                             <input type="file" name="img_testimonial2" class="form-control" id="input1">
-                                            <p class="help-block">Image testimonial2 sebaiknya beresolusi 726 x 790 Pixels.</p>
+                                            <p class="help-block">Image struktur organisasi sebaiknya beresolusi 726 x 790 Pixels.</p>
                                             <img src="/assets/backend/images/home/<?= $homes['home_bg_testimonial2']; ?>" width="560" class="thumbnail">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input1" class="col-sm-2 control-label">Image Struktur Organisasi 2</label>
+                                        <div class="col-sm-10">
+                                            <input type="file" name="img_testimonial3" class="form-control" id="input1">
+                                            <p class="help-block">Image struktur organisasi sebaiknya beresolusi 726 x 790 Pixels.</p>
+                                            <img src="/assets/backend/images/home/<?= $homes['home_bg_testimonial3']; ?>" width="560" class="thumbnail">
                                         </div>
                                     </div>
 

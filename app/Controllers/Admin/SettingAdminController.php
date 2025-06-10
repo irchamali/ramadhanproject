@@ -274,6 +274,14 @@ class SettingAdminController extends BaseController
                     'is_image' => 'Yang anda pilih bukan gambar',
                     'mime_in' => 'Yang anda pilih bukan gambar'
                 ]
+            ],
+            'img_testimonial3' => [
+                'rules' => 'max_size[img_testimonial2,2048]|is_image[img_testimonial2]|mime_in[img_testimonial2,image/jpg,image/jpeg,image/png]',
+                'errors' => [
+                    'max_size' => 'Ukuran gambar tidak boleh lebih dari 2MB',
+                    'is_image' => 'Yang anda pilih bukan gambar',
+                    'mime_in' => 'Yang anda pilih bukan gambar'
+                ]
             ]
         ])) {
             return redirect()->to("/admin/setting/home")->with('msg', 'error');
@@ -289,26 +297,37 @@ class SettingAdminController extends BaseController
         $imgHeadingAwal = $data['home_bg_heading'];
         $imgTestimonialAwal = $data['home_bg_testimonial'];
         $imgTestimonial2Awal = $data['home_bg_testimonial2'];
+        $imgTestimonial3Awal = $data['home_bg_testimonial3'];
         $fileImgHeading = $this->request->getFile('img_heading');
         $fileImgTestimonial = $this->request->getFile('img_testimonial');
         $fileImgTestimonial2 = $this->request->getFile('img_testimonial2');
+        $fileImgTestimonial3 = $this->request->getFile('img_testimonial3');
         if ($fileImgHeading->getName() == '') {
             $namaImgHeading = $imgHeadingAwal;
         } else {
             $namaImgHeading = $fileImgHeading->getRandomName();
             $fileImgHeading->move('assets/backend/images/home/', $namaImgHeading);
         }
+        
         if ($fileImgTestimonial->getName() == '') {
             $namaImgTestimonial = $imgTestimonialAwal;
         } else {
             $namaImgTestimonial = $fileImgTestimonial->getRandomName();
             $fileImgTestimonial->move('assets/backend/images/home/', $namaImgTestimonial);
         }
+
         if ($fileImgTestimonial2->getName() == '') {
             $namaImgTestimonial2 = $imgTestimonial2Awal;
         } else {
             $namaImgTestimonial2 = $fileImgTestimonial2->getRandomName();
             $fileImgTestimonial2->move('assets/backend/images/home/', $namaImgTestimonial2);
+        }
+
+        if ($fileImgTestimonial3->getName() == '') {
+            $namaImgTestimonial3 = $imgTestimonial3Awal;
+        } else {
+            $namaImgTestimonial3 = $fileImgTestimonial3->getRandomName();
+            $fileImgTestimonial3->move('assets/backend/images/home/', $namaImgTestimonial3);
         }
         // Simpan ke database
         $this->homeModel->update($home_id, [
@@ -317,7 +336,8 @@ class SettingAdminController extends BaseController
             'home_video' => $home_video,
             'home_bg_heading' => $namaImgHeading,
             'home_bg_testimonial' => $namaImgTestimonial,
-            'home_bg_testimonial2' => $namaImgTestimonial2
+            'home_bg_testimonial2' => $namaImgTestimonial2,
+            'home_bg_testimonial3' => $namaImgTestimonial3
         ]);
         return redirect()->to('/admin/setting/home')->with('msg', 'success');
     }

@@ -17,7 +17,9 @@
         <form id="zakat-maal" class="tab-content active">
             <div class="form-group">
                 <label for="hargaemas-maal">Masukkan Harga Emas saat ini:</label>
-                <input type="number" id="hargaemas-maal" placeholder="Masukkan Harga Emas saat ini" required>
+                <!-- <input type="number" id="hargaemas-maal" placeholder="Masukkan Harga Emas saat ini" required> -->
+                <input type="number" id="hargaemas-maal" placeholder="Mengambil harga emas..." required>
+
             </div>
             <div class="form-group">
                 <label for="nisab-tahun-maal">Nisab Satu Tahun:</label>
@@ -112,6 +114,7 @@
             <a href="https://lazalbahjah.org/campaign/zakat-harta-maal" class="action-button zakat-button" target="_blank">Zakat Sekarang</a>
         </div>
     </div>
+
     <script src="<?= base_url(''); ?>assets/calculator/script.js"></script>
 </body>
 </html>

@@ -133,3 +133,26 @@ document.getElementById('c').addEventListener('input', updateHartaSimpananMaal);
 document.getElementById('d').addEventListener('input', updateHartaSimpananMaal);
 document.getElementById('e').addEventListener('input', updateHartaSimpananMaal);
 document.getElementById('g').addEventListener('input', updateHartaSimpananMaal);
+
+function ambilHargaEmasRealtime() {
+    fetch('/api/harga-emas') // Pastikan route ini tersedia di controller
+        .then(response => response.json())
+        .then(data => {
+            if (data.harga_emas) {
+                // Isi kedua input
+                document.getElementById('hargaemas-maal').value = data.harga_emas;
+                document.getElementById('hargaemas-profesi').value = data.harga_emas;
+
+                // Hitung nisab untuk keduanya
+                updateNisab('maal');
+                updateNisab('profesi');
+            } else {
+                console.warn('Harga emas tidak tersedia dalam respons API:', data);
+            }
+        })
+        .catch(error => console.error('Gagal mengambil harga emas:', error));
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+    ambilHargaEmasRealtime();
+});

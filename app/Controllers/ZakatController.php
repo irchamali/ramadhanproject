@@ -26,4 +26,18 @@ class ZakatController extends BaseController
         ];
         return view('pages/zakat_view', $data);
     }
+
+    public function getHargaEmas()
+    {
+        $client = \Config\Services::curlrequest();
+        $response = $client->get('https://logam-mulia-api.vercel.app/prices/anekalogam');
+        $data = json_decode($response->getBody(), true);
+
+        if (isset($data['data'][0]['sell'])) {
+            return $this->response->setJSON(['harga_emas' => (int) $data['data'][0]['sell']]);
+        } else {
+            return $this->response->setStatusCode(500)->setJSON(['error' => 'Tidak dapat ambil harga emas']);
+        }
+    }
+
 }

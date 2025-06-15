@@ -14,7 +14,7 @@
 
 							<!-- Speaker Block One -->
 							<?php foreach ($partners as $row) : ?>
-							<div class="speaker-block_one col-lg-2 col-md-3 col-sm-6">
+							<div class="speaker-block_one col-lg-2 col-md-3 col-sm-4">
 								<div class="speaker-block_one-inner">
 									<div class="speaker-block_one-image">
 										<img src="/assets/backend/images/partners/<?= $row['partner_image']; ?>" alt="Pengurus" />

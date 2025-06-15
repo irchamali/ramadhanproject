@@ -33,13 +33,13 @@
                         <p><?= $program['program_description']; ?></p><hr>
 
 						<div class="d-flex align-items-center flex-wrap">
-							<a class="scholar-detail_play" href="#"><i class="fa-solid fa-clock fa-fw"></i><span><time datetime="2022-01-01"><?= date('d M Y', strtotime($program['program_date'])); ?></time></span></a>
+							<!-- <a class="scholar-detail_play" href="#"><i class="fa-solid fa-clock fa-fw"></i><span><time datetime="2022-01-01"><?= date('d M Y', strtotime($program['program_date'])); ?></time></span></a> -->
 							<!-- Social Box -->
-							<div class="scholar-detail_socials">
+							<!-- <div class="scholar-detail_socials">
 								<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
 								<a href="#"><i class="fa-brands fa-instagram"></i></a>
 								<a href="#"><i class="fa-brands fa-tiktok"></i></a>
-							</div>
+							</div> -->
 						</div>
 						
 					</div>

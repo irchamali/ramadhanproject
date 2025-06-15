@@ -35,7 +35,7 @@ class PrayerTimesController2 extends Controller
         // Kirim data ke view
         return view('pages/imsakiyah_view', [
             'site' => $this->siteModel->find(1),
-            'title' => 'Jadwal Imsakiyah',
+            'title' => 'Kalender Jadwal Sholat',
             'list_kota' => $list_kota,
             'kota_terpilih' => $kota_terpilih,
             'jadwal_sholat' => $jadwal_sholat

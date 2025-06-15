@@ -487,7 +487,7 @@
 
 	// Gallery Slider -- twoz
 	var slider = new Swiper('.gallery-twoz_carousel', {
-		slidesPerView: 4,
+		slidesPerView: 6,
 		spaceBetween: 30,
 		loop: true,
 		autoplay: {
@@ -508,10 +508,10 @@
 		speed: 500,
 		breakpoints: {
 			'1600': {
-				slidesPerView: 4,
+				slidesPerView: 6,
 			},
 			'1200': {
-				slidesPerView: 4,
+				slidesPerView: 6,
 			},
 			'992': {
 				slidesPerView: 3,

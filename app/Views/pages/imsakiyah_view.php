@@ -4,11 +4,11 @@
 <!-- Contact Info -->
 <section class="contact-info">
     <div class="auto-container">
-        <div class="inner-container">
-            <div class="bg-white px-3 mt-0 px-0 py-5 px-lg-5 rounded-3">
+        <!-- <div class="inner-container">
+            <div class="bg-white px-3 mt-0 px-0 py-5 px-lg-5 rounded-3"> -->
             <body class="bg-light">
                 <div class="container my-4">
-                    <h2 class="text-center mb-4">Jadwal Sholat dan Imsakiyah</h2>
+                    <h2 class="text-center mb-4">Kalender Jadwal Sholat</h2>
                     <p class="text-center mb-4">Realtime using API <a href="https://api.myquran.com/v2/sholat/kota/semua">MyQuran</a></p>
                     <!-- Form Pilih Kota -->
                     <div class="row justify-content-center">
@@ -57,8 +57,8 @@
 
                 </div>
             </body>
-            </div>
-        </div>
+            <!-- </div>
+        </div> -->
     </div>
 </section>
 <!-- End Contact Info -->

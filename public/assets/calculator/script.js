@@ -177,24 +177,6 @@ function resetForm() {
     document.getElementById('buttons-above-nisab-maal').style.display = 'none';
 }
 
-// function resetForm() {
-//     document.getElementById('zakat-maal').reset();
-//     document.getElementById('zakat-profesi').reset();
-//     document.getElementById('result').innerHTML = '';
-//     document.getElementById('buttons-below-nisab').style.display = 'none';
-//     document.getElementById('buttons-above-nisab').style.display = 'none';
-// }
-// function resetForm() {
-//     document.getElementById('zakat-maal').reset();
-//     document.getElementById('zakat-profesi').reset();
-//     document.getElementById('result-maal').innerHTML = '';
-//     document.getElementById('result-profesi').innerHTML = '';
-//     document.getElementById('buttons-below-nisab').style.display = 'none';
-//     document.getElementById('buttons-above-nisab').style.display = 'none';
-//     document.getElementById('buttons-below-nisab-maal').style.display = 'none';
-//     document.getElementById('buttons-above-nisab-maal').style.display = 'none';
-// }
-
 
 function switchTab(tabName) {
     const tabs = document.getElementsByClassName('tab-content');

@@ -371,7 +371,7 @@ $routes->group('author', ['filter' => 'authauthor'], static function ($routes) {
 $routes->get('/sholat', 'PrayerTimesController::index');
 $routes->get('/jadwalsholat', 'PrayerTimesController2::index');
 // Kalkulator zakat
-$routes->get('/zakat', 'ZakatController::index');
+$routes->get('/kalkulatorzakat', 'ZakatController::index');
 $routes->get('/api/harga-emas', 'ZakatController::getHargaEmas');
 
 /*

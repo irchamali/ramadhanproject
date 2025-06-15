@@ -51,18 +51,71 @@ function updateHartaSimpananMaal() {
     }
 }
 
+// function hitungZakat(type) {
+//     let resultText;
+//     let zakat;
+//     const resultDiv = document.getElementById('result');
+//     resultDiv.innerHTML = '';
+
+//     if (type === 'profesi') {
+//         const penghasilanBersih = parseRupiah(document.getElementById('penghasilan-bersih-profesi').value);
+//         const nisabBulan = parseRupiah(document.getElementById('nisab-bulan-profesi').value);
+
+//         if (isNaN(penghasilanBersih) || isNaN(nisabBulan)) {
+//             resultDiv.innerText = 'Mohon periksa input Anda.';
+//             return;
+//         }
+
+//         if (penghasilanBersih < nisabBulan) {
+//             resultText = 'Penghasilan Anda belum mencapai nisab. Anda tetap bisa menyempurnakan niat baik dengan bersedekah.';
+//             document.getElementById('buttons-below-nisab').style.display = 'flex';
+//             document.getElementById('buttons-above-nisab').style.display = 'none';
+//         } else {
+//             zakat = penghasilanBersih * 0.025;
+//             resultText = `Jumlah Zakat yang harus dibayar: ${formatRupiah(zakat)}`;
+//             document.getElementById('buttons-below-nisab').style.display = 'none';
+//             document.getElementById('buttons-above-nisab').style.display = 'flex';
+//         }
+//     } else if (type === 'maal') {
+//         const hartaKenaZakat = parseRupiah(document.getElementById('h').value);
+//         const nisabTahun = parseRupiah(document.getElementById('nisab-tahun-maal').value);
+
+//         if (isNaN(hartaKenaZakat) || isNaN(nisabTahun)) {
+//             resultDiv.innerText = 'Mohon periksa input Anda.';
+//             return;
+//         }
+
+//         if (hartaKenaZakat < nisabTahun) {
+//             resultText = 'Harta Anda belum mencapai nisab. Anda tetap bisa menyempurnakan niat baik dengan bersedekah.';
+//             document.getElementById('buttons-below-nisab-maal').style.display = 'flex';
+//             document.getElementById('buttons-above-nisab-maal').style.display = 'none';
+//         } else {
+//             zakat = hartaKenaZakat * 0.025;
+//             resultText = `Jumlah Zakat yang harus dibayar: ${formatRupiah(zakat)}`;
+//             document.getElementById('buttons-below-nisab-maal').style.display = 'none';
+//             document.getElementById('buttons-above-nisab-maal').style.display = 'flex';
+//         }
+//     }
+
+//     resultDiv.innerHTML = resultText;
+// }
 function hitungZakat(type) {
     let resultText;
     let zakat;
-    const resultDiv = document.getElementById('result');
-    resultDiv.innerHTML = '';
+
+    const resultMaal = document.getElementById('result-maal');
+    const resultProfesi = document.getElementById('result-profesi');
+
+    // Reset isi hasil terlebih dahulu
+    resultMaal.innerHTML = '';
+    resultProfesi.innerHTML = '';
 
     if (type === 'profesi') {
         const penghasilanBersih = parseRupiah(document.getElementById('penghasilan-bersih-profesi').value);
         const nisabBulan = parseRupiah(document.getElementById('nisab-bulan-profesi').value);
 
         if (isNaN(penghasilanBersih) || isNaN(nisabBulan)) {
-            resultDiv.innerText = 'Mohon periksa input Anda.';
+            resultProfesi.innerText = 'Mohon periksa input Anda.';
             return;
         }
 
@@ -76,12 +129,14 @@ function hitungZakat(type) {
             document.getElementById('buttons-below-nisab').style.display = 'none';
             document.getElementById('buttons-above-nisab').style.display = 'flex';
         }
+
+        resultProfesi.innerHTML = resultText;
     } else if (type === 'maal') {
         const hartaKenaZakat = parseRupiah(document.getElementById('h').value);
         const nisabTahun = parseRupiah(document.getElementById('nisab-tahun-maal').value);
 
         if (isNaN(hartaKenaZakat) || isNaN(nisabTahun)) {
-            resultDiv.innerText = 'Mohon periksa input Anda.';
+            resultMaal.innerText = 'Mohon periksa input Anda.';
             return;
         }
 
@@ -95,18 +150,51 @@ function hitungZakat(type) {
             document.getElementById('buttons-below-nisab-maal').style.display = 'none';
             document.getElementById('buttons-above-nisab-maal').style.display = 'flex';
         }
-    }
 
-    resultDiv.innerHTML = resultText;
+        resultMaal.innerHTML = resultText;
+    }
 }
 
 function resetForm() {
+    // Simpan nilai harga emas sebelum reset
+    const hargaEmasMaal = document.getElementById('hargaemas-maal').value;
+    const hargaEmasProfesi = document.getElementById('hargaemas-profesi').value;
+
+    // Reset semua form
     document.getElementById('zakat-maal').reset();
     document.getElementById('zakat-profesi').reset();
-    document.getElementById('result').innerHTML = '';
+
+    // Set ulang harga emas agar tidak hilang
+    document.getElementById('hargaemas-maal').value = hargaEmasMaal;
+    document.getElementById('hargaemas-profesi').value = hargaEmasProfesi;
+
+    // Kosongkan hasil dan sembunyikan tombol
+    document.getElementById('result-maal').innerHTML = '';
+    document.getElementById('result-profesi').innerHTML = '';
     document.getElementById('buttons-below-nisab').style.display = 'none';
     document.getElementById('buttons-above-nisab').style.display = 'none';
+    document.getElementById('buttons-below-nisab-maal').style.display = 'none';
+    document.getElementById('buttons-above-nisab-maal').style.display = 'none';
 }
+
+// function resetForm() {
+//     document.getElementById('zakat-maal').reset();
+//     document.getElementById('zakat-profesi').reset();
+//     document.getElementById('result').innerHTML = '';
+//     document.getElementById('buttons-below-nisab').style.display = 'none';
+//     document.getElementById('buttons-above-nisab').style.display = 'none';
+// }
+// function resetForm() {
+//     document.getElementById('zakat-maal').reset();
+//     document.getElementById('zakat-profesi').reset();
+//     document.getElementById('result-maal').innerHTML = '';
+//     document.getElementById('result-profesi').innerHTML = '';
+//     document.getElementById('buttons-below-nisab').style.display = 'none';
+//     document.getElementById('buttons-above-nisab').style.display = 'none';
+//     document.getElementById('buttons-below-nisab-maal').style.display = 'none';
+//     document.getElementById('buttons-above-nisab-maal').style.display = 'none';
+// }
+
 
 function switchTab(tabName) {
     const tabs = document.getElementsByClassName('tab-content');

@@ -24,7 +24,7 @@ class ZakatController extends BaseController
             'title' => 'Kalkulator Zakat',
             'active' => 'Zakat'
         ];
-        return view('pages/zakat_view', $data);
+        return view('pages/kalkulator_zakat', $data);
     }
 
     public function getHargaEmas()

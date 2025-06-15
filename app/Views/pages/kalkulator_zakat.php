@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalkulator Zakat - POROZ</title>
-    <link rel="stylesheet" href="<?= base_url(''); ?>assets/calculator/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <link rel="shortcut icon" href="<?= base_url(''); ?>assets/backend/images/site/<?= $site['site_favicon']; ?>" type="image/x-icon">
-    <link rel="icon" href="<?= base_url(''); ?>assets/backend/images/favicons/apple-touch-icon.png" type="image/x-icon">
-</head>
-<body>
+<?= $this->extend('layouts/template-zakat'); ?>
+
+<?= $this->section('content'); ?>
+
     <div class="container">
         <div class="tab-container">
             <div class="tab active" onclick="switchTab('zakat-maal')">Zakat Harta (Maal)</div>
@@ -18,10 +10,10 @@
 
         <form id="zakat-maal" class="tab-content active">
             <div class="form-group">
-                <label for="hargaemas-maal">Masukkan Harga Emas saat ini:</label>
+                <label for="hargaemas-maal">Harga Emas saat ini:</label>
                 <!-- <input type="number" id="hargaemas-maal" placeholder="Masukkan Harga Emas saat ini" required> -->
                 <input type="number" id="hargaemas-maal" placeholder="Mengambil harga emas..." required>
-
+                <small>Catatan: data real-time sesuai API logam-mulia</small>
             </div>
             <div class="form-group">
                 <label for="nisab-tahun-maal">Nisab Satu Tahun:</label>
@@ -65,7 +57,7 @@
                 <label for="h">h. Harta simpanan kena zakat(F-G)</label>
                 <input type="text" id="h" readonly>
             </div>
-            <button type="button" onclick="hitungZakat('maal')">Hitung Zakat</button><br>
+            <button type="button" onclick="hitungZakat('maal')">Hitung Zakat</button>
             <div id="result-maal"></div>
             <div id="buttons-below-nisab-maal" style="display: none;">
                 <button class="reset-button" onclick="resetForm()">Reset</button>
@@ -91,8 +83,9 @@
                 <input type="text" id="penghasilan-bersih-profesi" readonly>
             </div>
             <div class="form-group">
-                <label for="hargaemas-profesi">Masukkan Harga Emas saat ini:</label>
+                <label for="hargaemas-profesi">Harga Emas saat ini:</label>
                 <input type="number" id="hargaemas-profesi" placeholder="Mengambil harga emas..." required>
+                <small>Catatan: data real-time sesuai API logam-mulia</small>
             </div>
             <div class="form-group">
                 <label for="nisab-tahun-profesi">Nisab Satu Tahun:</label>
@@ -104,7 +97,7 @@
                 <input type="text" id="nisab-bulan-profesi" value="" readonly>
                 <small>Catatan: Nisab 1 bulan : nisab 1 tahun / 12 bulan</small>
             </div>
-            <button type="button" onclick="hitungZakat('profesi')">Hitung Zakat</button><br>
+            <button type="button" onclick="hitungZakat('profesi')">Hitung Zakat</button>
             <div id="result-profesi"></div>
             <div id="buttons-below-nisab" style="display: none;">
                 <button class="reset-button" onclick="resetForm()">Reset</button>
@@ -115,7 +108,9 @@
                 <a href="https://baznas.go.id/bayarzakat" class="action-button zakat-button" target="_blank">Zakat Sekarang</a>
             </div>
         </form>
-    </div>
+    </div><br>
     <script src="<?= base_url(''); ?>assets/calculator/script.js"></script>
-</body>
-</html>
+
+<?= $this->endSection(); ?>
+
+

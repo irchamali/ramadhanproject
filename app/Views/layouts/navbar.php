@@ -41,12 +41,7 @@
 											</ul>
 										</li>
 										<li><a href="/partners">Mitra</a></li>
-                                        <!-- <li class="dropdown"><a href="#">Mitra</a>
-											<ul>
-												<li><a href="<?= base_url(''); ?>mitra">Mitra-mitra</a></li>
-												<li><a href="<?= base_url(''); ?>kerjasama">Kerjasama</a></li>
-											</ul>
-										</li> -->
+                                        
 										<li class="dropdown"><a href="#">Media</a>
 											<ul>
 												<li><a href="<?= base_url(''); ?>category/berita">Berita</a></li>
@@ -64,6 +59,7 @@
                                                         <li><a href="<?= base_url(''); ?>jadwalsholat">Dalam satu bulan</a></li>
 													</ul>
 												</li>
+												<li><a href="/kalkulatorzakat">Kalkulator Zakat</a></li>
 											</ul>
 										</li>
 										<li><a href="/kontak">Kontak</a></li>
